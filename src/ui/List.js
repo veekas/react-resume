@@ -8,15 +8,15 @@ const List = ({ items, style }) => (
   }}>
     {
       items.map((item, key) => {
-        let isLink = (item.substr(0, 6) === 'Link: ');
-        let url = item.split(' ')[1];
+        const isLink = (item.substr(0, 6) === 'Link: ');
+        const url = item.split(' ')[1];
         return (
-          isLink ?
-          <li key={key}>
-            <span>Link:</span><Link to={url}>{url}</Link>
-          </li> :
-          <li key={key} dangerouslySetInnerHTML={{__html: item}}>
-          </li>
+          isLink
+            ? <li key={key}>
+                <span>Link:</span><Link to={url}>{url}</Link>
+              </li>
+            : <li key={key} dangerouslySetInnerHTML={{ __html: item }}>
+              </li>
         );
       })
     }

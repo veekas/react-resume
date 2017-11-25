@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Link from '../ui/Link';
 
-const Footer = ({links}) => (
+const Footer = ({ links }) => (
   <section style={style.main}>
     {
       links.map((link) => (
@@ -21,10 +21,10 @@ const style = {
     borderTop: '1px solid black',
     height: '3rem',
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   icon: {
-    display:'inline-block',
+    display: 'inline-block',
     fontSize: '1.6rem',
     lineHeight: '1.6rem',
     width: '2.4rem',
@@ -34,7 +34,7 @@ const style = {
     color: 'rgba(77, 100, 141, 1)',
     border: '1px solid rgba(77, 100, 141, 1)',
     borderRadius: '60px',
-    padding: '4px'
+    padding: '4px',
   },
 };
 

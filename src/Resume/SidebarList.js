@@ -6,7 +6,7 @@ const SidebarList = ({ items, title, separator }) => (
     <SidebarHeading> {title} </SidebarHeading>
     <div style={style.list}>
       {items.map((item, key) => (
-        <span key={key} dangerouslySetInnerHTML={{__html: item + createSeparator(key, items, separator)}}>
+        <span key={key} dangerouslySetInnerHTML={{ __html: item + createSeparator(key, items, separator) }}>
         </span>
       ))}
     </div>

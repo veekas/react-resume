@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import Link from '../ui/Link';
 
-const Header = ({ firstName, lastName, program, website }) => {
+const Header = ({ firstName, lastName, subheader, website }) => {
 
-  const { nickname, term } = program;
+  const { nickname, qualifier } = subheader;
 
   return (
     <section style={style.main}>
@@ -12,8 +12,8 @@ const Header = ({ firstName, lastName, program, website }) => {
         <span style={style.span}>&nbsp;</span>
         <span style={style.span}>{lastName.toUpperCase()}</span>
       </h1>
-      <span style={style.program}>
-        {term} {nickname} | <Link to={website.link} style={{padding: 0}}>{website.name}</Link>
+      <span style={style.subheader}>
+        {qualifier} {nickname} | <Link to={website.link} style={{ padding: 0 }}>{website.name}</Link>
       </span>
     </section>
   );
@@ -33,12 +33,12 @@ const style = {
     display: 'block',
     fontSize: '3.4rem',
   },
-  program: {
+  subheader: {
     fontSize: '1.2rem',
     display: 'block',
     marginLeft: '5px',
     marginTop: '-6px',
-    color: 'rgb(77, 100, 141)'
+    color: 'rgb(77, 100, 141)',
   },
   span: {
     display: 'inline-block',
@@ -48,7 +48,7 @@ const style = {
 Header.propTypes = {
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
-  program: PropTypes.object.isRequired,
+  subheader: PropTypes.object.isRequired,
 };
 
 export default Header;

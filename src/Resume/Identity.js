@@ -1,16 +1,22 @@
 import React, { PropTypes } from 'react';
 
-const Identity = ({ firstName, lastName, program }) => {
-  const { nickname, term } = program;
+const Identity = ({ firstName, lastName, subheader }) => {
+  const { nickname, qualifier } = subheader;
   return (
     <section style={style.main}>
       <h1 style={style.h1}>
-        <span style={style.span}>{firstName.toUpperCase()}</span>
-        <span style={style.span}>&nbsp;</span>
-        <span style={style.span}>{lastName.toUpperCase()}</span>
+        <span style={style.span}>
+          {firstName.toUpperCase()}
+        </span>
+        <span style={style.span}>
+          &nbsp;
+        </span>
+        <span style={style.span}>
+          {lastName.toUpperCase()}
+        </span>
       </h1>
       <h2 style={style.h2}>
-        {term} {nickname}
+        {qualifier} {nickname}
       </h2>
     </section>
   );
@@ -35,7 +41,7 @@ const style = {
 Identity.propTypes = {
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
-  program: PropTypes.object.isRequired,
+  subheader: PropTypes.object.isRequired,
 };
 
 export default Identity;

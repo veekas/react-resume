@@ -17,6 +17,10 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
+app.get('/favicon.ico', (req, res) => {
+  res.send(express.static(__dirname + 'favicon.ico'));
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });

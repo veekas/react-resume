@@ -23,95 +23,101 @@ class Resume extends Component {
 const DATA = {
   sidebar: {
     education: {
-      university: 'University of Waterloo',
-      duration: 'Sept 2013 - now',
-      degree: 'Bachelor of Software Engineering'
+      university: 'Arizona State University',
+      duration: 'July 2017',
+      degree: 'BA Political Science; Cert. Applied Business Data Analysis',
     },
-    languages: [{
-      name: 'JavaScript (ES2015)',
-      proficiency: 0.8,
-    }, {
-      name: 'Python',
-      proficiency: 0.7,
-    }, {
-      name: 'HTML/CSS',
-      proficiency: 0.4,
-    }, {
-      name: 'Scala',
-      proficiency: 0.6,
-    }, {
-      name: 'C++',
-      proficiency: 0.6,
-    }, {
-      name: 'BASH',
-      proficiency: 0.5,
-    }],
+    languages: [
+      {
+        name: 'JavaScript',
+        proficiency: 0.8,
+      },
+      {
+        name: 'HTML/CSS',
+        proficiency: 0.7,
+      },
+      {
+        name: 'R',
+        proficiency: 0.5,
+      },
+      {
+        name: 'Typescript',
+        proficiency: 0.4,
+      },
+      {
+        name: 'Ruby',
+        proficiency: 0.3,
+      },
+      {
+        name: '6',
+        proficiency: 0.2,
+      },
+    ],
     databases: [
-      'MongoDB',
-      'Redshift/PostgreSQL',
-      'MySQL'
+      'PostgreSQL',
+      '2',
+      '3',
     ],
     libraries: [
       'React',
-      'React Native',
       'Redux',
       'Node.js',
       'Express',
-      'Socket.io',
-      'Koa',
-      'Scrapy',
-      'Gensim',
-      'Scikit-Learn',
-      'NLTK',
-      'Django',
-      'Angular',
       'Mocha',
+      'Socket.io',
       'jQuery',
-      'Sass/Less'
+      'Sass/Less',
+      'Ruby on Rails',
+      '10',
+      '11',
+      '12',
+      '13',
+      '14',
+      '15',
+      '16'
     ],
     tools: [
-      'AWS (Redshift, S3, Lambda, Kinesis, EMR, EC2, SES, SNS)',
-      'Spark/Spark Streaming',
-      'Airflow',
-      'Jupyter',
-      'Zeppelin',
-      'Vim',
-      'Unix',
       'Git',
       'Webpack',
-      'Gulp',
-      'Grunt',
+      'Vim',
+      'Unix',
       'Browserify',
-      'Docker'
+      'Docker',
+      'Visual Studio Code',
+      'Agile Methodology',
+      'Test Driven Development',
+      'Adobe Illustrator',
+      'Adobe Photoshop',
+      '12',
+      '13',
     ],
     interests: [
       'I <b>learn</b> about web and startups.',
       'I <b>dominate</b> in baddy, ping pong, League of Legends, and Tetris.',
       'I <b>love</b> tacos, anime, bubble tea, fitness, traveling, and team players.',
-      'I <b>hate</b> doing planks.'
     ],
     links: [{
       name: 'Phone',
       faClass: 'fa fa-phone',
-      display: '647 571 9781',
-      link: 'tel:+16475719781',
+      display: '480.264.0124',
+      link: 'tel:+14802640124',
     }, {
       name: 'Email',
       faClass: 'fa fa-envelope',
-      display: 'c8hoang@uwaterloo.ca',
-      link: 'mailto:c8hoang@uwaterloo.ca',
+      display: 'Veekas@VeekasMeansProgress.com',
+      link: 'mailto:Veekas@VeekasMeansProgress.com',
     }, {
       name: 'GitHub',
       faClass: 'fa fa-github',
-      display: 'github.com/clemmy',
-      link: 'https://github.com/clemmy',
+      display: 'github.com/veekas',
+      link: 'https://github.com/veekas',
     }],
   },
   footerLinks: [{
     name: 'Website',
     faClass: 'fa fa-fire',
-    display: 'http://clemmy.ninja',
-    link: 'http://clemmy.ninja',
+    display: 'VeekasMeansProgress.com',
+    link: 'http://VeekasMeansProgress.com',
   }, {
     name: 'Blog',
     faClass: 'fa fa-book',
@@ -120,20 +126,20 @@ const DATA = {
   }, {
     name: 'Linkedin',
     faClass: 'fa fa-linkedin',
-    display: 'linkedin.com/in/clementhoang',
-    link: 'https://www.linkedin.com/in/clementhoang',
+    display: 'linkedin.com/in/veekas',
+    link: 'https://www.linkedin.com/in/veekas',
   }],
   main: {
-    firstName: 'Clement',
-    lastName: 'Hoang',
-    program: {
-      term: '4A',
-      nickname: 'Software Engineering',
-      name: 'Software Engineering',
+    firstName: 'Veekas',
+    lastName: 'Shrivastava',
+    subheader: {
+      qualifier: 'Fullstack Javascript',
+      nickname: 'Software Engineer',
+      name: 'Software Engineer',
     },
     website: {
-      name: 'http://clemmy.ninja',
-      link: 'http://clemmy.ninja'
+      name: 'VeekasMeansProgress.com',
+      link: 'http://VeekasMeansProgress.com',
     },
     companies: [{
       name: 'Memebox',
@@ -179,7 +185,7 @@ const DATA = {
         'Re-architected the messaging system to support multiple participants and time-scheduling using the <b>MEAN</b> stack',
         'Ran email A/B tests, which increased user retention by <b>20%</b>',
         'Added complete i18n coverage to the web platform'
-      ]
+      ],
     }],
     projects: [{
       name: 'Zoo House',
@@ -187,7 +193,7 @@ const DATA = {
       achievements: [
         'Helped clients build fully fledged products such as <b><a href="https://www.coastlinemarket.com/">Coastline Market</a></b>, e-commerce and inventory management for fishing',
         'Worked with small team to transform fun projects into market-ready products, such as <b><a href="https://medicov.io/">Medicov</a></b> and <b><a href="https://luql.io/">Luql</a></b>'
-      ]
+      ],
     }, {
       name: 'Various Hacks',
       tools: [],
@@ -197,7 +203,7 @@ const DATA = {
         '<b><a href="http://devpost.com/software/query-sctlva">Query</a></b> - pebble and web app that provide a real-time collaborative classroom layer on top of a lecture (Winner at HackingEDU 2015)',
         '<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
         '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)'
-      ]
+      ],
     }],
   },
 };

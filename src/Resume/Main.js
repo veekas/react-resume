@@ -8,7 +8,7 @@ import Identity from './Identity';
 
 // http://paletton.com/#uid=13I0u0kllllaFw0g0qFqFg0w0aF
 
-const Main = ({ firstName, lastName, program, companies, projects }) => (
+const Main = ({ firstName, lastName, subheader, companies, projects }) => (
   <section style={style.main}>
     <MainHeading title="+ Projects" />
       {projects.map((project, key) => (

@@ -7,4 +7,7 @@ import Resume from './Resume';
 
 // http://paletton.com/#uid=12P0u0kllllaFw0g0qFqFg0w0aF
 
-render(<Resume />, document.getElementById('root'));
+render(
+  <Resume />,
+  document.getElementById('root')
+);
