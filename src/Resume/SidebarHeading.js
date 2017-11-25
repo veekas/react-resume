@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 
-const SidebarHeading = ({ children, align = 'right' }) => (
+const SidebarHeading = ({ children, align = 'left' }) => (
   <h1 style={{
     ...style,
     textAlign: align,
@@ -10,7 +10,10 @@ const SidebarHeading = ({ children, align = 'right' }) => (
 );
 
 const style = {
-  padding: '0.25rem',
+  paddingTop: '0.25rem',
+  paddingBottom: '0.25rem',
+  borderBottom: '1px solid rgb(21, 44, 85)',
+  marginBottom: '0.6rem'
 };
 
 SidebarHeading.propTypes = {

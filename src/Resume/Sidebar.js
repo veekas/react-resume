@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import Identity from './Identity';
 import Languages from './Languages';
 import SidebarList from './SidebarList';
 import ContactLinks from './ContactLinks';
@@ -9,19 +8,17 @@ import Education from './Education';
 const Sidebar = ({ data }) => (
   <section style={style.main}>
     <div>
-      <Identity name={data.name} program={data.program} />
-      <HorizontalRule />
       <ContactLinks data={data.links} />
-      <HorizontalRule />
       <Languages data={data.languages} />
-      <SidebarList title="Libraries" items={data.libraries} />
-      <SidebarList title="Frameworks" items={data.frameworks} />
-      <SidebarList title="Tools" items={data.tools} />
-      <HorizontalRule />
+      <SidebarList title="+ FRAMEWORKS" items={data.libraries} />
+      <SidebarList title="+ DATABASES" items={data.databases} />
+      <SidebarList title="+ TOOLS" items={data.tools} />
+      <SidebarList title="+ INTERESTS" items={data.interests} separator={'<br/>'} />
     </div>
     <div>
       <Education
         university={data.education.university}
+        degree={data.education.degree}
         duration={data.education.duration} />
     </div>
   </section>
@@ -29,13 +26,14 @@ const Sidebar = ({ data }) => (
 
 const style = {
   main: {
-    width: '29%',
+    flex: '1 0 auto',
+    width: '30%',
     backgroundColor: 'rgba(118,136,169,0.125)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: '2rem',
-    color: 'rgb(5, 24, 56)',
+    padding: '0 1.2rem 1.2rem 1.2rem',
+    color: 'rgb(21, 44, 85)',
   },
 };
 

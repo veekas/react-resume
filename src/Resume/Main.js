@@ -4,14 +4,15 @@ import MainHeading from './MainHeading';
 import Project from './Project';
 import Section from '../ui/Section';
 import List from '../ui/List';
+import Identity from './Identity';
 
 // http://paletton.com/#uid=13I0u0kllllaFw0g0qFqFg0w0aF
 
-const Main = ({ companies, projects, interests }) => (
+const Main = ({ firstName, lastName, program, companies, projects }) => (
   <section style={style.main}>
-    <MainHeading title="Work Experience" />
+    <MainHeading title="+ Work Experience" />
     <Companies data={companies} />
-    <MainHeading title="Projects" />
+    <MainHeading title="+ Projects" />
       {projects.map((project, key) => (
         <Section color="rgb(77, 100, 141)" key={key}>
           <Project
@@ -22,25 +23,20 @@ const Main = ({ companies, projects, interests }) => (
             key={key} />
         </Section>
       ))}
-    <MainHeading title="Activities & Interests" />
-    <Section color="rgb(77, 100, 141)">
-      <List items={interests} />
-    </Section>
   </section>
 );
 
 const style = {
   main: {
-    minHeight: '100%',
-    width: '73%',
-    padding: '2rem 1rem',
+    paddingRight: '1.25rem',
   },
 };
 
 Main.propTypes = {
+  firstName: PropTypes.string.isRequired,
+  lastName: PropTypes.string.isRequired,
   companies: PropTypes.arrayOf(PropTypes.object).isRequired,
   projects: PropTypes.arrayOf(PropTypes.object).isRequired,
-  interests: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Main;

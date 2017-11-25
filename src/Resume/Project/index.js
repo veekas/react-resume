@@ -4,6 +4,7 @@ import ProjectHeading from './ProjectHeading';
 
 const Project = ({ name, tools, link, achievements }) => {
   const items = link ? [...achievements, createLink(link)] : achievements;
+
   return (
     <div style={style.main}>
       <ProjectHeading name={name} tools={tools} />
@@ -18,7 +19,7 @@ function createLink(link) {
 
 const style = {
   main: {
-    margin: '1rem 0',
+    margin: '1rem 0 0 0.2rem',
   },
   list: {
     margin: 0,

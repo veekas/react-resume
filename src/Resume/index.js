@@ -2,13 +2,19 @@ import React, { Component } from 'react';
 import Container from '../ui/Container';
 import Sidebar from './Sidebar';
 import Main from './Main';
+import Header from './Header';
+import Footer from './Footer';
 
 class Resume extends Component {
   render() {
     return (
       <Container>
-        <Sidebar data={DATA.sidebar} />
-        <Main {...DATA.main} />
+        <Header {...DATA.main} />
+        <div style={{ display: 'flex' }}>
+          <Main {...DATA.main} />
+          <Sidebar data={DATA.sidebar} />
+        </div>
+        <Footer links={DATA.footerLinks} />
       </Container>
     );
   }
@@ -16,154 +22,182 @@ class Resume extends Component {
 
 const DATA = {
   sidebar: {
-    name: 'Ramanpreet Nara',
-    program: {
-      term: '3A',
-      nickname: 'Software Engineering',
-      name: 'Software Engineering',
-    },
     education: {
       university: 'University of Waterloo',
-      duration: 'Sept 13 - PRESENT',
+      duration: 'Sept 2013 - now',
+      degree: 'Bachelor of Software Engineering'
     },
     languages: [{
-      name: 'JavaScript',
+      name: 'JavaScript (ES2015)',
       proficiency: 0.8,
     }, {
-      name: 'Clojure',
+      name: 'Python',
+      proficiency: 0.7,
+    }, {
+      name: 'HTML/CSS',
       proficiency: 0.4,
+    }, {
+      name: 'Scala',
+      proficiency: 0.6,
     }, {
       name: 'C++',
       proficiency: 0.6,
     }, {
-      name: 'HTML',
-      proficiency: 0.75,
-    }, {
-      name: 'PHP',
-      proficiency: 0.4,
-    }, {
-      name: 'CSS',
-      proficiency: 0.6,
-    }, {
       name: 'BASH',
-      proficiency: 0.3,
+      proficiency: 0.5,
     }],
-    frameworks: [
-      'Node.js',
-      'Redux',
-      'Express',
-      'Koa',
-      'Angular',
-      'Ember',
-      'Sails',
-      'SCRUM',
-      'Mocha',
+    databases: [
+      'MongoDB',
+      'Redshift/PostgreSQL',
+      'MySQL'
     ],
     libraries: [
       'React',
-      'Ramda',
-      'Immutable',
-      'Chai',
+      'React Native',
+      'Redux',
+      'Node.js',
+      'Express',
+      'Socket.io',
+      'Koa',
+      'Scrapy',
+      'Gensim',
+      'Scikit-Learn',
+      'NLTK',
+      'Django',
+      'Angular',
+      'Mocha',
+      'jQuery',
+      'Sass/Less'
     ],
     tools: [
-      'Unix CLI',
-      'PivotalTracker',
+      'AWS (Redshift, S3, Lambda, Kinesis, EMR, EC2, SES, SNS)',
+      'Spark/Spark Streaming',
+      'Airflow',
+      'Jupyter',
+      'Zeppelin',
+      'Vim',
+      'Unix',
       'Git',
       'Webpack',
       'Gulp',
-      'Broccoli',
-      'MongoDB',
-      'Redis',
+      'Grunt',
+      'Browserify',
+      'Docker'
+    ],
+    interests: [
+      'I <b>learn</b> about web and startups.',
+      'I <b>dominate</b> in baddy, ping pong, League of Legends, and Tetris.',
+      'I <b>love</b> tacos, anime, bubble tea, fitness, traveling, and team players.',
+      'I <b>hate</b> doing planks.'
     ],
     links: [{
       name: 'Phone',
-      display: '1-647-609-4290',
-      link: 'tel:+16576094290',
+      faClass: 'fa fa-phone',
+      display: '647 571 9781',
+      link: 'tel:+16475719781',
     }, {
       name: 'Email',
-      display: 'rsnara@uwaterloo.ca',
-      link: 'mailto:rsnara@uwaterloo.ca',
-    }, {
-      name: 'CodePen',
-      display: 'rsnara',
-      link: 'http://codepen.io',
+      faClass: 'fa fa-envelope',
+      display: 'c8hoang@uwaterloo.ca',
+      link: 'mailto:c8hoang@uwaterloo.ca',
     }, {
       name: 'GitHub',
-      display: 'noodlemaster',
-      link: 'https://github.com/noodlemaster',
+      faClass: 'fa fa-github',
+      display: 'github.com/clemmy',
+      link: 'https://github.com/clemmy',
     }],
   },
+  footerLinks: [{
+    name: 'Website',
+    faClass: 'fa fa-fire',
+    display: 'http://clemmy.ninja',
+    link: 'http://clemmy.ninja',
+  }, {
+    name: 'Blog',
+    faClass: 'fa fa-book',
+    display: 'blog.clementhoang.net',
+    link: 'http://blog.clementhoang.net',
+  }, {
+    name: 'Linkedin',
+    faClass: 'fa fa-linkedin',
+    display: 'linkedin.com/in/clementhoang',
+    link: 'https://www.linkedin.com/in/clementhoang',
+  }],
   main: {
-    interests: [
-      'Following technological advancements; scripting; digital art; Project Euler',
-      'Exploring the mysterious arts of the JavaScript ninja',
-      'Over-engineering resumes using React',
-    ],
+    firstName: 'Clement',
+    lastName: 'Hoang',
+    program: {
+      term: '4A',
+      nickname: 'Software Engineering',
+      name: 'Software Engineering',
+    },
+    website: {
+      name: 'http://clemmy.ninja',
+      link: 'http://clemmy.ninja'
+    },
     companies: [{
-      name: 'Rangle.io',
+      name: 'Memebox',
+      title: 'Data Engineer',
+      color: 'rgb(77, 100, 141)',
+      date: 'Winter 2017',
+      location: 'Seoul, Korea',
+      achievements: [
+        'Maintained stable data pipelines built with <b>Spark</b> and <b>Spark Streaming</b>, with <b>Airflow</b> for scheduling (50+ GB data flow daily)',
+        'Built <b>real time</b> data visualization and alerting tools',
+        'Wrote data extraction tool for external sites using <b>Scrapy</b> that automatically refreshes for stale data periodically',
+        'Extracted keywords from Korean text using Latent Dirichlet Allocation'
+      ],
+    }, {
+      name: 'Zenreach',
+      title: 'Junior Zengineer',
+      color: 'rgb(77, 100, 141)',
+      date: 'Spring 2016',
+      location: 'San Francisco, US',
+      achievements: [
+        'Contributed to open-sourced <b><a href="https://github.com/quilljs/quill/releases/tag/v1.0.0-beta.8">Quill</a></b> project with over 13k stars on Github',
+        'Created interactive visualizations for customer data, improving browser coverage to over <b>99%</b>',
+        'Built drag & drop email composer using <b>React</b> with <b>Django</b>, with event tracking infrastructure and behavioural analytics'
+      ],
+    }, {
+      name: 'Datera',
       color: 'rgb(77, 100, 141)',
       title: 'Full Stack JavaScript Developer',
-      projects: [{
-        name: 'Sideboard',
-        tools: ['ECMAScript 2015', 'Ramda', 'Immutable', 'Keen.io'],
-        achievements: [
-          'Designed an algorithm to aggregate Cycle Times using PivotalTracker APIs',
-          'Coauthored a simple React + Redux front-end, and a Koa.js back-end',
-        ],
-      }, {
-        name: 'Project Augury',
-        tools: ['TypeScript', 'Express', 'Mocha', 'Chai'],
-        achievements: [
-          'Used ResourceGuru APIs to implement Rangle.io\'s Vacation Request Form',
-          'Decoupled, tested, and modularized spaghetti server code',
-        ],
-      }, {
-        name: 'Livefyre HTML Embed',
-        tools: ['ECMAScript 2015', 'DOM', 'SVG', 'Webpack'],
-        achievements: [
-          'Successfully led an architectural overhaul 3 weeks into 8 week long project',
-          'Implemented cross-browser SVG animations to minimize embed size',
-          'Collaborated with client engineers to find and fix faults in software',
-        ],
-      }],
-    }, {
-      name: 'Ntree',
-      title: 'Angular JS Developer',
-      color: 'rgb(77, 100, 141)',
-      projects: [{
-        name: 'SalesTree',
-        tools: ['ECMAScript 2015', 'Angular', 'Broccoli', 'Gulp', 'Bootstrap'],
-        achievements: [
-          'Helped implement a responsive tablet interface using Bootstrap, and LESS',
-          'Created services to monitor user activities and log client-side errors server-side',
-          'Recreated client-side build infrastructure using Broccoli, cutting rebuild times by more than 75%',
-        ],
-      }],
-    }, {
-      name: 'Ontario Ministry of Govt. Services',
-      title: 'Interactive Developer',
-      color: 'rgb(77, 100, 141)',
+      date: 'Fall 2015',
+      location: 'Mountain View, US',
       achievements: [
-        'Built and provisioned Vagrant development environments for four projects',
-        'Halved load times on the Premier\'s website by implementing query caching',
-        'Refactored authentication on a legacy PHP app, switching from MD5 to BCrypt',
+        'Built interactive API explorer using the JSONSchema standard with <b>AngularJS</b>',
+        'Added core features to an in-house <b>Javascript</b> SPA framework including duplex streams for model access and <b>React</b> support',
+        'Designed and built admin panel for a distributed storage system'
       ],
+    }, {
+      name: 'Ten Thousand Coffees',
+      title: 'Software Engineering Intern',
+      color: 'rgb(77, 100, 141)',
+      date: 'Winter 2015',
+      location: 'Toronto, Canada',
+      achievements: [
+        'Re-architected the messaging system to support multiple participants and time-scheduling using the <b>MEAN</b> stack',
+        'Ran email A/B tests, which increased user retention by <b>20%</b>',
+        'Added complete i18n coverage to the web platform'
+      ]
     }],
     projects: [{
-      name: 'LOLQueen - League of Legends',
-      tools: ['Redux', 'Radium', 'Immutable', 'BASSCSS', 'Ramda'],
-      link: 'http://lolqueen.net',
+      name: 'Zoo House',
+      tools: [],
       achievements: [
-        'Authored utilities to query RIOT\'s APIs that seamlessly handle rate limiting',
-        'Built a React + Redux front-end to display Summoner Match history',
-      ],
+        'Helped clients build fully fledged products such as <b><a href="https://www.coastlinemarket.com/">Coastline Market</a></b>, e-commerce and inventory management for fishing',
+        'Worked with small team to transform fun projects into market-ready products, such as <b><a href="https://medicov.io/">Medicov</a></b> and <b><a href="https://luql.io/">Luql</a></b>'
+      ]
     }, {
-      name: 'CVAS - HTML5 Canvas Hack',
-      tools: ['Socket.io', 'Express'],
-      link: 'http://cvas.herokuapp.com',
+      name: 'Various Hacks',
+      tools: [],
       achievements: [
-        'Used message passing to keep canvas state efficiently in sync between users',
-      ],
+        '<b><a href="https://github.com/jasonf7/memories-of-harambe">Vio</a></b> - mobile web app to film location-based video diaries with sentimental analysis (Participant at Hack the North 2016)',
+        '<b><a href="http://www.hackathon.io/pokidex">Pokidex</a></b> - mobile app where users can easily view important insurance data (Winner at AngelHack Silicon Valley 2016)',
+        '<b><a href="http://devpost.com/software/query-sctlva">Query</a></b> - pebble and web app that provide a real-time collaborative classroom layer on top of a lecture (Winner at HackingEDU 2015)',
+        '<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
+        '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)'
+      ]
     }],
   },
 };

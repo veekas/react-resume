@@ -4,7 +4,7 @@ import SidebarHeading from '../SidebarHeading';
 
 const Languages = ({ data: languages }) => (
   <section style={style.main}>
-    <SidebarHeading>Languages</SidebarHeading>
+    <SidebarHeading>+ LANGUAGES</SidebarHeading>
     <div>
       {languages.map((language, index) => (
         <Language
@@ -18,7 +18,7 @@ const Languages = ({ data: languages }) => (
 
 const style = {
   main: {
-    margin: '1rem 0',
+    margin: '0.2rem 0 0.6rem 0',
   },
 };
 
