@@ -1,21 +1,21 @@
 {
-  "name": "3a-resume",
-  "version": "0.1.0",
-  "description": "A resume written using react!",
+  "name": "react-resume-veekas-shrivastava",
+  "version": "1.0.0",
+  "description": "Veekas Shrivastava's resume, unnecessarily built with React",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "npm run clean && npm run build:webpack",
+    "build": "yarn run clean && yarn run build:webpack",
     "start": "node dev-server.js",
     "lint": "eslint src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ramanpreetnara/resume-react.git"
+    "url": "https://github.com/veekas/.git"
   },
   "license": "CC0-1.0",
-  "author": "Clement Hoang <clement.hoang24@gmail.com> (http://github.com/clemmy)",
-  "homepage": "https://github.com/clemmy/3a-resume",
+  "author": "Veekas Shrivastava, Clement Hoang, Ramanpreet Nara",
+  "homepage": "https://github.com/veekas/.git",
   "devDependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",

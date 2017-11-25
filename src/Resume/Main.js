@@ -10,8 +10,6 @@ import Identity from './Identity';
 
 const Main = ({ firstName, lastName, program, companies, projects }) => (
   <section style={style.main}>
-    <MainHeading title="+ Work Experience" />
-    <Companies data={companies} />
     <MainHeading title="+ Projects" />
       {projects.map((project, key) => (
         <Section color="rgb(77, 100, 141)" key={key}>
@@ -20,9 +18,12 @@ const Main = ({ firstName, lastName, program, companies, projects }) => (
             tools={project.tools}
             achievements={project.achievements}
             link={project.link}
-            key={key} />
+            key={key}
+          />
         </Section>
       ))}
+    <MainHeading title="+ Work Experience" />
+    <Companies data={companies} />
   </section>
 );
 
