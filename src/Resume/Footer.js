@@ -32,7 +32,7 @@ const style = {
     textAlign: 'center',
     verticalAlign: 'middle',
     color: 'rgba(77, 100, 141, 1)',
-    border: '1px solid rgba(77, 100, 141, 1)',
+    // border: '1px solid rgba(77, 100, 141, 1)',
     borderRadius: '60px',
     padding: '4px',
   },

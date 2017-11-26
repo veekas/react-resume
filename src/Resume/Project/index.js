@@ -2,12 +2,13 @@ import React, { PropTypes } from 'react';
 import List from '../../ui/List';
 import ProjectHeading from './ProjectHeading';
 
-const Project = ({ name, tools, link, achievements }) => {
+const Project = ({ name, tools, link, achievements, description }) => {
   const items = link ? [...achievements, createLink(link)] : achievements;
 
   return (
     <div style={style.main}>
       <ProjectHeading name={name} tools={tools} />
+      <span>{description}</span>
       <List items={items} style={style.list}/>
     </div>
   );

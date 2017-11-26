@@ -3,17 +3,17 @@ import Link from '../ui/Link';
 
 const Header = ({ firstName, lastName, subheader, website }) => {
 
-  const { nickname, qualifier } = subheader;
+  const { title, qualifier } = subheader;
 
   return (
     <section style={style.main}>
       <h1 style={style.h1}>
-        <span style={style.span}>{firstName.toUpperCase()}</span>
+        <span style={style.span}>{firstName}</span>
         <span style={style.span}>&nbsp;</span>
-        <span style={style.span}>{lastName.toUpperCase()}</span>
+        <span style={style.span}>{lastName}</span>
       </h1>
       <span style={style.subheader}>
-        {qualifier} {nickname} | <Link to={website.link} style={{ padding: 0 }}>{website.name}</Link>
+        {/* qualifier */} {title} | <Link to={website.link} style={{ padding: 0 }}>{website.name}</Link>
       </span>
     </section>
   );
@@ -24,7 +24,6 @@ const style = {
     padding: '16px 0 1px 0',
     flex: '1 1 auto',
     fontSize: '1.6rem',
-    // background: 'rgba(118, 136, 169, 0.125)',
     marginBottom: '-0.4em',
     height: '9rem',
   },
@@ -42,7 +41,7 @@ const style = {
   },
   span: {
     display: 'inline-block',
-  }
+  },
 };
 
 Header.propTypes = {

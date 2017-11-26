@@ -13,7 +13,7 @@ const SidebarList = ({ items, title, separator }) => (
   </section>
 );
 
-function createSeparator(index, array, separator=', ') {
+function createSeparator(index, array, separator = ', ') {
   if (index < array.length - 1) {
     return separator;
   }

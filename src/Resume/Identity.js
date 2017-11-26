@@ -31,11 +31,11 @@ const style = {
     fontSize: '1.8rem',
   },
   h2: {
-    fontSize: '1.4rem'
+    fontSize: '1.4rem',
   },
   span: {
     display: 'inline-block',
-  }
+  },
 };
 
 Identity.propTypes = {

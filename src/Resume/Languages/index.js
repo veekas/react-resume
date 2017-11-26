@@ -2,6 +2,9 @@ import React, { PropTypes } from 'react';
 import Language from './Language';
 import SidebarHeading from '../SidebarHeading';
 
+// const proficientScore = 0.5;
+// const isProficient = (num) => num > proficientScore;
+
 const Languages = ({ data: languages }) => (
   <section style={style.main}>
     <SidebarHeading>+ LANGUAGES</SidebarHeading>

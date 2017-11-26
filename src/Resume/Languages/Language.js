@@ -3,7 +3,9 @@ import React, { PropTypes } from 'react';
 const Language = ({ name }) => (
   <div style={style.main}>
     <div />
-    <div>{name}</div>
+    <div>
+      {name}
+    </div>
   </div>
 );
 
