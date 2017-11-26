@@ -13,7 +13,7 @@ const style = {
   paddingTop: '0.25rem',
   paddingBottom: '0.25rem',
   borderBottom: '1px solid rgb(21, 44, 85)',
-  marginBottom: '0.6rem'
+  marginBottom: '0.6rem',
 };
 
 SidebarHeading.propTypes = {

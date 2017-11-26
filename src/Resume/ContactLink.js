@@ -11,17 +11,17 @@ const style = {
   main: {
     display: 'flex',
     justifyContent: 'flex-start',
-    margin: '4px'
+    margin: '4px',
   },
   icon: {
-    display:'inline-block',
+    display: 'inline-block',
     fontSize: '1.6rem',
     lineHeight: '1.6rem',
     width: '1.6rem',
     height: '1.6rem',
     textAlign: 'center',
     verticalAlign: 'middle',
-    color: 'rgba(77, 100, 141, 1)'
+    color: 'rgba(77, 100, 141, 1)',
   },
 };
 

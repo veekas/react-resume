@@ -25,7 +25,7 @@ const DATA = {
     education: {
       university: 'Arizona State University',
       duration: 'July 2017',
-      degree: 'BA Political Science; Cert. Applied Business Data Analysis',
+      degree: 'BA Political Science;\nCert. Applied Business Data Analysis',
     },
     languages: [
       {
@@ -74,7 +74,7 @@ const DATA = {
       '13',
       '14',
       '15',
-      '16'
+      '16',
     ],
     tools: [
       'Git',
@@ -113,22 +113,26 @@ const DATA = {
       link: 'https://github.com/veekas',
     }],
   },
-  footerLinks: [{
-    name: 'Website',
-    faClass: 'fa fa-fire',
-    display: 'VeekasMeansProgress.com',
-    link: 'http://VeekasMeansProgress.com',
-  }, {
-    name: 'Blog',
-    faClass: 'fa fa-book',
-    display: 'blog.clementhoang.net',
-    link: 'http://blog.clementhoang.net',
-  }, {
-    name: 'Linkedin',
-    faClass: 'fa fa-linkedin',
-    display: 'linkedin.com/in/veekas',
-    link: 'https://www.linkedin.com/in/veekas',
-  }],
+  footerLinks: [
+    {
+      name: 'Website',
+      faClass: 'fa fa-veekas',
+      display: 'VeekasMeansProgress.com',
+      link: 'http://VeekasMeansProgress.com',
+    },
+    {
+      name: 'GitHub',
+      faClass: 'fa fa-github',
+      display: 'github.com/veekas',
+      link: 'https://github.com/veekas',
+    },
+    {
+      name: 'Linkedin',
+      faClass: 'fa fa-linkedin',
+      display: 'linkedin.com/in/veekas',
+      link: 'https://www.linkedin.com/in/veekas',
+    },
+  ],
   main: {
     firstName: 'Veekas',
     lastName: 'Shrivastava',
@@ -162,7 +166,7 @@ const DATA = {
       achievements: [
         'Contributed to open-sourced <b><a href="https://github.com/quilljs/quill/releases/tag/v1.0.0-beta.8">Quill</a></b> project with over 13k stars on Github',
         'Created interactive visualizations for customer data, improving browser coverage to over <b>99%</b>',
-        'Built drag & drop email composer using <b>React</b> with <b>Django</b>, with event tracking infrastructure and behavioural analytics'
+        'Built drag & drop email composer using <b>React</b> with <b>Django</b>, with event tracking infrastructure and behavioural analytics',
       ],
     }, {
       name: 'Datera',
@@ -173,7 +177,7 @@ const DATA = {
       achievements: [
         'Built interactive API explorer using the JSONSchema standard with <b>AngularJS</b>',
         'Added core features to an in-house <b>Javascript</b> SPA framework including duplex streams for model access and <b>React</b> support',
-        'Designed and built admin panel for a distributed storage system'
+        'Designed and built admin panel for a distributed storage system',
       ],
     }, {
       name: 'Ten Thousand Coffees',
@@ -184,7 +188,7 @@ const DATA = {
       achievements: [
         'Re-architected the messaging system to support multiple participants and time-scheduling using the <b>MEAN</b> stack',
         'Ran email A/B tests, which increased user retention by <b>20%</b>',
-        'Added complete i18n coverage to the web platform'
+        'Added complete i18n coverage to the web platform',
       ],
     }],
     projects: [{
@@ -192,7 +196,7 @@ const DATA = {
       tools: [],
       achievements: [
         'Helped clients build fully fledged products such as <b><a href="https://www.coastlinemarket.com/">Coastline Market</a></b>, e-commerce and inventory management for fishing',
-        'Worked with small team to transform fun projects into market-ready products, such as <b><a href="https://medicov.io/">Medicov</a></b> and <b><a href="https://luql.io/">Luql</a></b>'
+        'Worked with small team to transform fun projects into market-ready products, such as <b><a href="https://medicov.io/">Medicov</a></b> and <b><a href="https://luql.io/">Luql</a></b>',
       ],
     }, {
       name: 'Various Hacks',
@@ -202,7 +206,7 @@ const DATA = {
         '<b><a href="http://www.hackathon.io/pokidex">Pokidex</a></b> - mobile app where users can easily view important insurance data (Winner at AngelHack Silicon Valley 2016)',
         '<b><a href="http://devpost.com/software/query-sctlva">Query</a></b> - pebble and web app that provide a real-time collaborative classroom layer on top of a lecture (Winner at HackingEDU 2015)',
         '<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
-        '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)'
+        '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)',
       ],
     }],
   },

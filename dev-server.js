@@ -18,7 +18,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('/favicon.ico', (req, res) => {
-  res.send(express.static(__dirname + 'favicon.ico'));
+  res.send(path.join(__dirname + 'favicon.ico'));
 });
 
 app.get('*', (req, res) => {
@@ -30,6 +30,5 @@ app.listen(PORT, 'localhost', (err) => {
     console.log(err);
     return;
   }
-
   console.log(`Listening at http://localhost:${PORT}`);
 });

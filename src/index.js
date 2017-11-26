@@ -1,6 +1,7 @@
 import 'babel-polyfill';
 import 'normalize.css/normalize.css';
 import './index.css';
+import './fa-modified.css';
 import React from 'react';
 import { render } from 'react-dom';
 import Resume from './Resume';
