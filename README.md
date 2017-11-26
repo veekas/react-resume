@@ -1,9 +1,11 @@
-# Resume
-This is my 3A Resume written in React! To run, simply:
+# Veekas Shrivastava's Resume
+
+
+
 ```
 $ npm install
 $ npm start
 ```
 
 ## Acknowledgements
-This project was forked from my good buddy, [noodlemaster](https://github.com/noodlemaster)'s [resume-react](https://github.com/noodlemaster/resume-react) project, so a special thanks to him!
+This project is based on [Clement Hoang's resume-react](https://github.com/clemmy/react-resume) project
