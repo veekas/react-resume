@@ -18,10 +18,12 @@ const Main = ({ firstName, lastName, subheader, companies, projects }) => (
             tools={project.tools}
             achievements={project.achievements}
             link={project.link}
+            description={project.description}
             key={key}
           />
         </Section>
-      ))}
+    ))}
+    <br />
     <MainHeading title="+ Work Experience" />
     <Companies data={companies} />
   </section>

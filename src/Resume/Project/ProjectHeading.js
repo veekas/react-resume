@@ -1,8 +1,11 @@
 import React, { PropTypes } from 'react';
+import Link from '../../ui/Link';
 
-const ProjectHeading = ({ name, tools }) => (
+const ProjectHeading = ({ name, tools, link }) => (
   <div style={style.main}>
-    <div style={style.name}>{name}</div>
+    <div style={style.name}>
+        {name}
+    </div>
     <div style={style.tools}>
       {tools.join(', ')}
     </div>
@@ -29,6 +32,7 @@ const style = {
 
 ProjectHeading.propTypes = {
   name: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
   tools: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

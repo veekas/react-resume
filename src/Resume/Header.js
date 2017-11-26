@@ -2,7 +2,6 @@ import React, { PropTypes } from 'react';
 import Link from '../ui/Link';
 
 const Header = ({ firstName, lastName, subheader, website }) => {
-
   const { title, qualifier } = subheader;
 
   return (
@@ -13,7 +12,16 @@ const Header = ({ firstName, lastName, subheader, website }) => {
         <span style={style.span}>{lastName}</span>
       </h1>
       <span style={style.subheader}>
-        {/* qualifier */} {title} | <Link to={website.link} style={{ padding: 0 }}>{website.name}</Link>
+        {/* qualifier */} {title}
+        | <Link to={website.link} style={{ padding: 0 }}>{website.name}</Link>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a style={style.a} href="https://github.com/veekas/react-resume">
+          <i>This resume was built with React</i>
+        </a>
       </span>
     </section>
   );
@@ -41,6 +49,12 @@ const style = {
   },
   span: {
     display: 'inline-block',
+  },
+  a: {
+    float: 'right',
+    fontSize: '0.8rem',
+    display: 'block',
+    color: 'rgb(77, 100, 141)',
   },
 };
 

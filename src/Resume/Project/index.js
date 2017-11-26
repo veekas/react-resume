@@ -3,19 +3,27 @@ import List from '../../ui/List';
 import ProjectHeading from './ProjectHeading';
 
 const Project = ({ name, tools, link, achievements, description }) => {
-  const items = link ? [...achievements, createLink(link)] : achievements;
+  const items = description
+    ? [createDescription(description), ...achievements]
+    : achievements;
+  const hasAchievements = achievements
+    ? <List items={items} style={style.list} />
+    : null;
 
   return (
     <div style={style.main}>
       <ProjectHeading name={name} tools={tools} />
-      <span>{description}</span>
-      <List items={items} style={style.list}/>
+      {hasAchievements}
     </div>
   );
 };
 
-function createLink(link) {
-  return `Link: ${link}`;
+// function createLink(link) {
+//   return `<b>Link:</b> ${link}`;
+// }
+
+function createDescription(description) {
+  return `<b>${description}</b>`;
 }
 
 const style = {
@@ -29,8 +37,10 @@ const style = {
 
 Project.propTypes = {
   name: PropTypes.string.isRequired,
+  // link: PropTypes.string.isRequired,
   tools: PropTypes.arrayOf(PropTypes.string).isRequired,
-  achievements: PropTypes.arrayOf(PropTypes.string).isRequired,
+  achievements: PropTypes.arrayOf(PropTypes.string),
+  description: PropTypes.string,
 };
 
 export default Project;

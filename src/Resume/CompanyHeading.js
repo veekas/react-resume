@@ -19,7 +19,7 @@ const defaultStyles = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingRight: '0.75rem'
+    paddingRight: '0.75rem',
   },
   company: {
     fontSize: '1.25rem',
@@ -38,7 +38,7 @@ const defaultStyles = {
     fontSize: '0.9rem',
     color: 'rgba(77, 100, 141, 0.75)',
     padding: '0.25rem',
-  }
+  },
 };
 
 CompanyHeading.propTypes = {

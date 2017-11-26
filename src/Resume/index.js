@@ -11,8 +11,8 @@ class Resume extends Component {
       <Container>
         <Header {...DATA.main} />
         <div style={{ display: 'flex' }}>
-          <Main {...DATA.main} />
-          <Sidebar data={DATA.sidebar} />
+        <Main {...DATA.main} />
+        <Sidebar data={DATA.sidebar} />
         </div>
         <Footer links={DATA.footerLinks} />
       </Container>
@@ -28,7 +28,7 @@ const DATA = {
         duration: 'July 2017',
         degree: 'BA, Political Science',
         cert: 'Certificate, Applied Business Data Analysis',
-        courses: 'Statistics; Applied Regression and Forecasting; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business',
+        courses: 'Statistics; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business',
         // courses: 'Science, Technology and Public Affairs; Information Technology and Culture; Political Statistics; Applied Regression and Forecasting; Economics of Healthcare; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Technology, Industry and Management in China',
         // activities: 'GlobalResolve (helped prototype a portable electricity generator and capacitor; conducted market research in Ghana); Undergraduate Student Government; Lambda Chi Alpha',
       },
@@ -91,8 +91,6 @@ const DATA = {
       'Github',
       'JIRA',
       'Visual Studio Code',
-      'Google AdWords',
-      'Facebook Ads',
       'Microsoft Excel',
       'Microsoft Access',
       'FileMaker Pro',
@@ -170,57 +168,89 @@ const DATA = {
       name: 'VeekasMeansProgress.com',
       link: 'http://VeekasMeansProgress.com',
     },
-    companies: [{
-      name: 'Memebox',
-      title: 'Data Engineer',
-      color: 'rgb(77, 100, 141)',
-      date: 'Winter 2017',
-      location: 'Seoul, Korea',
-      achievements: [
-        'Maintained stable data pipelines built with <b>Spark</b> and <b>Spark Streaming</b>, with <b>Airflow</b> for scheduling (50+ GB data flow daily)',
-        'Built <b>real time</b> data visualization and alerting tools',
-        'Wrote data extraction tool for external sites using <b>Scrapy</b> that automatically refreshes for stale data periodically',
-        'Extracted keywords from Korean text using Latent Dirichlet Allocation'
-      ],
-    }, {
-      name: 'Zenreach',
-      title: 'Junior Zengineer',
-      color: 'rgb(77, 100, 141)',
-      date: 'Spring 2016',
-      location: 'San Francisco, US',
-      achievements: [
-        'Contributed to open-sourced <b><a href="https://github.com/quilljs/quill/releases/tag/v1.0.0-beta.8">Quill</a></b> project with over 13k stars on Github',
-        'Created interactive visualizations for customer data, improving browser coverage to over <b>99%</b>',
-        'Built drag & drop email composer using <b>React</b> with <b>Django</b>, with event tracking infrastructure and behavioural analytics',
-      ],
-    }, {
-      name: 'Datera',
-      color: 'rgb(77, 100, 141)',
-      title: 'Full Stack JavaScript Developer',
-      date: 'Fall 2015',
-      location: 'Mountain View, US',
-      achievements: [
-        'Built interactive API explorer using the JSONSchema standard with <b>AngularJS</b>',
-        'Added core features to an in-house <b>Javascript</b> SPA framework including duplex streams for model access and <b>React</b> support',
-        'Designed and built admin panel for a distributed storage system',
-      ],
-    }, {
-      name: 'Ten Thousand Coffees',
-      title: 'Software Engineering Intern',
-      color: 'rgb(77, 100, 141)',
-      date: 'Winter 2015',
-      location: 'Toronto, Canada',
-      achievements: [
-        'Re-architected the messaging system to support multiple participants and time-scheduling using the <b>MEAN</b> stack',
-        'Ran email A/B tests, which increased user retention by <b>20%</b>',
-        'Added complete i18n coverage to the web platform',
-      ],
-    }],
+    companies: [
+      {
+        name: 'Arizona Technology Council',
+        title: 'Director of Business & Community Partnerships',
+        color: 'rgb(77, 100, 141)',
+        date: 'Feb 2017–July 2017',
+        location: 'Phoenix, AZ',
+        achievements: [
+          'Tripled the number of mentors in less than 4 months',
+          'Led team to transition from Excel spreadsheets to an internal database',
+          'Project manager for UI/UX redesign of the organization’s Wordpress website',
+          // 'Maintained stable data pipelines built with <b>Spark</b> and <b>Spark Streaming</b>, with <b>Airflow</b> for scheduling (50+ GB data flow daily)',
+          // 'Built <b>real time</b> data visualization and alerting tools',
+          // 'Wrote data extraction tool for external sites using <b>Scrapy</b> that automatically refreshes for stale data periodically',
+          // 'Extracted keywords from Korean text using Latent Dirichlet Allocation',
+        ],
+      },
+      {
+        name: 'Oscar Health Insurance',
+        title: 'Plan Guide',
+        color: 'rgb(77, 100, 141)',
+        date: 'Sept 2016–Jan 2017',
+        location: 'Tempe, AZ',
+        achievements: [
+          'Top performer: Over 2x enrollment rate & Top 5% in total enrollments compared to company average',
+          'Created an ELO-based web-app using Ruby on Rails: <a href="http://oscarpingpong.club">OscarPingPong.Club</a>',
+          // 'Contributed to open-sourced <b><a href="https://github.com/quilljs/quill/releases/tag/v1.0.0-beta.8">Quill</a></b> project with over 13k stars on Github',
+          // 'Created interactive visualizations for customer data, improving browser coverage to over <b>99%</b>',
+          // 'Built drag & drop email composer using <b>React</b> with <b>Django</b>, with event tracking infrastructure and behavioural analytics',
+        ],
+      },
+      {
+        name: 'Veekas Means Progress Consulting',
+        color: 'rgb(77, 100, 141)',
+        title: 'Chief Development Officer (Business Development)',
+        date: 'Feb 2012–Oct 2016',
+        location: '     Tempe, AZ',
+        achievements: [
+          'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
+          'Mined insurance broker data to generate 7,000+ warm leads for a client',
+          // 'Built interactive API explorer using the JSONSchema standard with <b>AngularJS</b>',
+          // 'Added core features to an in-house <b>Javascript</b> SPA framework including duplex streams for model access and <b>React</b> support',
+          // 'Designed and built admin panel for a distributed storage system',
+        ],
+      },
+      {
+        name: 'Veekas Means Progress for Tempe Kids',
+        color: 'rgb(77, 100, 141)',
+        title: 'Governing Board Candidate',
+        date: 'Feb 2016–Nov 2016',
+        location: 'Tempe, AZ',
+        achievements: [
+          'Received 15,669 votes after knocking 3,185 doors, calling over 6,000 people',
+          'Led a team of 6 part-time interns and over 90 volunteers (2014)',
+        ],
+      },
+      // {
+      //   name: 'Ten Thousand Coffees',
+      //   title: 'Software Engineering Intern',
+      //   color: 'rgb(77, 100, 141)',
+      //   date: 'Winter 2015',
+      //   location: 'Toronto, Canada',
+      //   achievements: [
+      //     'Re-architected the messaging system to support multiple participants and time-scheduling using the <b>MEAN</b> stack',
+      //     'Ran email A/B tests, which increased user retention by <b>20%</b>',
+      //     'Added complete i18n coverage to the web platform',
+      //   ],
+      // },
+    ],
     projects: [
       {
+        name: 'Open Source Contributor (React, Sequelize)',
+        link: 'https://github.com/facebook/react/pull/11658',
+        tools: ['Javascript', 'React', 'Jest', 'Git', 'Github'],
+        // achievements: [
+        //   'Pull requests accepted for React and Sequelize',
+        // ],
+      },
+      {
         name: 'CodeMode',
-        tools: ['Javascript', 'React', 'Redux', 'Google Chrome API'],
-        description: 'Turn your Youtube channel into a learning platform.',
+        link: 'https://github.com/TheUniverseofCoding/world-of-code',
+        tools: ['Javascript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
+        description: 'Chrome extension to convert Youtube channels into learning platforms',
         achievements: [
           'Something impressive will be said here',
           'Something impressive will be said here',
@@ -229,29 +259,49 @@ const DATA = {
           // 'Worked with small team to transform fun projects into market-ready products, such as <b><a href="https://medicov.io/">Medicov</a></b> and <b><a href="https://luql.io/">Luql</a></b>',
         ],
       },
-      {
-        name: 'Audelio',
-        tools: ['Javascript', 'React', 'Redux', 'Python'],
-        description: 'Listen to ike Pandora for podcasts.',
-        achievements: [
-          'Something impressive will be said here',
-          'Something impressive will be said here',
-          // '<b><a href="https://github.com/jasonf7/memories-of-harambe">Vio</a></b> - mobile web app to film location-based video diaries with sentimental analysis (Participant at Hack the North 2016)',
-          // '<b><a href="http://www.hackathon.io/pokidex">Pokidex</a></b> - mobile app where users can easily view important insurance data (Winner at AngelHack Silicon Valley 2016)',
-          // '<b><a href="http://devpost.com/software/query-sctlva">Query</a></b> - pebble and web app that provide a real-time collaborative classroom layer on top of a lecture (Winner at HackingEDU 2015)',
-          // '<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
-          // '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)',
-        ],
-      },
+      // {
+      //   name: 'Audelio',
+      //   link: 'https://github.com/veekas/podcast-project',
+      //   tools: ['Javascript', 'React', 'Redux', 'Python', 'Express', 'Sequelize'],
+      //   description: 'Podcast player and discovery engine',
+      //   achievements: [
+      //     'Something impressive will be said here',
+      //     'Something impressive will be said here',
+      //     // '<b><a href="https://github.com/jasonf7/memories-of-harambe">Vio</a></b> - mobile web app to film location-based video diaries with sentimental analysis (Participant at Hack the North 2016)',
+      //     // '<b><a href="http://www.hackathon.io/pokidex">Pokidex</a></b> - mobile app where users can easily view important insurance data (Winner at AngelHack Silicon Valley 2016)',
+      //     // '<b><a href="http://devpost.com/software/query-sctlva">Query</a></b> - pebble and web app that provide a real-time collaborative classroom layer on top of a lecture (Winner at HackingEDU 2015)',
+      //     // '<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
+      //     // '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)',
+      //   ],
+      // },
       {
         name: 'Use Strict Everywhere',
-        tools: ['React', 'Redux', 'VSCode API'],
-        description: '',
+        link: 'https://marketplace.visualstudio.com/items?itemName=veekas.use-strict-everywhere',
+        tools: ['Typescript', 'React', 'Redux', 'VSCode API'],
+        description: 'Visual Studio Code extension that converts a workspace to strict mode',
         achievements: [
           'Something impressive will be said here',
           'Something impressive will be said here',
-          // 'Helped clients build fully fledged products such as <b><a href="https://www.coastlinemarket.com/">Coastline Market</a></b>, e-commerce and inventory management for fishing',
-          // 'Worked with small team to transform fun projects into market-ready products, such as <b><a href="https://medicov.io/">Medicov</a></b> and <b><a href="https://luql.io/">Luql</a></b>',
+        ],
+      },
+      {
+        name: 'Easy Form to PDF',
+        link: 'https://github.com/veekas/easy-form-to-pdf',
+        tools: ['Javascript', 'React', 'Redux', 'Draft.js', 'HTML/CSS', 'Express', 'Sequelize'],
+        description: 'Absurdly user-friendly Draft.js form that generates a PDF from inputs',
+        achievements: [
+          'Something impressive will be said here',
+          'Something impressive will be said here',
+        ],
+      },
+      {
+        name: 'Pokeball',
+        link: 'https://fsa-pokeball.herokuapp.com',
+        tools: ['Javascript', 'React', 'Redux', 'Express', 'Sequelize'],
+        description: 'A fully-developed mock e-commerce site selling Pokemon',
+        achievements: [
+          'Something impressive will be said here',
+          'Something impressive will be said here',
         ],
       },
     ],
