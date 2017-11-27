@@ -12,6 +12,7 @@ const app = express();
 const compiler = webpack(config);
 
 app.use(morgan('dev'));
+app.use(compression());
 
 // app.use(require('webpack-dev-middleware')(compiler, {
 //   noInfo: true,
