@@ -7,7 +7,7 @@ const config = require('./webpack.config.dev');
 const app = express();
 const compiler = webpack(config);
 
-const PORT = 3213;
+const LOCAL_PORT = 3213;
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
@@ -25,10 +25,10 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(process.env.PORT || PORT, (err) => {
+app.listen(process.env.PORT || LOCAL_PORT, (err) => {
   if (err) {
     console.log(err);
     return;
   }
-  console.log(`Listening at http://localhost:${PORT}`);
+  console.log(`Listening at http://localhost:${LOCAL_PORT}`);
 });
