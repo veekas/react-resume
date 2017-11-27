@@ -13,14 +13,13 @@ const compiler = webpack(config);
 
 app.use(morgan('dev'));
 
+// app.use(require('webpack-dev-middleware')(compiler, {
+//   noInfo: true,
+//   publicPath: config.output.publicPath,
+//   stats: { colors: true },
+// }));
 
-app.use(require('webpack-dev-middleware')(compiler, {
-  noInfo: true,
-  publicPath: config.output.publicPath,
-  stats: { colors: true },
-}));
-
-app.use(require('webpack-hot-middleware')(compiler));
+// app.use(require('webpack-hot-middleware')(compiler));
 
 app.get('/favicon.ico', (req, res) => {
   res.send(path.join(__dirname + 'favicon.ico'));
