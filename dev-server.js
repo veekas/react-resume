@@ -7,7 +7,7 @@ const config = require('./webpack.config.dev');
 const app = express();
 const compiler = webpack(config);
 
-const PORT = 3213;
+const PORT = process.env.PORT || 3213;
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
@@ -25,7 +25,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(process.env.PORT || PORT, (err) => {
+app.listen(PORT, (err) => {
   if (err) {
     console.log(err);
     return;
