@@ -193,7 +193,7 @@ const DATA = {
         location: 'Tempe, AZ',
         achievements: [
           'Top performer: Over 2x enrollment rate & Top 5% in total enrollments compared to company average',
-          'Created an ELO-based web-app using Ruby on Rails: <a href="http://oscarpingpong.club">OscarPingPong.Club</a>',
+          'Created an ELO-based web-app using Ruby on Rails: <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)">OscarPingPong.Club</a> <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
           // 'Contributed to open-sourced <b><a href="https://github.com/quilljs/quill/releases/tag/v1.0.0-beta.8">Quill</a></b> project with over 13k stars on Github',
           // 'Created interactive visualizations for customer data, improving browser coverage to over <b>99%</b>',
           // 'Built drag & drop email composer using <b>React</b> with <b>Django</b>, with event tracking infrastructure and behavioural analytics',
@@ -204,7 +204,7 @@ const DATA = {
         color: 'rgb(77, 100, 141)',
         title: 'Chief Development Officer (Business Development)',
         date: 'Feb 2012–Oct 2016',
-        location: '     Tempe, AZ',
+        location: 'Tempe, AZ',
         achievements: [
           'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
           'Mined insurance broker data to generate 7,000+ warm leads for a client',
@@ -241,6 +241,7 @@ const DATA = {
       {
         name: 'Open Source Contributor (React, Sequelize)',
         link: 'https://github.com/facebook/react/pull/11658',
+        faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Jest', 'Git', 'Github'],
         // achievements: [
         //   'Pull requests accepted for React and Sequelize',
@@ -249,6 +250,7 @@ const DATA = {
       {
         name: 'CodeMode',
         link: 'https://github.com/TheUniverseofCoding/world-of-code',
+        faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'Chrome extension to convert Youtube channels into learning platforms',
         achievements: [
@@ -262,6 +264,7 @@ const DATA = {
       // {
       //   name: 'Audelio',
       //   link: 'https://github.com/veekas/podcast-project',
+      // faClass: 'fa fa-github',
       //   tools: ['Javascript', 'React', 'Redux', 'Python', 'Express', 'Sequelize'],
       //   description: 'Podcast player and discovery engine',
       //   achievements: [
@@ -277,6 +280,7 @@ const DATA = {
       {
         name: 'Use Strict Everywhere',
         link: 'https://marketplace.visualstudio.com/items?itemName=veekas.use-strict-everywhere',
+        faClass: 'fa fa-windows',
         tools: ['Typescript', 'React', 'Redux', 'VSCode API'],
         description: 'Visual Studio Code extension that converts a workspace to strict mode',
         achievements: [
@@ -287,6 +291,7 @@ const DATA = {
       {
         name: 'Easy Form to PDF',
         link: 'https://github.com/veekas/easy-form-to-pdf',
+        faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Redux', 'Draft.js', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'Absurdly user-friendly Draft.js form that generates a PDF from inputs',
         achievements: [
@@ -297,6 +302,7 @@ const DATA = {
       {
         name: 'Pokeball',
         link: 'https://fsa-pokeball.herokuapp.com',
+        faClass: 'fa fa-external-link-square',
         tools: ['Javascript', 'React', 'Redux', 'Express', 'Sequelize'],
         description: 'A fully-developed mock e-commerce site selling Pokemon',
         achievements: [

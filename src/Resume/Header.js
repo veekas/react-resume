@@ -17,11 +17,11 @@ const Header = ({ firstName, lastName, subheader, website }) => {
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a style={style.a} href="https://github.com/veekas/react-resume">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <i>This resume was built with React</i>
-        </a>
+          <Link to="https://github.com/veekas/react-resume">
+            <i className="fa fa-github" style={style.icon}></i>
+          </Link>
       </span>
     </section>
   );
@@ -55,6 +55,12 @@ const style = {
     fontSize: '0.8rem',
     display: 'block',
     color: 'rgb(77, 100, 141)',
+  },
+  icon: {
+    lineHeight: '0.8rem',
+    width: '0.8rem',
+    height: '0.8rem',
+    color: 'rgba(77, 100, 141, 1)',
   },
 };
 

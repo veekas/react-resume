@@ -9,7 +9,9 @@ const CompanyHeading = ({ style, company, title, date, location }) => (
       </div>
     </div>
     <div style={defaultStyles.locationdate}>
-      { date + ' | ' + location }
+      {date}
+      <br />
+      {location}
     </div>
   </div>
 );
@@ -28,13 +30,14 @@ const defaultStyles = {
     padding: '0.25rem',
   },
   title: {
-    display: 'inline-block',
+    // display: 'inline-block',
     fontSize: '1rem',
     color: 'rgba(78, 78, 78 , 1)',
-    padding: '0.25rem',
+    // padding: '0.25rem',
     fontWeight: '300',
   },
   locationdate: {
+    justifyContent: 'flex-end',
     fontSize: '0.9rem',
     color: 'rgba(77, 100, 141, 0.75)',
     padding: '0.25rem',
@@ -48,3 +51,29 @@ CompanyHeading.propTypes = {
 };
 
 export default CompanyHeading;
+
+/*
+
+const CompanyHeading = ({ style, company, title, date, location }) => (
+  <div>
+
+    <div style={{ ...defaultStyles.main, ...style }}>
+
+      <div style={defaultStyles.company}>
+        {company}
+      </div>
+
+      <div style={defaultStyles.locationdate}>
+        {date} {/* + ' | ' + location } }
+      </div >
+
+    </div >
+
+  <div style={defaultStyles.title}>
+    {title}
+  </div>
+
+  </div >
+);
+
+*/

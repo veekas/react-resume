@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import List from '../../ui/List';
 import ProjectHeading from './ProjectHeading';
 
-const Project = ({ name, tools, link, achievements, description }) => {
+const Project = ({ name, tools, link, achievements, description, faClass }) => {
   const items = description
     ? [createDescription(description), ...achievements]
     : achievements;
@@ -12,15 +12,11 @@ const Project = ({ name, tools, link, achievements, description }) => {
 
   return (
     <div style={style.main}>
-      <ProjectHeading name={name} tools={tools} />
+      <ProjectHeading name={name} tools={tools} link={link} faClass={faClass} />
       {hasAchievements}
     </div>
   );
 };
-
-// function createLink(link) {
-//   return `<b>Link:</b> ${link}`;
-// }
 
 function createDescription(description) {
   return `<b>${description}</b>`;
@@ -28,7 +24,7 @@ function createDescription(description) {
 
 const style = {
   main: {
-    margin: '1rem 0 0 0.2rem',
+    margin: '1rem 0 0 0',
   },
   list: {
     margin: 0,

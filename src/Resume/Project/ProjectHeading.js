@@ -1,10 +1,15 @@
 import React, { PropTypes } from 'react';
 import Link from '../../ui/Link';
 
-const ProjectHeading = ({ name, tools, link }) => (
+const ProjectHeading = ({ name, tools, link, faClass }) => (
   <div style={style.main}>
     <div style={style.name}>
-        {name}
+      {name}
+      <span style={style.link}>
+        <Link to={link}>
+          <i className={faClass} style={style.icon}></i>
+        </Link>
+      </span>
     </div>
     <div style={style.tools}>
       {tools.join(', ')}
@@ -24,9 +29,20 @@ const style = {
     fontWeight: 'bold',
     color: 'rgb(77, 100, 141)',
   },
+  link: {
+    fontWeight: 'normal',
+    fontStyle: 'italic',
+  },
   tools: {
     fontSize: '0.75rem',
     color: 'rgba(77, 100, 141, 0.75)',
+  },
+  icon: {
+    fontSize: '1rem',
+    lineHeight: '1rem',
+    width: '1rem',
+    height: '1rem',
+    color: 'rgba(77, 100, 141, 1)',
   },
 };
 

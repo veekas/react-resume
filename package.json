@@ -7,6 +7,7 @@
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "yarn run clean && yarn run build:webpack",
     "start": "node dev-server.js",
+    "everything": "yarn run build && yarn run start",
     "lint": "eslint src"
   },
   "repository": {
