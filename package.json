@@ -12,12 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/veekas/.git"
+    "url": "https://github.com/veekas/react-resume.git"
   },
   "license": "CC0-1.0",
-  "author": "Veekas Shrivastava, Clement Hoang, Ramanpreet Nara",
-  "homepage": "https://github.com/veekas/.git",
-  "devDependencies": {
+  "author": "Veekas Shrivastava",
+  "dependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",
     "babel-loader": "^6.2.0",
@@ -36,14 +35,12 @@
     "express": "^4.13.3",
     "normalize.css": "^3.0.3",
     "radium": "^0.15.3",
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
     "rimraf": "^2.4.3",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0"
-  },
-  "dependencies": {
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3"
   }
 }
