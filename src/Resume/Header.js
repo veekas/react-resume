@@ -14,11 +14,7 @@ const Header = ({ firstName, lastName, subheader, website }) => {
       <span style={style.subheader}>
         {/* qualifier */} {title}
         | <Link to={website.link} style={{ padding: 0 }}>{website.name}</Link>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <i>This resume was built with React</i>
+         | <i>This resume was <s>built</s> deliberatly overengineered with React</i>
           <Link to="https://github.com/veekas/react-resume">
             <i className="fa fa-github" style={style.icon}></i>
           </Link>
