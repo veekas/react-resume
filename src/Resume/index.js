@@ -53,7 +53,7 @@ const DATA = {
       },
       {
         name: 'Python',
-        proficiency: 0.4,
+        proficiency: 0.3,
       },
       {
         name: 'Ruby',
@@ -252,11 +252,11 @@ const DATA = {
         link: 'https://github.com/TheUniverseofCoding/world-of-code',
         faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
-        description: 'Chrome extension to convert Youtube channels into learning platforms',
+        description: 'Chrome extension to convert passing videos into learning platforms',
         achievements: [
-          'Something impressive will be said here',
-          'Something impressive will be said here',
-          'Something impressive will be said here',
+          'Worked in a team of four over two weeks to create our first extension',
+          'Implemented most UI/UX design and functionality',
+          'Full-featured: used content scripts, background processes, and a popup',
           // 'Helped clients build fully fledged products such as <b><a href="https://www.coastlinemarket.com/">Coastline Market</a></b>, e-commerce and inventory management for fishing',
           // 'Worked with small team to transform fun projects into market-ready products, such as <b><a href="https://medicov.io/">Medicov</a></b> and <b><a href="https://luql.io/">Luql</a></b>',
         ],
@@ -284,8 +284,8 @@ const DATA = {
         tools: ['Typescript', 'React', 'Redux', 'VSCode API'],
         description: 'Visual Studio Code extension that converts a workspace to strict mode',
         achievements: [
-          'Something impressive will be said here',
-          'Something impressive will be said here',
+          'Learned VSCode API, implemented, and deployed over a few days',
+          'Currently offered in the VSCode extension marketplace for download',
         ],
       },
       {
@@ -295,8 +295,8 @@ const DATA = {
         tools: ['Javascript', 'React', 'Redux', 'Draft.js', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'Absurdly user-friendly Draft.js form that generates a PDF from inputs',
         achievements: [
-          'Something impressive will be said here',
-          'Something impressive will be said here',
+          'Real-world project for United Way of Washington State affiliate, Hopelink',
+          'Sole developer for form that implements Draft.js and Formik',
         ],
       },
       {
@@ -306,8 +306,8 @@ const DATA = {
         tools: ['Javascript', 'React', 'Redux', 'Express', 'Sequelize'],
         description: 'A fully-developed mock e-commerce site selling Pokemon',
         achievements: [
-          'Something impressive will be said here',
-          'Something impressive will be said here',
+          'Worked in agile team to implement e-commerce website over 1 week',
+          'Contributions included fullstack navigation & auth. functionality and UI',
         ],
       },
     ],
