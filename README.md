@@ -10,8 +10,4 @@ $ yarn start
 ```
 
 ## Acknowledgements
-<<<<<<< HEAD
 This resume was inspired by [Clement Hoang's](https://github.com/clemmy/react-resume) project
-=======
-This project was forked from [Clement Hoang's resume-react](https://github.com/clemmy/react-resume) project
->>>>>>> ac8f3ab8551695854fa8071b151014d413eb0d66
