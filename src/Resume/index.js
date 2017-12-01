@@ -221,7 +221,7 @@ const DATA = {
         location: 'Tempe, AZ',
         achievements: [
           'Received 15,669 votes after knocking 3,185 doors, calling over 6,000 people',
-          'Led a team of 6 part-time interns and over 90 volunteers (2014)',
+          'Led a team of 6 part-time interns and over 90 volunteers',
         ],
       },
       // {
