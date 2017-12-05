@@ -38,8 +38,10 @@ const style = {
   },
   subheader: {
     fontSize: '1.2rem',
-    display: 'block',
+    display: 'flex',
+    justifyContent: 'space-around',
     marginLeft: '5px',
+    marginRight: '5px',
     marginTop: '-6px',
     color: 'rgb(77, 100, 141)',
   },
