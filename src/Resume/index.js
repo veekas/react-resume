@@ -184,10 +184,6 @@ const DATA = {
           'Tripled the number of mentors in less than 4 months',
           'Led team to transition from Excel spreadsheets to an internal database',
           'Project manager for UI/UX redesign of the organization’s Wordpress website',
-          // 'Maintained stable data pipelines built with <b>Spark</b> and <b>Spark Streaming</b>, with <b>Airflow</b> for scheduling (50+ GB data flow daily)',
-          // 'Built <b>real time</b> data visualization and alerting tools',
-          // 'Wrote data extraction tool for external sites using <b>Scrapy</b> that automatically refreshes for stale data periodically',
-          // 'Extracted keywords from Korean text using Latent Dirichlet Allocation',
         ],
       },
       {
@@ -199,9 +195,6 @@ const DATA = {
         achievements: [
           'Top performer: Over 2x enrollment rate & Top 5% in total enrollments compared to company average',
           'Created an ELO-based web-app using Ruby on Rails: <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)">OscarPingPong.Club</a> <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-          // 'Contributed to open-sourced <b><a href="https://github.com/quilljs/quill/releases/tag/v1.0.0-beta.8">Quill</a></b> project with over 13k stars on Github',
-          // 'Created interactive visualizations for customer data, improving browser coverage to over <b>99%</b>',
-          // 'Built drag & drop email composer using <b>React</b> with <b>Django</b>, with event tracking infrastructure and behavioural analytics',
         ],
       },
       {
@@ -213,9 +206,6 @@ const DATA = {
         achievements: [
           'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
           'Mined insurance broker data to generate 7,000+ warm leads for a client',
-          // 'Built interactive API explorer using the JSONSchema standard with <b>AngularJS</b>',
-          // 'Added core features to an in-house <b>Javascript</b> SPA framework including duplex streams for model access and <b>React</b> support',
-          // 'Designed and built admin panel for a distributed storage system',
         ],
       },
       {
@@ -229,18 +219,6 @@ const DATA = {
           'Led a team of 6 part-time interns and over 90 volunteers',
         ],
       },
-      // {
-      //   name: 'Ten Thousand Coffees',
-      //   title: 'Software Engineering Intern',
-      //   color: 'rgb(77, 100, 141)',
-      //   date: 'Winter 2015',
-      //   location: 'Toronto, Canada',
-      //   achievements: [
-      //     'Re-architected the messaging system to support multiple participants and time-scheduling using the <b>MEAN</b> stack',
-      //     'Ran email A/B tests, which increased user retention by <b>20%</b>',
-      //     'Added complete i18n coverage to the web platform',
-      //   ],
-      // },
     ],
     projects: [
       {
@@ -254,16 +232,14 @@ const DATA = {
       },
       {
         name: 'CodeMode',
-        link: 'https://github.com/TheUniverseofCoding/world-of-code',
-        faClass: 'fa fa-github',
+        link: 'https://www.youtube.com/watch?v=H9oYe_8Ks9M',
+        faClass: 'fa fa-youtube',
         tools: ['Javascript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'Chrome extension to convert passing videos into learning platforms',
         achievements: [
           'Worked in a team of four over two weeks to create our first extension',
-          'Implemented most UI/UX design and functionality',
+          'Implemented UI/UX design and drawer functionality',
           'Full-featured: used content scripts, background processes, and a popup',
-          // 'Helped clients build fully fledged products such as <b><a href="https://www.coastlinemarket.com/">Coastline Market</a></b>, e-commerce and inventory management for fishing',
-          // 'Worked with small team to transform fun projects into market-ready products, such as <b><a href="https://medicov.io/">Medicov</a></b> and <b><a href="https://luql.io/">Luql</a></b>',
         ],
       },
       // {
