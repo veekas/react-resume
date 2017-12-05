@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import http from 'http';
 import Container from '../ui/Container';
 import Sidebar from './Sidebar';
 import Main from './Main';
@@ -7,6 +8,10 @@ import Footer from './Footer';
 
 class Resume extends Component {
   render() {
+    // call Heroku every 5 minutes to prevent dyno from sleeping
+    const callHeroku = () => http.get('http://veekas-react-resume.herokuapp.com');
+    setInterval(callHeroku(), 300000);
+
     return (
       <Container>
         <Header {...DATA.main} />
