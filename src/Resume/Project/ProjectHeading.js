@@ -24,7 +24,7 @@ const style = {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'flex-end',
-    marginBottom: '0.4rem',
+    marginBottom: '0rem',
   },
   name: {
     fontSize: '1rem',

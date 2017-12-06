@@ -5,7 +5,7 @@ const Section = ({ color, children }) => (
     marginTop: '-0.8rem',
     // borderTop: '0.1px solid ' + color,
     marginBottom: '-0.4rem',
-    padding: '0.025rem 1.2rem',
+    padding: '0 0.5rem',
   }}>
     {children}
   </section>
