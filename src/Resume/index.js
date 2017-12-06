@@ -154,6 +154,12 @@ const DATA = {
       link: 'https://github.com/veekas',
     },
     {
+      name: 'Twitter',
+      faClass: 'fa fa-twitter',
+      display: '@veekas',
+      link: 'http://www.twitter.com/veekas',
+    },
+    {
       name: 'Linkedin',
       faClass: 'fa fa-linkedin',
       display: 'linkedin.com/in/veekas',
@@ -235,7 +241,7 @@ const DATA = {
         link: 'https://www.youtube.com/watch?v=H9oYe_8Ks9M',
         faClass: 'fa fa-youtube',
         tools: ['Javascript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
-        description: 'Chrome extension to convert passing videos into learning platforms',
+        description: 'Chrome extension to convert Youtube videos into a learning platform',
         achievements: [
           'Worked in a team of four over two weeks to create our first extension',
           'Implemented UI/UX design and drawer functionality',
