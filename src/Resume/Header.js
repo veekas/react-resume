@@ -13,15 +13,15 @@ const Header = ({ firstName, lastName, subheader, website }) => {
       </h1>
       <span style={style.subheader}>
         {/* qualifier */} {title}
-        | <Link to={website.link} style={{ padding: 0 }}>{website.name}</Link>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <i>This resume was built with React</i>
-          <Link to="https://github.com/veekas/react-resume">
-            <i className="fa fa-github" style={style.icon}></i>
-          </Link>
+        |
+        <Link to={website.link} style={{ padding: 0 }}>
+            <b>{website.name}</b>
+        </Link>
+        |
+        <i>This resume was <s>built</s> deliberately overengineered with React</i>
+        <Link to="https://github.com/veekas/react-resume">
+          <i className="fa fa-github" style={style.icon}></i>
+        </Link>
       </span>
     </section>
   );
@@ -38,12 +38,14 @@ const style = {
   h1: {
     color: 'rgb(21, 44, 85)',
     display: 'block',
+    justifyContent: 'center',
     fontSize: '3.4rem',
   },
   subheader: {
     fontSize: '1.2rem',
-    display: 'block',
-    marginLeft: '5px',
+    display: 'flex',
+    justifyContent: 'space-around',
+    marginRight: '5px',
     marginTop: '-6px',
     color: 'rgb(77, 100, 141)',
   },
@@ -57,9 +59,10 @@ const style = {
     color: 'rgb(77, 100, 141)',
   },
   icon: {
-    lineHeight: '0.8rem',
-    width: '0.8rem',
-    height: '0.8rem',
+    fontSize: '1rem',
+    lineHeight: '1rem',
+    width: '1rem',
+    height: '1rem',
     color: 'rgba(77, 100, 141, 1)',
   },
 };

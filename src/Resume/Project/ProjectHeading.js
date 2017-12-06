@@ -4,7 +4,9 @@ import Link from '../../ui/Link';
 const ProjectHeading = ({ name, tools, link, faClass }) => (
   <div style={style.main}>
     <div style={style.name}>
-      {name}
+      <Link to={link}>
+        {name}
+      </Link>
       <span style={style.link}>
         <Link to={link}>
           <i className={faClass} style={style.icon}></i>
