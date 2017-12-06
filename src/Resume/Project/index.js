@@ -21,10 +21,6 @@ const Project = ({ name, tools, link, achievements, description, faClass }) => {
   );
 };
 
-function createDescription(description) {
-  return `<b>${description}</b>`;
-}
-
 const style = {
   main: {
     margin: '1.5rem 0 0 0',
@@ -34,7 +30,7 @@ const style = {
   },
   description: {
     // fontWeight: 'bold',
-    margin: '0 1.5rem 0 0',
+    margin: '0 0 0 0.5rem',
   },
 };
 
