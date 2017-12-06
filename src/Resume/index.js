@@ -225,7 +225,7 @@ const DATA = {
         location: 'Tempe, AZ',
         achievements: [
           'Received 15,669 votes after knocking 3,185 doors, calling over 6,000 people',
-          'Designed website and graphics for digital and print use. View on Github: <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'Designed website and graphics for digital and print use. <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)">View on Github:</a> <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
         ],
       },
     ],
@@ -291,7 +291,7 @@ const DATA = {
         description: 'Visual Studio Code extension that converts a workspace to strict mode',
         achievements: [
           'Learned VSCode API, implemented, and deployed over a few days',
-          'Currently offered in the VSCode extension marketplace for download',
+          'Currently offered in the VSCode extension marketplace with over 40 downloads',
         ],
       },
       {
