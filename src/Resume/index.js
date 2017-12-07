@@ -287,7 +287,7 @@ const DATA = {
         name: 'Use Strict Everywhere',
         link: 'https://marketplace.visualstudio.com/items?itemName=veekas.use-strict-everywhere',
         faClass: 'fa fa-windows',
-        tools: ['Typescript', 'React', 'Redux', 'VSCode API'],
+        tools: ['Typescript', 'VSCode API'],
         description: 'Visual Studio Code extension that converts a workspace to strict mode',
         achievements: [
           'Learned VSCode API, implemented, and deployed over a few days',
