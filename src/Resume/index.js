@@ -207,7 +207,7 @@ const DATA = {
         ],
       },
       {
-        name: 'Veekas Means Progress Consulting',
+        name: 'VMP Consulting',
         color: 'rgb(77, 100, 141)',
         title: 'Chief Development Officer (Business Development)',
         date: 'Feb 2012–Oct 2016',
