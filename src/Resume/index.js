@@ -202,7 +202,7 @@ const DATA = {
         date: 'Sept 2016–Jan 2017',
         location: 'Tempe, AZ',
         achievements: [
-          'Top performer: Over 2x enrollment rate & Top 5% in total enrollments compared to company average',
+          'Top performer: over 2x enrollment rate & top 5% in total enrollments',
           'Created an ELO-based web-app using Ruby on Rails: <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)">OscarPingPong.Club</a> <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
