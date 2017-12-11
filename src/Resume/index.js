@@ -37,11 +37,11 @@ const DATA = {
         // courses: 'Science, Technology and Public Affairs; Information Technology and Culture; Political Statistics; Applied Regression and Forecasting; Economics of Healthcare; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Technology, Industry and Management in China',
         // activities: 'GlobalResolve (helped prototype a portable electricity generator and capacitor; conducted market research in Ghana); Undergraduate Student Government; Lambda Chi Alpha',
       },
-      {
-        bootcamp: 'Fullstack Academy of Code',
-        endDate: 'December 2017',
-        program: 'Software Engineering Immersive',
-      },
+      // {
+      //   bootcamp: 'Fullstack Academy of Code',
+      //   endDate: 'December 2017',
+      //   program: 'Software Engineering Immersive',
+      // },
     ],
     languages: [
       {
