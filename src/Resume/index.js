@@ -188,7 +188,7 @@ const DATA = {
         color: 'rgb(77, 100, 141)',
         title: 'Full Stack Developer',
         date: 'Feb 2012–Present',
-        location: 'Tempe, AZ',
+        location: 'New York, NY',
         achievements: [
           'Building full stack web apps for political campaigns',
           'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
