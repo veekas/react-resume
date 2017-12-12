@@ -22,7 +22,7 @@ const Education = ({ university, duration, degree, cert, courses, activities, bo
     </div>
     <div>
     <br />
-    <i>Relevant Coursework:</i><br />
+    <i>Selected Coursework:</i><br />
       {courses}
     </div>
     {/*
