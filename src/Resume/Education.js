@@ -9,21 +9,6 @@ const Education = ({ university, duration, degree, cert, courses, activities, bo
       ...style.text,
       fontWeight: 'bold',
     }}>
-      {bootcamp}
-    </div>
-    <div>
-      {program}
-    </div>
-    <div>
-      {endDate}
-    </div>
-
-    <br />
-
-    <div style={{
-      ...style.text,
-      fontWeight: 'bold',
-    }}>
       {university}
     </div>
     <div>
@@ -66,10 +51,6 @@ Education.propTypes = {
   degree: PropTypes.string.isRequired,
   cert: PropTypes.string.isRequired,
   courses: PropTypes.string.isRequired,
-  // activities: PropTypes.string.isRequired,
-  bootcamp: PropTypes.string.isRequired,
-  endDate: PropTypes.string.isRequired,
-  program: PropTypes.string.isRequired,
 };
 
 export default Education;

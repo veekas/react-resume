@@ -31,17 +31,28 @@ const Sidebar = ({ data }) => (
       <div>
      */}
     <div>
-      <Education
-        university={data.education[0].university}
-        degree={data.education[0].degree}
-        cert={data.education[0].cert}
-        duration={data.education[0].duration}
-        courses={data.education[0].courses}
-        // activities={data.education[0].activities}
-        bootcamp={data.education[1].bootcamp}
-        program={data.education[1].program}
-        endDate={data.education[1].endDate}
-      />
+      {
+      data.education[1]
+        ? <Education
+            university={data.education[0].university}
+            degree={data.education[0].degree}
+            cert={data.education[0].cert}
+            duration={data.education[0].duration}
+            courses={data.education[0].courses}
+            // activities={data.education[0].activities}
+            bootcamp={data.education[1].bootcamp}
+            program={data.education[1].program}
+            endDate={data.education[1].endDate}
+          />
+        : <Education
+            university={data.education[0].university}
+            degree={data.education[0].degree}
+            cert={data.education[0].cert}
+            duration={data.education[0].duration}
+            courses={data.education[0].courses}
+          />
+      }
+
     </div>
   </section>
 );
