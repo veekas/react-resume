@@ -33,7 +33,7 @@ const DATA = {
         duration: 'July 2017',
         degree: 'BA, Political Science',
         cert: 'Certificate, Applied Business Data Analysis',
-        courses: 'Statistics; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business',
+        courses: 'Statistics; Calculus; Economics of Healthcare; Applied Regression and Forecasting; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
         // courses: 'Science, Technology and Public Affairs; Information Technology and Culture; Political Statistics; Applied Regression and Forecasting; Economics of Healthcare; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Technology, Industry and Management in China',
         // activities: 'GlobalResolve (helped prototype a portable electricity generator and capacitor; conducted market research in Ghana); Undergraduate Student Government; Lambda Chi Alpha',
       },
@@ -184,13 +184,24 @@ const DATA = {
     },
     companies: [
       {
+        name: 'VMP Consulting',
+        color: 'rgb(77, 100, 141)',
+        title: 'Full Stack Developer',
+        date: 'Feb 2012–Present',
+        location: 'Tempe, AZ',
+        achievements: [
+          'Building full stack web apps for political campaigns',
+          'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
+          'Mined insurance broker data to generate 7,000+ warm leads for a client',
+        ],
+      },
+      {
         name: 'Arizona Technology Council',
         title: 'Director of Business & Community Partnerships',
         color: 'rgb(77, 100, 141)',
         date: 'Feb 2017–July 2017',
         location: 'Phoenix, AZ',
         achievements: [
-          'Tripled the number of mentors in less than 4 months',
           'Led team to transition from Excel spreadsheets to an internal database',
           'Project manager for UI/UX redesign of the organization’s Wordpress website',
         ],
@@ -203,18 +214,7 @@ const DATA = {
         location: 'Tempe, AZ',
         achievements: [
           'Top performer: over 2x enrollment rate & top 5% in total enrollments',
-          'Created an ELO-based web-app using Ruby on Rails: <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)">OscarPingPong.Club</a> <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-        ],
-      },
-      {
-        name: 'VMP Consulting',
-        color: 'rgb(77, 100, 141)',
-        title: 'Chief Development Officer (Business Development)',
-        date: 'Feb 2012–Oct 2016',
-        location: 'Tempe, AZ',
-        achievements: [
-          'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
-          'Mined insurance broker data to generate 7,000+ warm leads for a client',
+          'Created score-tracking web-app using Ruby on Rails: <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)">OscarPingPong.Club</a> <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
       {
@@ -313,7 +313,7 @@ const DATA = {
         description: 'A fully-developed mock e-commerce site selling Pokemon',
         achievements: [
           'Worked in agile team to implement e-commerce website over 1 week',
-          'Contributions included fullstack navigation, auth. functionality, and UI',
+          'Contributions included full stack navigation, auth. functionality, and UI',
         ],
       },
     ],
