@@ -102,6 +102,7 @@ const DATA = {
       'JIRA',
       'Visual Studio Code',
       'Microsoft Excel',
+      'VBA',
       'Microsoft Access',
       'FileMaker Pro',
       'Adobe Illustrator',
