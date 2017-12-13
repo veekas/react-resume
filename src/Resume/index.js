@@ -193,7 +193,7 @@ const DATA = {
         date: 'Feb 2012–Present',
         location: 'New York, NY',
         achievements: [
-          'Building full stack web apps for political campaigns',
+          '(Starting in 2017) Building full stack web apps for political campaigns',
           'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
           'Mined insurance broker data to generate 7,000+ warm leads for a client',
         ],
