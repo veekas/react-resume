@@ -239,7 +239,9 @@ const DATA = {
         faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Jest', 'Git', 'Github'],
         // achievements: [
-        //   'Pull requests accepted for React and Sequelize',
+        //   '',
+        //   '',
+        //   '',
         // ],
       },
       {
