@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
 import Languages from './Languages';
 import SidebarList from './SidebarList';
-import SidebarHeading from './SidebarHeading';
+// import SidebarHeading from './SidebarHeading';
 import ContactLinks from './ContactLinks';
-import HorizontalRule from '../ui/HorizontalRule';
+// import HorizontalRule from '../ui/HorizontalRule';
 import Education from './Education';
 
 const Sidebar = ({ data }) => (
@@ -12,7 +12,7 @@ const Sidebar = ({ data }) => (
       <ContactLinks data={data.links} />
     </div>
     <div>
-        <Languages data={data.languages} />
+      <Languages title="+ LANGUAGES" items={data.languages} />
     </div>
     <div>
       <SidebarList title="+ FRAMEWORKS" items={data.libraries} />

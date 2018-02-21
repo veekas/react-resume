@@ -1,6 +1,6 @@
 {
   "name": "react-resume-veekas-shrivastava",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Veekas Shrivastava's resume, unnecessarily built with React",
   "scripts": {
     "clean": "rimraf dist",

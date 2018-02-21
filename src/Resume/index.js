@@ -44,26 +44,38 @@ const DATA = {
       // },
     ],
     languages: [
-      {
-        name: 'JavaScript',
-        proficiency: 0.8,
-      },
-      {
-        name: 'HTML/CSS',
-        proficiency: 0.7,
-      },
-      {
-        name: 'R',
-        proficiency: 0.5,
-      },
-      {
-        name: 'Python',
-        proficiency: 0.3,
-      },
-      {
-        name: 'Ruby',
-        proficiency: 0.2,
-      },
+      // {
+      //   name: 'JavaScript',
+      //   proficiency: 0.8,
+      // },
+      // {
+      //   name: 'HTML/CSS',
+      //   proficiency: 0.7,
+      // },
+      // {
+      //   name: 'SQL',
+      //   proficiency: 0.5,
+      // },
+      // {
+      //   name: 'R',
+      //   proficiency: 0.5,
+      // },
+      // {
+      //   name: 'Python',
+      //   proficiency: 0.3,
+      // },
+      // {
+      //   name: 'Ruby',
+      //   proficiency: 0.2,
+      // },
+      'Javascript',
+      'ES6',
+      'HTML',
+      'CSS',
+      'SQL',
+      'R',
+      'Python',
+      'Ruby',
     ],
     // databases: [
     //   'PostgreSQL',
@@ -75,6 +87,8 @@ const DATA = {
       'Redux',
       'Express',
       'Sequelize',
+      'GraphQL',
+      'Apollo',
       'Typescript',
       'Node.js',
       'Mocha',
@@ -100,7 +114,9 @@ const DATA = {
       'Git',
       'Github',
       'JIRA',
-      'Visual Studio Code',
+      'Google Cloud Platform',
+      'Dialogflow',
+      'Amazon Web Services (AWS)',
       'Microsoft Excel',
       'VBA',
       'Microsoft Access',
@@ -137,6 +153,12 @@ const DATA = {
         faClass: 'fa fa-linkedin',
         display: 'linkedin.com/in/veekas',
         link: 'https://www.linkedin.com/in/veekas',
+      },
+      {
+        name: 'Twitter',
+        faClass: 'fa fa-twitter',
+        display: 'twitter.com/veekas',
+        link: 'https://www.twitter.com/veekas',
       },
       {
         name: 'Location',
