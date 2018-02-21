@@ -53,6 +53,10 @@ const DATA = {
         proficiency: 0.7,
       },
       {
+        name: 'SQL',
+        proficiency: 0.5,
+      },
+      {
         name: 'R',
         proficiency: 0.5,
       },
@@ -75,6 +79,8 @@ const DATA = {
       'Redux',
       'Express',
       'Sequelize',
+      'GraphQL',
+      'Apollo',
       'Typescript',
       'Node.js',
       'Mocha',
@@ -100,7 +106,9 @@ const DATA = {
       'Git',
       'Github',
       'JIRA',
-      'Visual Studio Code',
+      'Google Cloud Platform',
+      'Dialogflow',
+      'Amazon Web Services (AWS)',
       'Microsoft Excel',
       'VBA',
       'Microsoft Access',
@@ -137,6 +145,12 @@ const DATA = {
         faClass: 'fa fa-linkedin',
         display: 'linkedin.com/in/veekas',
         link: 'https://www.linkedin.com/in/veekas',
+      },
+      {
+        name: 'Twitter',
+        faClass: 'fa fa-twitter',
+        display: 'twitter.com/veekas',
+        link: 'https://www.twitter.com/veekas',
       },
       {
         name: 'Location',
