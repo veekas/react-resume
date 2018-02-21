@@ -44,30 +44,38 @@ const DATA = {
       // },
     ],
     languages: [
-      {
-        name: 'JavaScript',
-        proficiency: 0.8,
-      },
-      {
-        name: 'HTML/CSS',
-        proficiency: 0.7,
-      },
-      {
-        name: 'SQL',
-        proficiency: 0.5,
-      },
-      {
-        name: 'R',
-        proficiency: 0.5,
-      },
-      {
-        name: 'Python',
-        proficiency: 0.3,
-      },
-      {
-        name: 'Ruby',
-        proficiency: 0.2,
-      },
+      // {
+      //   name: 'JavaScript',
+      //   proficiency: 0.8,
+      // },
+      // {
+      //   name: 'HTML/CSS',
+      //   proficiency: 0.7,
+      // },
+      // {
+      //   name: 'SQL',
+      //   proficiency: 0.5,
+      // },
+      // {
+      //   name: 'R',
+      //   proficiency: 0.5,
+      // },
+      // {
+      //   name: 'Python',
+      //   proficiency: 0.3,
+      // },
+      // {
+      //   name: 'Ruby',
+      //   proficiency: 0.2,
+      // },
+      'Javascript',
+      'ES6',
+      'HTML',
+      'CSS',
+      'SQL',
+      'R',
+      'Python',
+      'Ruby',
     ],
     // databases: [
     //   'PostgreSQL',

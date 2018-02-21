@@ -12,7 +12,7 @@ const Sidebar = ({ data }) => (
       <ContactLinks data={data.links} />
     </div>
     <div>
-        <Languages data={data.languages} />
+      <Languages title="+ LANGUAGES" items={data.languages} />
     </div>
     <div>
       <SidebarList title="+ FRAMEWORKS" items={data.libraries} />
