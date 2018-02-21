@@ -1,18 +1,13 @@
 import React, { PropTypes } from 'react';
-// import Language from './Language';
 import SidebarHeading from './SidebarHeading';
 
-// const proficientScore = 0.5;
-// const isProficient = (num) => num > proficientScore;
-
-const Languages = ({ languages, title, separator }) => (
+const Languages = ({ items, title, separator }) => (
   <section style={style.main}>
     <SidebarHeading> {title} </SidebarHeading>
     <div style={style.list}>
-      {languages.map((language, key) => (
-        // <span key={key} dangerouslySetInnerHTML={{ __html: language + createSeparator(key, languages, ', ') }}>
-        // </span>
-        `${language}, ${key}`
+      {items.map((item, key) => (
+        <span key={key} dangerouslySetInnerHTML={{ __html: item + createSeparator(key, items, separator) }}>
+        </span>
       ))}
     </div>
   </section>

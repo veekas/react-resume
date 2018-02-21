@@ -4,7 +4,7 @@ import SidebarHeading from './SidebarHeading';
 const SidebarList = ({ items, title, separator }) => (
   <section style={style.main}>
     <SidebarHeading> {title} </SidebarHeading>
-    <div style={style.list}>
+    <div>
       {items.map((item, key) => (
         <span key={key} dangerouslySetInnerHTML={{ __html: item + createSeparator(key, items, separator) }}>
         </span>
