@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import SidebarHeading from './SidebarHeading';
 
-const Education = ({ university, duration, degree, cert, courses, activities, bootcamp, endDate, program }) => (
+const Education = ({ university, duration, degree, cert, courses, bootcamp, endDate, program }) => ( // activities
   <section style={style.main}>
     <SidebarHeading align="left">+ EDUCATION</SidebarHeading>
 
@@ -12,17 +12,14 @@ const Education = ({ university, duration, degree, cert, courses, activities, bo
       {university}
     </div>
     <div>
-      {degree};
-    </div>
-    <div>
-      {cert}
+      {degree}; concentrations in {cert}
     </div>
     <div>
       {duration}
     </div>
     <div>
     <br />
-    <i>Selected Coursework:</i><br />
+    <i>Selected Coursework: </i>
       {courses}
     </div>
     {/*
@@ -32,6 +29,13 @@ const Education = ({ university, duration, degree, cert, courses, activities, bo
       {activities}
     </div>
     */}
+    <br />
+    <div style={{
+      ...style.text,
+      fontWeight: 'bold',
+    }}>{bootcamp}</div>
+    <div>{program}</div>
+    <div>{endDate}</div>
 
   </section>
 );

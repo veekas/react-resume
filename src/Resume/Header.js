@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import Link from '../ui/Link';
 
 const Header = ({ firstName, lastName, subheader, website }) => {
-  const { title, qualifier } = subheader;
+  const { title } = subheader; // qualifier
 
   return (
     <section style={style.main}>
@@ -18,7 +18,7 @@ const Header = ({ firstName, lastName, subheader, website }) => {
             <b>{website.name}</b>
         </Link>
         |
-        <i>This resume was <s>built</s> deliberately overengineered with React</i>
+        <i>This resume was <s>written</s> deliberately overengineered in React</i>
         <Link to="https://github.com/veekas/react-resume">
           <i className="fa fa-github" style={style.icon}></i>
         </Link>
@@ -29,7 +29,7 @@ const Header = ({ firstName, lastName, subheader, website }) => {
 
 const style = {
   main: {
-    padding: '16px 0 1px 0',
+    padding: '10px 0 1px 0',
     flex: '1 1 auto',
     fontSize: '1.6rem',
     marginBottom: '-0.4em',

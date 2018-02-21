@@ -32,42 +32,22 @@ const DATA = {
         university: 'Arizona State University',
         duration: 'July 2017',
         degree: 'BA, Political Science',
-        cert: 'Certificate, Applied Business Data Analysis',
-        courses: 'Statistics; Calculus; Economics of Healthcare; Applied Regression and Forecasting; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
+        cert: 'Economics, Applied Business Data Analysis',
+        courses: 'Statistics; Calculus; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
+
+        // FITS ON ONE PAGE WITHOUT FSA
+        // courses: 'Statistics; Calculus; Economics of Healthcare; Applied Regression and Forecasting; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
+
         // courses: 'Science, Technology and Public Affairs; Information Technology and Culture; Political Statistics; Applied Regression and Forecasting; Economics of Healthcare; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Technology, Industry and Management in China',
         // activities: 'GlobalResolve (helped prototype a portable electricity generator and capacitor; conducted market research in Ghana); Undergraduate Student Government; Lambda Chi Alpha',
       },
-      // {
-      //   bootcamp: 'Fullstack Academy of Code',
-      //   endDate: 'December 2017',
-      //   program: 'Software Engineering Immersive',
-      // },
+      {
+        bootcamp: 'Fullstack Academy of Code',
+        endDate: 'December 2017',
+        program: 'Software Engineering Immersive',
+      },
     ],
     languages: [
-      // {
-      //   name: 'JavaScript',
-      //   proficiency: 0.8,
-      // },
-      // {
-      //   name: 'HTML/CSS',
-      //   proficiency: 0.7,
-      // },
-      // {
-      //   name: 'SQL',
-      //   proficiency: 0.5,
-      // },
-      // {
-      //   name: 'R',
-      //   proficiency: 0.5,
-      // },
-      // {
-      //   name: 'Python',
-      //   proficiency: 0.3,
-      // },
-      // {
-      //   name: 'Ruby',
-      //   proficiency: 0.2,
-      // },
       'Javascript',
       'ES6',
       'HTML',
@@ -89,6 +69,7 @@ const DATA = {
       'Sequelize',
       'GraphQL',
       'Apollo',
+      'D3.js',
       'Typescript',
       'Node.js',
       'Mocha',
@@ -121,6 +102,7 @@ const DATA = {
       'VBA',
       'Microsoft Access',
       'FileMaker Pro',
+      'Glitch',
       'Adobe Illustrator',
       'Adobe Photoshop',
     ],
@@ -139,7 +121,7 @@ const DATA = {
       {
         name: 'Phone',
         faClass: 'fa fa-phone',
-        display: '480.264.0124',
+        display: '(480) 264-0124',
         link: 'tel:+14802640124',
       },
       {
@@ -211,13 +193,13 @@ const DATA = {
       {
         name: 'VMP Consulting',
         color: 'rgb(77, 100, 141)',
-        title: 'Full Stack Developer',
+        title: 'Full Stack Developer (prev. Chief Development Officer)',
         date: 'Feb 2012–Present',
         location: 'New York, NY',
         achievements: [
-          '(Starting in 2017) Building full stack web apps for political campaigns',
+          'Built full stack web apps (React, Javascript, HTML/CSS) for political campaigns',
           'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
-          'Mined insurance broker data to generate 7,000+ warm leads for a client',
+          'Scraped and cultivated insurance broker data, generating 7,000+ warm leads',
         ],
       },
       {
@@ -239,43 +221,54 @@ const DATA = {
         location: 'Tempe, AZ',
         achievements: [
           'Top performer: over 2x enrollment rate & top 5% in total enrollments',
-          'Created score-tracking web-app using Ruby on Rails: <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)">OscarPingPong.Club</a> <a href="http://oscarpingpong.club" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          'Created score-tracking web-app using Ruby on Rails: <a href="http://pingpongclub.win" style="color: rgba(77, 100, 141, 1)">PingPongClub.Win</a> <a href="http://pingpongclub.win" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
-      {
-        name: 'Veekas Means Progress for Tempe Kids',
-        color: 'rgb(77, 100, 141)',
-        title: 'Governing Board Candidate (Tempe Elementary Schools)',
-        date: 'Feb 2016–Nov 2016',
-        location: 'Tempe, AZ',
-        achievements: [
-          'Received 15,669 votes after knocking 3,185 doors, calling over 6,000 people',
-          'Designed website and graphics for digital and print use. <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)">View on Github:</a> <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-        ],
-      },
+      // {
+      //   name: 'Veekas Means Progress for Tempe Kids',
+      //   color: 'rgb(77, 100, 141)',
+      //   title: 'Governing Board Candidate (Tempe Elementary Schools)',
+      //   date: 'Feb 2016–Nov 2016',
+      //   location: 'Tempe, AZ',
+      //   achievements: [
+      //     'Received 15,669 votes after knocking 3,185 doors, calling over 6,000 people',
+      //     'Designed website and graphics for digital and print use. <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)">View on Github:</a> <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+      //   ],
+      // },
     ],
     projects: [
       {
-        name: 'Open Source Contributor (React, Sequelize)',
-        link: 'https://github.com/facebook/react/pull/11658',
+        name: 'open source contributor',
+        // link: 'https://github.com/facebook/react/pull/11658',
+        // faClass: 'fa fa-github',
+        tools: ['Javascript', 'React', 'Jest', 'HTML', 'CSS', 'Git', 'Github'],
+        achievements: [
+          'Mozilla Developer Network (MDN) interactive examples listed contributor <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'Sequelize docs contributor <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'React.js test/warning contributor (in progress) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+        ],
+      },
+      {
+        name: 'Reasons Why I Love You',
+        link: 'https://github.com/veekas/reasons-why-i-love-you',
         faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Jest', 'Git', 'Github'],
-        // achievements: [
-        //   '',
-        //   '',
-        //   '',
-        // ],
+        tools: ['Javascript', 'Google Cloud Platform', 'Actions on Google', 'Dialogflow'],
+        description: 'Action for Google Assistant that tells a significant other why you love them',
+        achievements: [
+          'Demo and customization instructions published on Valentines Day 2018 <a href="https://reasons-why-i-love-you.glitch.me/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+        ],
       },
       {
         name: 'CodeMode',
-        link: 'https://www.youtube.com/watch?v=H9oYe_8Ks9M',
-        faClass: 'fa fa-youtube',
+        link: 'https://github.com/world-of-code/code-mode',
+        faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'Chrome extension to convert Youtube videos into an interactive learning platform',
         achievements: [
           'Worked in an agile  team of four over two weeks to create our first extension',
           'Implemented UI/UX design and drawer functionality',
           'Full-featured: used content scripts, background processes, and a popup',
+          'Lead presenter for live product demonstration <a href="https://www.youtube.com/watch?v=H9oYe_8Ks9M" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
         ],
       },
       // {
@@ -298,7 +291,7 @@ const DATA = {
         name: 'Audelio',
         link: 'https://github.com/veekas/podcast-project',
         faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Redux', 'Python', 'Express', 'Sequelize'],
+        tools: ['Javascript', 'React', 'Redux', 'Apollo', 'GraphQL', 'Python', 'Express', 'Sequelize'],
         description: 'Podcast player and recommendation engine (in development)',
         // achievements: [
         //   'Something impressive will be said here',
@@ -325,19 +318,18 @@ const DATA = {
         name: 'Easy Form to PDF',
         link: 'https://github.com/veekas/easy-form-to-pdf',
         faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Redux', 'Draft.js', 'HTML/CSS', 'Express', 'Sequelize'],
+        tools: ['Javascript', 'React', 'Redux', 'Draft.js', 'Formik', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'User-friendly Draft.js form that generates a PDF from inputs',
         achievements: [
           'Real-world project for Hopelink, a Seattle-based United Way affiliate',
-          'Sole developer for form that implements Draft.js and Formik',
         ],
       },
       {
         name: 'Pokeball',
-        link: 'https://fsa-pokeball.herokuapp.com',
-        faClass: 'fa fa-external-link-square',
+        link: 'https://github.com/ABHVZ/pokeball',
+        faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Redux', 'Express', 'Sequelize'],
-        description: 'A fully-developed mock e-commerce site selling Pokemon',
+        description: `A fully-developed mock e-commerce site 'selling' Pokemon`,
         achievements: [
           'Worked in agile team to implement e-commerce website over 1 week',
           'Contributions included full stack navigation, auth. functionality, and UI',

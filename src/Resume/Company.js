@@ -25,11 +25,11 @@ const Company = ({ color, name, title, projects = [], achievements = [], date, l
   );
 };
 
-const style = {
-  children: {
-    padding: '0 2rem 0.25rem 1.25rem',
-  },
-};
+// const style = {
+//   children: {
+//     padding: '0 2rem 0.25rem 1.25rem',
+//   },
+// };
 
 Company.propTypes = {
   color: PropTypes.string.isRequired,
