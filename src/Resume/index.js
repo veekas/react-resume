@@ -303,7 +303,7 @@ const DATA = {
         link: 'https://github.com/veekas/easy-form-to-pdf',
         faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Redux', 'Draft.js', 'Formik', 'HTML/CSS', 'Express', 'Sequelize'],
-        description: 'User-friendly Draft.js form that generates a PDF from inputs',
+        description: 'User-friendly Draft.js form that generates a PDF from inputs (private repo)',
         achievements: [
           'Real-world project for Hopelink, a Seattle-based United Way affiliate',
         ],
