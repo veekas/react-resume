@@ -224,17 +224,17 @@ const DATA = {
           'Created score-tracking web-app using Ruby on Rails: <a href="http://pingpongclub.win" style="color: rgba(77, 100, 141, 1)">PingPongClub.Win</a> <a href="http://pingpongclub.win" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
-      // {
-      //   name: 'Veekas Means Progress for Tempe Kids',
-      //   color: 'rgb(77, 100, 141)',
-      //   title: 'Governing Board Candidate (Tempe Elementary Schools)',
-      //   date: 'Feb 2016–Nov 2016',
-      //   location: 'Tempe, AZ',
-      //   achievements: [
-      //     'Received 15,669 votes after knocking 3,185 doors, calling over 6,000 people',
-      //     'Designed website and graphics for digital and print use. <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)">View on Github:</a> <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-      //   ],
-      // },
+      {
+        name: 'Veekas Means Progress for Tempe Kids',
+        color: 'rgb(77, 100, 141)',
+        title: 'Governing Board Candidate (Tempe Schools)',
+        date: 'Feb 2016–Nov 2016',
+        location: 'Tempe, AZ',
+        achievements: [
+          // 'Received 15,669 votes after knocking 3,185 doors, calling 6,000+ people',
+          'Designed website and graphics for digital and print use. <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+        ],
+      },
     ],
     projects: [
       {
@@ -243,9 +243,9 @@ const DATA = {
         // faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Jest', 'HTML', 'CSS', 'Git', 'Github'],
         achievements: [
-          'Mozilla Developer Network (MDN) interactive examples listed contributor <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-          'Sequelize docs contributor <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-          'React.js test/warning contributor (in progress) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'Facebook - React (in progress) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'Sequelize <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'MDN (Mozilla Developer Network) - Interactive Examples <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
         ],
       },
       {
@@ -263,12 +263,23 @@ const DATA = {
         link: 'https://github.com/world-of-code/code-mode',
         faClass: 'fa fa-github',
         tools: ['Javascript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
-        description: 'Chrome extension to convert Youtube videos into an interactive learning platform',
+        description: 'Chrome extension to turn Youtube video pages into an interactive learning platform',
         achievements: [
-          'Worked in an agile  team of four over two weeks to create our first extension',
+          'Worked in an agile  team of four over two weeks',
           'Implemented UI/UX design and drawer functionality',
           'Full-featured: used content scripts, background processes, and a popup',
           'Lead presenter for live product demonstration <a href="https://www.youtube.com/watch?v=H9oYe_8Ks9M" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
+        ],
+      },
+      {
+        name: 'Use Strict Everywhere',
+        link: 'https://marketplace.visualstudio.com/items?itemName=veekas.use-strict-everywhere',
+        faClass: 'fa fa-windows',
+        tools: ['Typescript', 'VSCode API'],
+        description: 'Visual Studio Code extension that converts a workspace to strict mode',
+        achievements: [
+          'Learned VSCode API, implemented, and deployed over a few days',
+          'Currently offered in the VSCode extension marketplace with 100+ downloads',
         ],
       },
       // {
@@ -288,33 +299,6 @@ const DATA = {
       //   ],
       // },
       {
-        name: 'Audelio',
-        link: 'https://github.com/veekas/podcast-project',
-        faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Redux', 'Apollo', 'GraphQL', 'Python', 'Express', 'Sequelize'],
-        description: 'Podcast player and recommendation engine (in development)',
-        // achievements: [
-        //   'Something impressive will be said here',
-        //   'Something impressive will be said here',
-          // '<b><a href="https://github.com/jasonf7/memories-of-harambe">Vio</a></b> - mobile web app to film location-based video diaries with sentimental analysis (Participant at Hack the North 2016)',
-          // '<b><a href="http://www.hackathon.io/pokidex">Pokidex</a></b> - mobile app where users can easily view important insurance data (Winner at AngelHack Silicon Valley 2016)',
-          // '<b><a href="http://devpost.com/software/query-sctlva">Query</a></b> - pebble and web app that provide a real-time collaborative classroom layer on top of a lecture (Winner at HackingEDU 2015)',
-          // '<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
-          // '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)',
-        // ],
-      },
-      {
-        name: 'Use Strict Everywhere',
-        link: 'https://marketplace.visualstudio.com/items?itemName=veekas.use-strict-everywhere',
-        faClass: 'fa fa-windows',
-        tools: ['Typescript', 'VSCode API'],
-        description: 'Visual Studio Code extension that converts a workspace to strict mode',
-        achievements: [
-          'Learned VSCode API, implemented, and deployed over a few days',
-          'Currently offered in the VSCode extension marketplace with over 40 downloads',
-        ],
-      },
-      {
         name: 'Easy Form to PDF',
         link: 'https://github.com/veekas/easy-form-to-pdf',
         faClass: 'fa fa-github',
@@ -325,16 +309,32 @@ const DATA = {
         ],
       },
       {
-        name: 'Pokeball',
-        link: 'https://github.com/ABHVZ/pokeball',
+        name: 'Audelio',
+        link: 'https://github.com/veekas/audelio',
         faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Redux', 'Express', 'Sequelize'],
-        description: `A fully-developed mock e-commerce site 'selling' Pokemon`,
-        achievements: [
-          'Worked in agile team to implement e-commerce website over 1 week',
-          'Contributions included full stack navigation, auth. functionality, and UI',
-        ],
+        tools: ['Javascript', 'React', 'Redux', 'Apollo', 'GraphQL', 'Python', 'Express', 'Sequelize'],
+        description: 'Podcast player and recommendation engine (in development)',
+        // achievements: [
+        //   'Something impressive will be said here',
+        //   'Something impressive will be said here',
+        // '<b><a href="https://github.com/jasonf7/memories-of-harambe">Vio</a></b> - mobile web app to film location-based video diaries with sentimental analysis (Participant at Hack the North 2016)',
+        // '<b><a href="http://www.hackathon.io/pokidex">Pokidex</a></b> - mobile app where users can easily view important insurance data (Winner at AngelHack Silicon Valley 2016)',
+        // '<b><a href="http://devpost.com/software/query-sctlva">Query</a></b> - pebble and web app that provide a real-time collaborative classroom layer on top of a lecture (Winner at HackingEDU 2015)',
+        // '<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
+        // '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)',
+        // ],
       },
+      // {
+      //   name: 'Pokeball',
+      //   link: 'https://github.com/ABHVZ/pokeball',
+      //   faClass: 'fa fa-github',
+      //   tools: ['Javascript', 'React', 'Redux', 'Express', 'Sequelize'],
+      //   description: `A fully-developed mock e-commerce site 'selling' Pokemon`,
+      //   achievements: [
+      //     'Worked in five-oerson agile team over 1 week',
+      //     'Contributions included full stack navigation, auth. functionality, and UI',
+      //   ],
+      // },
     ],
   },
 };
