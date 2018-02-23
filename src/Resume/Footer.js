@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Link from '../ui/Link';
 
 const Footer = ({ links }) => (
@@ -19,7 +19,7 @@ const style = {
     marginTop: '1rem',
     padding: '1rem 1rem 0 1rem',
     borderTop: '1px solid black',
-    height: '3rem',
+    // height: '3rem',
     display: 'flex',
     justifyContent: 'space-between',
   },

@@ -2721,5 +2721,5 @@
 }
 
 .fa-veekas:before {
-  content: url("https://github.com/veekas/react-resume/blob/master/src/vmp-logo.png?raw=true")
+  content: url("fa-veekas.svg");
 }
