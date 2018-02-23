@@ -32,6 +32,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: 'style-loader!css-loader',
+    }, {
+      test: /\.svg$/,
+      loader: 'svg-url-loader?pngScale=2',
     }],
   },
 };
