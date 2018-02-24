@@ -97,7 +97,6 @@ const DATA = {
       'JIRA',
       'Google Cloud Platform',
       'Dialogflow',
-      'Amazon Web Services (AWS)',
       'Microsoft Excel',
       'VBA',
       'Microsoft Access',
@@ -197,7 +196,7 @@ const DATA = {
         date: 'Feb 2012–Present',
         location: 'New York, NY',
         achievements: [
-          'Built full stack web apps (React, Javascript, HTML/CSS) for political campaigns',
+          'Built full stack web apps (React, Node.js, JS/HTML/CSS) for political campaigns',
           'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
           'Scraped and cultivated insurance broker data, generating 7,000+ warm leads',
         ],
