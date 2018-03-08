@@ -48,7 +48,7 @@ const DATA = {
       },
     ],
     languages: [
-      'Javascript',
+      'JavaScript',
       'ES6',
       'HTML',
       'CSS',
@@ -182,7 +182,7 @@ const DATA = {
     firstName: 'Veekas',
     lastName: 'Shrivastava',
     subheader: {
-      qualifier: 'Fullstack Javascript Developer',
+      qualifier: 'Fullstack JavaScript Developer',
       title: 'Software Engineer',
       name: 'Software Engineer',
     },
@@ -243,7 +243,7 @@ const DATA = {
         name: 'open source contributor',
         // link: 'https://github.com/facebook/react/pull/11658',
         // faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Jest', 'HTML', 'CSS', 'Git', 'Github'],
+        tools: ['JavaScript', 'React', 'Jest', 'HTML', 'CSS', 'Git', 'Github'],
         achievements: [
           'Facebook - React (in progress) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
           'Sequelize <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
@@ -254,7 +254,7 @@ const DATA = {
         name: 'Reasons Why I Love You',
         link: 'https://github.com/veekas/reasons-why-i-love-you',
         faClass: 'fa fa-github',
-        tools: ['Javascript', 'Google Cloud Platform', 'Actions on Google', 'Dialogflow'],
+        tools: ['JavaScript', 'Google Cloud Platform', 'Actions on Google', 'Dialogflow'],
         description: 'Action for Google Assistant that tells a significant other why you love them',
         achievements: [
           'Demo and customization instructions published on Valentines Day 2018 <a href="https://reasons-why-i-love-you.glitch.me/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
@@ -264,7 +264,7 @@ const DATA = {
         name: 'CodeMode',
         link: 'https://github.com/world-of-code/code-mode',
         faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
+        tools: ['JavaScript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'Chrome extension to turn Youtube video pages into an interactive learning platform',
         achievements: [
           'Worked in an agile  team of four over two weeks',
@@ -288,7 +288,7 @@ const DATA = {
       //   name: 'Audelio',
       //   link: 'https://github.com/veekas/podcast-project',
       // faClass: 'fa fa-github',
-      //   tools: ['Javascript', 'React', 'Redux', 'Python', 'Express', 'Sequelize'],
+      //   tools: ['JavaScript', 'React', 'Redux', 'Python', 'Express', 'Sequelize'],
       //   description: 'Podcast player and discovery engine',
       //   achievements: [
       //     'Something impressive will be said here',
@@ -304,7 +304,7 @@ const DATA = {
         name: 'Easy Form to PDF',
         link: 'https://github.com/veekas/easy-form-to-pdf',
         faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Redux', 'Draft.js', 'Formik', 'HTML/CSS', 'Express', 'Sequelize'],
+        tools: ['JavaScript', 'React', 'Redux', 'Draft.js', 'Formik', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'User-friendly Draft.js form that generates a PDF from inputs',
         achievements: [
           'Real-world project for Hopelink, a Seattle-based United Way affiliate',
@@ -314,7 +314,7 @@ const DATA = {
         name: 'Audelio',
         link: 'https://github.com/veekas/audelio',
         faClass: 'fa fa-github',
-        tools: ['Javascript', 'React', 'Apollo', 'GraphQL', 'PWA', 'Styled-Components', 'CI', 'Codecov'],
+        tools: ['JavaScript', 'React', 'Apollo', 'GraphQL', 'PWA', 'Styled-Components', 'CI', 'Codecov'],
         description: 'Podcast player and discovery engine progressive web-app (private repo)',
         // achievements: [
         //   'Something impressive will be said here',
@@ -330,7 +330,7 @@ const DATA = {
       //   name: 'Pokeball',
       //   link: 'https://github.com/ABHVZ/pokeball',
       //   faClass: 'fa fa-github',
-      //   tools: ['Javascript', 'React', 'Redux', 'Express', 'Sequelize'],
+      //   tools: ['JavaScript', 'React', 'Redux', 'Express', 'Sequelize'],
       //   description: `A fully-developed mock e-commerce site 'selling' Pokemon`,
       //   achievements: [
       //     'Worked in five-oerson agile team over 1 week',
