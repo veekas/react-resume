@@ -315,7 +315,7 @@ const DATA = {
         link: 'https://github.com/veekas/audelio',
         faClass: 'fa fa-github',
         tools: ['JavaScript', 'React', 'Apollo', 'GraphQL', 'PWA', 'Styled-Components', 'CI', 'Codecov'],
-        description: 'Podcast player and discovery engine progressive web-app (private repo)',
+        description: 'Podcast player and discovery engine progressive web-app (in development)',
         // achievements: [
         //   'Something impressive will be said here',
         //   'Something impressive will be said here',
