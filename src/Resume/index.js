@@ -317,7 +317,7 @@ const DATA = {
         tools: ['JavaScript', 'React', 'Apollo', 'GraphQL', 'PWA', 'Styled-Components', 'Jest', 'Enzyme', 'Travis-CI', 'Codecov'],
         description: 'Podcast player and discovery engine PWA (in development)',
         achievements: [
-          'front-end mostly written in a TDD manner with Jest/Enzyme',
+          'continuous integration, front-end mostly TDD with Jest/Enzyme',
         ],
         // achievements: [
         //   'Something impressive will be said here',
