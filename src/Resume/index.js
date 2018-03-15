@@ -312,10 +312,13 @@ const DATA = {
       },
       {
         name: 'Audelio',
-        link: 'https://github.com/veekas/audelio',
-        faClass: 'fa fa-github',
+        link: 'https://audelio.netlify.com/',
+        faClass: 'fa fa-external-link-square',
         tools: ['JavaScript', 'React', 'Apollo', 'GraphQL', 'PWA', 'Styled-Components', 'Jest', 'Enzyme', 'Travis-CI', 'Codecov'],
-        description: 'Podcast player and discovery engine progressive web-app (in development)',
+        description: 'Podcast player and discovery engine PWA (in development)',
+        achievements: [
+          'front-end mostly written in a TDD manner with Jest/Enzyme',
+        ],
         // achievements: [
         //   'Something impressive will be said here',
         //   'Something impressive will be said here',
