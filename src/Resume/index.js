@@ -30,7 +30,7 @@ const DATA = {
     education: [
       {
         university: 'Arizona State University',
-        duration: 'July 2017',
+        duration: 'May 2018',
         degree: 'BA, Political Science',
         cert: 'Economics, Applied Business Data Analysis',
         courses: 'Statistics; Calculus; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
@@ -194,6 +194,18 @@ const DATA = {
     },
     companies: [
       {
+        name: 'XO Group, Inc',
+        color: 'rgb(77, 100, 141)',
+        title: 'Associate Software Engineer',
+        date: 'May 2016-Present',
+        location: 'New York, NY',
+        achievements: [
+          'Lead engineer on vendor home page redesign in React.js',
+          'Contributed to internal UI library',
+          'Organized Advanced React workshop for XO and external engineers',
+        ],
+      },
+      {
         name: 'VMP Consulting',
         color: 'rgb(77, 100, 141)',
         title: 'Full Stack Developer (prev. Chief Development Officer)',
@@ -227,17 +239,17 @@ const DATA = {
           'Created score-tracking web-app using Ruby on Rails: <a href="http://pingpongclub.win" style="color: rgba(77, 100, 141, 1)">PingPongClub.Win</a> <a href="http://pingpongclub.win" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
-      {
-        name: 'Veekas Means Progress for Tempe Kids',
-        color: 'rgb(77, 100, 141)',
-        title: 'Governing Board Candidate (Tempe Schools)',
-        date: 'Feb 2016–Nov 2016',
-        location: 'Tempe, AZ',
-        achievements: [
-          // 'Received 15,669 votes after knocking 3,185 doors, calling 6,000+ people',
-          'Designed website and graphics for digital and print use. <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-        ],
-      },
+      // {
+      //   name: 'Veekas Means Progress for Tempe Kids',
+      //   color: 'rgb(77, 100, 141)',
+      //   title: 'Governing Board Candidate (Tempe Schools)',
+      //   date: 'Feb 2016–Nov 2016',
+      //   location: 'Tempe, AZ',
+      //   achievements: [
+      //     // 'Received 15,669 votes after knocking 3,185 doors, calling 6,000+ people',
+      //     'Designed website and graphics for digital and print use. <a href="https://github.com/veekas/TD3-2016-data" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+      //   ],
+      // },
     ],
     projects: [
       {
@@ -268,7 +280,7 @@ const DATA = {
         tools: ['JavaScript', 'React', 'Redux', 'Google Chrome API', 'HTML/CSS', 'Express', 'Sequelize'],
         description: 'Chrome extension to turn Youtube video pages into an interactive learning platform',
         achievements: [
-          'Worked in an agile  team of four over two weeks',
+          // 'Worked in an agile  team of four over two weeks',
           'Implemented UI/UX design and drawer functionality',
           // 'Full-featured: used content scripts, background processes, and a popup',
           'Lead presenter for live product demonstration <a href="https://www.youtube.com/watch?v=H9oYe_8Ks9M" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
