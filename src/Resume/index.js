@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import http from 'http';
 import Container from '../ui/Container';
 import Sidebar from './Sidebar';
 import Main from './Main';
@@ -8,10 +7,6 @@ import Footer from './Footer';
 
 class Resume extends Component {
   render() {
-    // call Heroku every 5 minutes to prevent dyno from sleeping
-    const callHeroku = () => http.get('http://veekas-react-resume.herokuapp.com');
-    setInterval(callHeroku(), 300000);
-
     return (
       <Container>
         <Header {...DATA.main} />
@@ -158,7 +153,7 @@ const DATA = {
       name: 'Website',
       faClass: 'fa fa-veekas',
       display: 'VeekasMeansProgress.com',
-      link: 'http://VeekasMeansProgress.com',
+      link: 'https://VeekasMeansProgress.com',
     },
     {
       name: 'GitHub',
@@ -170,7 +165,7 @@ const DATA = {
       name: 'Twitter',
       faClass: 'fa fa-twitter',
       display: '@veekas',
-      link: 'http://www.twitter.com/veekas',
+      link: 'https://www.twitter.com/veekas',
     },
     {
       name: 'Linkedin',
@@ -190,18 +185,18 @@ const DATA = {
     website: {
       faClass: 'fa fa-veekas',
       name: 'VeekasMeansProgress.com',
-      link: 'http://VeekasMeansProgress.com',
+      link: 'https://VeekasMeansProgress.com',
     },
     companies: [
       {
         name: 'XO Group, Inc',
         color: 'rgb(77, 100, 141)',
         title: 'Associate Software Engineer',
-        date: 'May 2016-Present',
+        date: 'May 2018-Present',
         location: 'New York, NY',
         achievements: [
-          'Lead engineer on vendor home page redesign in React.js',
-          'Contributed to internal UI library',
+          'Lead engineer on <a href="https://www.theknot.com/marketplace">marketplace home page</a> redesign in React.js',
+          'Regular contributor to inner source UI library',
           'Organized Advanced React workshop for XO and external engineers',
         ],
       },
@@ -236,7 +231,7 @@ const DATA = {
         location: 'Tempe, AZ',
         achievements: [
           'Top performer: over 2x enrollment rate & top 5% in total enrollments',
-          'Created score-tracking web-app using Ruby on Rails: <a href="http://pingpongclub.win" style="color: rgba(77, 100, 141, 1)">PingPongClub.Win</a> <a href="http://pingpongclub.win" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          'Created score-tracking web-app using Ruby on Rails: <a href="https://pingpongclub.win" style="color: rgba(77, 100, 141, 1)">PingPongClub.Win</a> <a href="https://pingpongclub.win" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
       // {
