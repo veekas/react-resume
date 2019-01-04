@@ -195,7 +195,7 @@ const DATA = {
         date: 'May 2018-Present',
         location: 'New York, NY',
         achievements: [
-          'Lead engineer on <a href="https://www.theknot.com/marketplace">marketplace home page</a> redesign in React.js',
+          'Lead engineer on <a href="https://www.theknot.com/marketplace">marketplace home page</a> <a href="https://www.theknot.com/marketplace"><i class="fa fa-external-link-square"></i></a> redesign in React.js',
           'Regular contributor to inner source UI library',
           'Organized Advanced React workshop for XO and external engineers',
         ],
@@ -207,9 +207,10 @@ const DATA = {
         date: 'Feb 2012–Present',
         location: 'New York, NY',
         achievements: [
-          '2017-Present: Built full stack web apps (Node.js, Express, React, Postgres)',
+          '2017-Present: Built full stack web apps with Node.js and React.js',
           'Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads',
-          'Scraped and cultivated insurance broker data, generating 7,000+ warm leads',
+          'Designed logos, mail pieces, and digital content with Photoshop and Illustrator',
+          // 'Scraped and cultivated insurance broker data, generating 7,000+ warm leads',
         ],
       },
       {
@@ -230,8 +231,8 @@ const DATA = {
         date: 'Sept 2016–Jan 2017',
         location: 'Tempe, AZ',
         achievements: [
-          'Top performer: over 2x enrollment rate & top 5% in total enrollments',
-          'Created score-tracking web-app using Ruby on Rails: <a href="https://pingpongclub.win" style="color: rgba(77, 100, 141, 1)">PingPongClub.Win</a> <a href="https://pingpongclub.win" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          'Top performer: over 2x average enrollment rate & top 5% in total enrollments',
+          'Created score-tracking web-app using Ruby on Rails, Oscar Ping Pong Club <a href="http://oscar-ping-pong.herokuapp.com" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
       // {
@@ -248,7 +249,19 @@ const DATA = {
     ],
     projects: [
       {
-        name: 'open source contributor',
+        name: 'Technical speaker',
+        // link: 'https://github.com/veekas/restaurant-search-example',
+        // faClass: 'fa fa-github',
+        tools: ['JavaScript', 'React'],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          'Virtual Reality on the Web with React 360 (ReactNYC, Dec. 2018) <a href="https://www.youtube.com/watch?v=yVNULzIkxCI" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
+          'Code-Splitting with React (ReactNYC, Nov. 2018)',
+          'A Practical Introduction to Service Workers (ReactNYC, May 2018) <a href="https://www.youtube.com/watch?v=0QE5xb9s6mM" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
+        ],
+      },
+      {
+        name: 'Open source contributor',
         // link: 'https://github.com/facebook/react/pull/11658',
         // faClass: 'fa fa-github',
         tools: ['JavaScript', 'React', 'Jest', 'HTML', 'CSS', 'Git', 'Github'],
@@ -286,10 +299,10 @@ const DATA = {
         link: 'https://marketplace.visualstudio.com/items?itemName=veekas.use-strict-everywhere',
         faClass: 'fa fa-windows',
         tools: ['Typescript', 'VSCode API'],
-        description: 'Visual Studio Code extension that converts a workspace to strict mode',
+        description: 'Microsoft Visual Studio Code extension that converts a workspace to strict mode',
         achievements: [
           // 'Learned VSCode API, implemented, and deployed over a few days',
-          'Currently offered in the VSCode extension marketplace with 100+ downloads',
+          'Currently offered in the VSCode extension marketplace with 400+ downloads',
         ],
       },
       // {
@@ -328,25 +341,25 @@ const DATA = {
       //     // '',
       //   ],
       // },
-      {
-        name: 'Restaurant Search Example App',
-        link: 'https://github.com/veekas/restaurant-search-example',
-        faClass: 'fa fa-github',
-        tools: ['JavaScript', 'React', 'Open Table API', 'Algolia'],
-        description: 'Yelp-like structured data search using Algolia and Open Table data',
-        achievements: [
-          // '',
-        ],
-      },
-      {
-        name: 'Audelio',
-        link: 'https://audelio.netlify.com/',
-        faClass: 'fa fa-external-link-square',
-        tools: ['JavaScript', 'React', 'Apollo', 'GraphQL', 'PWA', 'Styled-Components', 'Jest', 'Enzyme', 'Travis-CI', 'Codecov'],
-        description: 'Podcast player and discovery engine PWA (in development)',
-        achievements: [
-          // 'continuous integration, front-end mostly TDD with Jest/Enzyme',
-        ],
+      // {
+      //   name: 'Restaurant Search Example App',
+      //   link: 'https://github.com/veekas/restaurant-search-example',
+      //   faClass: 'fa fa-github',
+      //   tools: ['JavaScript', 'React', 'Open Table API', 'Algolia'],
+      //   description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //   achievements: [
+      //     // '',
+      //   ],
+      // },
+      // {
+      //   name: 'Audelio',
+      //   link: 'https://audelio.netlify.com/',
+      //   faClass: 'fa fa-external-link-square',
+      //   tools: ['JavaScript', 'React', 'Apollo', 'GraphQL', 'PWA', 'Styled-Components', 'Jest', 'Enzyme', 'Travis-CI', 'Codecov'],
+      //   description: 'Podcast player and discovery engine PWA (in development)',
+      //   achievements: [
+      //     // 'continuous integration, front-end mostly TDD with Jest/Enzyme',
+      //   ],
         // achievements: [
         //   'Something impressive will be said here',
         //   'Something impressive will be said here',
@@ -356,7 +369,7 @@ const DATA = {
         // '<b><a href="https://devpost.com/software/amusement-um9im">Amusement</a></b> - app that keeps your analyzes your mental state while driving and keeps it healthy via controlling your music playlist (Winner at HackWestern 2015)',
         // '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)',
         // ],
-      },
+      // },
       // {
       //   name: 'Pokeball',
       //   link: 'https://github.com/ABHVZ/pokeball',
