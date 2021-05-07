@@ -1,7 +1,7 @@
 {
-  "name": "react-resume-veekas-shrivastava",
+  "name": "react-resume-veekas-ashoka",
   "version": "1.1.0",
-  "description": "Veekas Shrivastava's resume, unnecessarily built with React",
+  "description": "Veekas Ashoka's resume, unnecessarily built with React",
   "scripts": {
     "clean": "rimraf dist",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -15,7 +15,7 @@
     "url": "https://github.com/veekas/react-resume.git"
   },
   "license": "CC0-1.0",
-  "author": "Veekas Shrivastava",
+  "author": "Veekas Ashoka",
   "dependencies": {
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",

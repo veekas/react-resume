@@ -1,4 +1,4 @@
-# Veekas Shrivastava's Resume
+# Veekas Ashoka's Resume
 
 You may also view my resume and/or use it as a template for your own.
 Open up your terminal, navigate to your working directory, and enter the following commands:
