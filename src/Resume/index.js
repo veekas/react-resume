@@ -22,14 +22,28 @@ class Resume extends Component {
 
 const DATA = {
   sidebar: {
-    education: [
+    institutions: [
+      {
+        university: "Arizona State University",
+        duration: "on hiatus since 2020",
+        degree: "MS, Computer Science",
+        // cert: "Economics, Applied Business Data Analysis",
+        // courses:
+        //   "Statistics; Calculus; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs",
+
+        // FITS ON ONE PAGE WITHOUT FSA
+        // courses: 'Statistics; Calculus; Economics of Healthcare; Applied Regression and Forecasting; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
+
+        // courses: 'Science, Technology and Public Affairs; Information Technology and Culture; Political Statistics; Applied Regression and Forecasting; Economics of Healthcare; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Technology, Industry and Management in China',
+        // activities: 'GlobalResolve (helped prototype a portable electricity generator and capacitor; conducted market research in Ghana); Undergraduate Student Government; Lambda Chi Alpha',
+      },
       {
         university: "Arizona State University",
         duration: "May 2018",
         degree: "BA, Political Science",
         cert: "Economics, Applied Business Data Analysis",
-        courses:
-          "Statistics; Calculus; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs",
+        // courses:
+        //   "Statistics; Calculus; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs",
 
         // FITS ON ONE PAGE WITHOUT FSA
         // courses: 'Statistics; Calculus; Economics of Healthcare; Applied Regression and Forecasting; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
@@ -44,14 +58,8 @@ const DATA = {
       },
     ],
     languages: [
-      "JavaScript",
-      "ES6",
-      "HTML",
-      "CSS",
-      "SQL",
-      "R",
-      "Python",
-      "Ruby",
+      "professional use: modern JavaScript (ES6+, Typescript), HTML, CSS, Rust, Groovy, Ruby",
+      "additional exposure: Python, SQL, R, C++ 17, Scala",
     ],
     // databases: [
     //   'PostgreSQL',
@@ -59,51 +67,25 @@ const DATA = {
     //   'FileMaker Pro',
     // ],
     libraries: [
-      "React",
-      "Redux",
-      "Webpack",
-      "Node.js",
-      "Axios",
-      "Express",
-      "Sequelize",
-      "Typescript",
-      "Jest",
-      "Enzyme",
-      "GraphQL",
-      "Apollo",
-      "D3.js",
-      "Mocha",
-      "Jasmine",
-      "AJAX",
-      "Socket.io",
-      "jQuery",
-      "Draft.js",
-      "OAuth",
-      "Chrome API",
-      "VSCode API",
-      "Bootstrap",
-      "Ruby on Rails",
-      "Passport",
-      "Babel",
+      "frameworks: React.js, Vue.js, Svelte",
+      "packagers: Webpack, Rollup",
+      "back-end: Node.js, Rails",
+      "ORM: Sequelize",
+      "APIs: Express.js, Hapi.js, Axios, GraphQL, Apollo",
+      "testing: React Testing Library, Jest, Enzyme",
+      "state management: Redux, React Context API",
+      "transpilation: Babel.js",
+      "routing: React Router",
     ],
     tools: [
-      "PostgreSQL",
-      "Git",
-      "Github",
-      "Codecov",
-      "Travis-CI",
-      "Chrome DevTools",
-      "JIRA",
-      "Google Cloud Platform",
-      "Dialogflow",
-      "Algolia",
-      "Microsoft Excel",
-      "VBA",
-      "Microsoft Access",
-      "FileMaker Pro",
-      "Glitch",
-      "Adobe Illustrator",
-      "Adobe Photoshop",
+      "version control: git, Github",
+      "CI/CD: Jenkins (Pipelines), CircleCI",
+      "agile project management: JIRA, Pivotal",
+      "testing: Codecov, CodeClimate",
+      "design collaboration: inVision, Figma",
+      "data storage: PostgreSQL, MongoDB, S3",
+      "orchestration: Kubernetes, Elastic Beanstalk",
+      "serverless: EC2, Lambda",
     ],
     // interests: [
     //   '',
@@ -141,12 +123,12 @@ const DATA = {
         display: "twitter.com/veekas",
         link: "https://www.twitter.com/veekas",
       },
-      {
-        name: "Location",
-        faClass: "fa fa-home",
-        display: "New York, NY",
-        link: "https://www.google.com/maps/place/New+York,+NY+10005/",
-      },
+      // {
+      //   name: "Location",
+      //   faClass: "fa fa-home",
+      //   display: "New York, NY",
+      //   link: "https://www.google.com/maps/place/New+York,+NY+10005/",
+      // },
     ],
   },
   footerLinks: [
@@ -190,52 +172,72 @@ const DATA = {
     },
     companies: [
       {
-        name: "XO Group, Inc",
+        name: "The Knot Worldwide (formerly XO Group, Inc)",
         color: "rgb(77, 100, 141)",
-        title: "Associate Software Engineer",
-        date: "May 2018-Present",
-        location: "New York, NY",
+        title: [
+          "Software Engineer - Core Services",
+          "Software Engineer - Marketplace",
+          "Associate Software Engineer",
+        ],
+        date: ["Jan 2020-Present", "Oct 2019-Jan 2020", "May 2018-Oct 2019"],
+        location: ["New York, NY", "New York, NY", "New York, NY"],
         achievements: [
-          'Lead engineer on <a href="https://www.theknot.com/marketplace">marketplace home page</a> <a href="https://www.theknot.com/marketplace"><i class="fa fa-external-link-square"></i></a> redesign in React.js',
-          "Regular contributor to inner source UI library",
-          "Organized Advanced React workshop for XO and external engineers",
+          [
+            'Co-maintained the company\'s shared frontend UI/UX framework <a href="https://docs.union.theknot.com" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+            "Led development on full redesigns of the following: global navigation/header, layout and grid system, buttons, links, and inline alerts",
+            "Transitioned the company's shared UI/UX framework from CircleCI to Jenkins Pipelines",
+            "Helped build an internal A/B testing service and REST API (Node.js/Express.js) to handle experiment management and user bucketing across brands",
+            "Built a targeted build tool for our large monorepo using Rust",
+            "Re-platformed and redesigned docs to use Storybook (in progress)",
+            "Implemented accessibility updates to foundational components used on all pages, such as headers, forms, and buttons",
+            "Founding lead of 'TKWW in Solidarity', a group for employees to listen, learn, and grow as partners to marginalized peers and the wider TKWW community",
+            "Member of Diversity, Equity, and Inclusion Council, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
+          ],
+          [
+            "Led development of the 'Quick Start' A/B test on search pages to increase relevancy for couples",
+          ],
+          [
+            'Lead engineer on the <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)">Marketplace home page</a> <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> redesign',
+            "Regular contributor to inner source UI/UX library",
+            "Organized an Advanced React workshop for internal and external engineers",
+          ],
         ],
       },
-      {
-        name: "VMP Consulting",
-        color: "rgb(77, 100, 141)",
-        title: "Full Stack Developer (prev. Chief Development Officer)",
-        date: "Feb 2012–Present",
-        location: "New York, NY",
-        achievements: [
-          "2017-Present: Built full stack web apps with Node.js and React.js",
-          "Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads",
-          "Designed logos, mail pieces, and digital content with Photoshop and Illustrator",
-          // 'Scraped and cultivated insurance broker data, generating 7,000+ warm leads',
-        ],
-      },
-      {
-        name: "Arizona Technology Council",
-        title: "Director of Business & Community Partnerships",
-        color: "rgb(77, 100, 141)",
-        date: "Feb 2017–July 2017",
-        location: "Phoenix, AZ",
-        achievements: [
-          "Led team to transition from Excel spreadsheets to an internal database",
-          'Managed UI/UX redesign of the organization’s <a href="https://chiefscienceofficers.org/national/" style="color: rgba(77, 100, 141, 1)">Wordpress website</a> <a href="https://chiefscienceofficers.org/national/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-        ],
-      },
-      {
-        name: "Oscar Health Insurance",
-        title: "Plan Guide",
-        color: "rgb(77, 100, 141)",
-        date: "Sept 2016–Jan 2017",
-        location: "Tempe, AZ",
-        achievements: [
-          "Top performer: over 2x average enrollment rate & top 5% in total enrollments",
-          'Created score-tracking web-app using Ruby on Rails, Oscar Ping Pong Club <a href="http://oscar-ping-pong.herokuapp.com" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-        ],
-      },
+      // {
+      //   name: "VMP Consulting",
+      //   color: "rgb(77, 100, 141)",
+      //   title: "Full Stack Developer (prev. Chief Development Officer)",
+      //   date: "Feb 2012–Present",
+      //   location: "New York, NY",
+      //   achievements: [
+      //     "2017-Present: Built full stack web apps with Node.js and React.js",
+      //     "Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads",
+      //     "Designed logos, mail pieces, and digital content with Photoshop and Illustrator",
+      //     // 'Scraped and cultivated insurance broker data, generating 7,000+ warm leads',
+      //   ],
+      // },
+      // {
+      //   name: "Arizona Technology Council",
+      //   title: "Director of Business & Community Partnerships",
+      //   color: "rgb(77, 100, 141)",
+      //   date: "Feb 2017–July 2017",
+      //   location: "Phoenix, AZ",
+      //   achievements: [
+      //     "Led team to transition from Excel spreadsheets to an internal database",
+      //     'Managed UI/UX redesign of the organization’s <a href="https://chiefscienceofficers.org/national/" style="color: rgba(77, 100, 141, 1)">Wordpress website</a> <a href="https://chiefscienceofficers.org/national/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+      //   ],
+      // },
+      // {
+      //   name: "Oscar Health Insurance",
+      //   title: "Plan Guide",
+      //   color: "rgb(77, 100, 141)",
+      //   date: "Sept 2016–Jan 2017",
+      //   location: "Tempe, AZ",
+      //   achievements: [
+      //     "Top performer: over 2x average enrollment rate & top 5% in total enrollments",
+      //     'Created score-tracking web-app using Ruby on Rails, Oscar Ping Pong Club <a href="http://oscar-ping-pong.herokuapp.com" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+      //   ],
+      // },
       // {
       //   name: 'Veekas Means Progress for Tempe Kids',
       //   color: 'rgb(77, 100, 141)',
@@ -250,6 +252,39 @@ const DATA = {
     ],
     projects: [
       {
+        name: "Club Rust",
+        // link: 'https://github.com/veekas/restaurant-search-example',
+        // faClass: 'fa fa-github',
+        tools: ["Rust"],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          'Livestream learning Rust, sometimes with help from a Rust core team member <a href="https://www.twitch.tv/tessaaaaaaaaaaaa" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+        ],
+      },
+      {
+        name: "Climate Can't Wait 2022",
+        // link: 'https://github.com/veekas/restaurant-search-example',
+        // faClass: 'fa fa-github',
+        tools: ["JavaScript", "React"],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          'Administrative Committee member for collaboration between 43+ organizations to pass bold climate policy at the state level <a href="https://www.climatecantwait.org" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          'Designed, built, and maintained coalition website <a href="https://github.com/veekas/climate-cant-wait" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+        ],
+      },
+      {
+        name: "Sunrise Movement NYC",
+        // link: 'https://github.com/veekas/restaurant-search-example',
+        // faClass: 'fa fa-github',
+        tools: [],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          "Elected to hub leadership in 2021",
+          'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Senate Majority Leader Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> and partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          "Represented the organization in coalition meetings with other external partners",
+        ],
+      },
+      {
         name: "Technical speaker",
         // link: 'https://github.com/veekas/restaurant-search-example',
         // faClass: 'fa fa-github',
@@ -262,67 +297,66 @@ const DATA = {
         ],
       },
       {
-        name: "Open source contributor",
+        name: "Open source contributions",
         // link: 'https://github.com/facebook/react/pull/11658',
         // faClass: 'fa fa-github',
         tools: ["JavaScript", "React", "Jest", "HTML", "CSS", "Git", "Github"],
         achievements: [
-          'Facebook - React <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-          'Sequelize <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-          'MDN (Mozilla Developer Network) - Interactive Examples <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'Facebook - React (2018) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'Sequelize (2017) <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'MDN (Mozilla Developer Network) - Interactive Examples (2017) <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
         ],
       },
-      {
-        name: "Reasons Why I Love You",
-        link: "https://github.com/veekas/reasons-why-i-love-you",
-        faClass: "fa fa-github",
-        tools: [
-          "JavaScript",
-          "Google Cloud Platform",
-          "Actions on Google",
-          "Dialogflow",
-        ],
-        description:
-          "Action for Google Assistant that tells a significant other why you love them",
-        achievements: [
-          'Demo and customization instructions published on Valentines Day 2018 <a href="https://reasons-why-i-love-you.glitch.me/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-        ],
-      },
-      {
-        name: "CodeMode",
-        link: "https://github.com/world-of-code/code-mode",
-        faClass: "fa fa-github",
-        tools: [
-          "JavaScript",
-          "React",
-          "Redux",
-          "Google Chrome API",
-          "HTML/CSS",
-          "Express",
-          "Sequelize",
-        ],
-        description:
-          "Chrome extension to turn Youtube video pages into an interactive learning platform",
-        achievements: [
-          // 'Worked in an agile  team of four over two weeks',
-          "Implemented UI/UX design and drawer functionality",
-          // 'Full-featured: used content scripts, background processes, and a popup',
-          'Lead presenter for live product demonstration <a href="https://www.youtube.com/watch?v=H9oYe_8Ks9M" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
-        ],
-      },
-      {
-        name: "Use Strict Everywhere",
-        link:
-          "https://marketplace.visualstudio.com/items?itemName=veekas.use-strict-everywhere",
-        faClass: "fa fa-windows",
-        tools: ["Typescript", "VSCode API"],
-        description:
-          "Microsoft Visual Studio Code extension that converts a workspace to strict mode",
-        achievements: [
-          // 'Learned VSCode API, implemented, and deployed over a few days',
-          "Currently offered in the VSCode extension marketplace with 400+ downloads",
-        ],
-      },
+      // {
+      //   name: "Reasons Why I Love You",
+      //   link: "https://github.com/veekas/reasons-why-i-love-you",
+      //   faClass: "fa fa-github",
+      //   tools: [
+      //     "JavaScript",
+      //     "Google Cloud Platform",
+      //     "Actions on Google",
+      //     "Dialogflow",
+      //   ],
+      //   description:
+      //     "Action for Google Assistant that tells a significant other why you love them",
+      //   achievements: [
+      //     'Demo and customization instructions published on Valentines Day 2018 <a href="https://reasons-why-i-love-you.glitch.me/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+      //   ],
+      // },
+      // {
+      //   name: "CodeMode",
+      //   link: "https://github.com/world-of-code/code-mode",
+      //   faClass: "fa fa-github",
+      //   tools: [
+      //     "JavaScript",
+      //     "React",
+      //     "Redux",
+      //     "Google Chrome API",
+      //     "HTML/CSS",
+      //     "Express",
+      //     "Sequelize",
+      //   ],
+      //   description:
+      //     "Chrome extension to turn Youtube video pages into an interactive learning platform",
+      //   achievements: [
+      //     // 'Worked in an agile  team of four over two weeks',
+      //     "Implemented UI/UX design and drawer functionality",
+      //     // 'Full-featured: used content scripts, background processes, and a popup',
+      //     'Lead presenter for live product demonstration <a href="https://www.youtube.com/watch?v=H9oYe_8Ks9M" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
+      //   ],
+      // },
+      // {
+      //   name: "Use Strict Everywhere",
+      //   link: "https://marketplace.visualstudio.com/items?itemName=veekas.use-strict-everywhere",
+      //   faClass: "fa fa-windows",
+      //   tools: ["Typescript", "VSCode API"],
+      //   description:
+      //     "Microsoft Visual Studio Code extension that converts a workspace to strict mode",
+      //   achievements: [
+      //     // 'Learned VSCode API, implemented, and deployed over a few days',
+      //     "Currently offered in the VSCode extension marketplace with 400+ downloads",
+      //   ],
+      // },
       // {
       //   name: 'Audelio',
       //   link: 'https://github.com/veekas/podcast-project',
@@ -339,26 +373,26 @@ const DATA = {
       //     // '<b><a href="https://twitter.com/SpaceAppsTO/status/587444439276191744">LookUp</a></b> - iOS and pebble app that displays live feed of transient space events (Winner at NASA Space Apps Toronto 2015)',
       //   ],
       // },
-      {
-        name: "Easy Form to PDF",
-        link: "https://github.com/veekas/easy-form-to-pdf",
-        faClass: "fa fa-github",
-        tools: [
-          "JavaScript",
-          "React",
-          "Redux",
-          "Draft.js",
-          "Formik",
-          "HTML/CSS",
-          "Express",
-          "Sequelize",
-        ],
-        description:
-          "User-friendly Draft.js form that generates a PDF from inputs",
-        achievements: [
-          "Project for Hopelink, a Seattle-based United Way affiliate",
-        ],
-      },
+      // {
+      //   name: "Easy Form to PDF",
+      //   link: "https://github.com/veekas/easy-form-to-pdf",
+      //   faClass: "fa fa-github",
+      //   tools: [
+      //     "JavaScript",
+      //     "React",
+      //     "Redux",
+      //     "Draft.js",
+      //     "Formik",
+      //     "HTML/CSS",
+      //     "Express",
+      //     "Sequelize",
+      //   ],
+      //   description:
+      //     "User-friendly Draft.js form that generates a PDF from inputs",
+      //   achievements: [
+      //     "Project for Hopelink, a Seattle-based United Way affiliate",
+      //   ],
+      // },
       // {
       //   name: 'iTunes Search Example App',
       //   link: 'github.com/veekas/itunes-search-example',

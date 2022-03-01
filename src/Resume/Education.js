@@ -1,56 +1,82 @@
-import React, { PropTypes } from 'react';
-import SidebarHeading from './SidebarHeading';
+import React, { PropTypes } from "react";
+import SidebarHeading from "./SidebarHeading";
 
-const Education = ({ university, duration, degree, cert, courses, bootcamp, endDate, program }) => ( // activities
+const Education = (
+  { institutions } // activities
+) => (
   <section style={style.main}>
     <SidebarHeading align="left">+ EDUCATION</SidebarHeading>
 
-    <div style={{
-      ...style.text,
-      fontWeight: 'bold',
-    }}>
-      {university}
-    </div>
-    <div>
-      {degree}; concentrations in {cert}
-    </div>
-    <div>
-      {duration}
-    </div>
-    <div>
-    <br />
-    <i>Selected Coursework: </i>
-      {courses}
-    </div>
-    {/*
-    <div>
-    <br />
-    <i>Activities:</i><br />
-      {activities}
-    </div>
-    */}
-    <br />
-    <div style={{
-      ...style.text,
-      fontWeight: 'bold',
-    }}>{bootcamp}</div>
-    <div>{program}</div>
-    <div>{endDate}</div>
-
+    {institutions.map(
+      ({
+        university,
+        duration,
+        degree,
+        cert,
+        courses,
+        bootcamp,
+        endDate,
+        program,
+      }) => (
+        <div>
+          <div
+            style={{
+              ...style.text,
+              fontWeight: "bold",
+            }}
+          >
+            {university}
+          </div>
+          <div>
+            {degree}
+            {cert && `; concentrations in ${cert}`}
+          </div>
+          <div>{duration}</div>
+          {courses && (
+            <div>
+              <br />
+              <i>Selected Coursework: </i>
+              {courses}
+            </div>
+          )}
+          {/* <br /> */}
+          {/*
+      <div>
+      <br />
+      <i>Activities:</i><br />
+        {activities}
+      </div>
+      */}
+          {!!bootcamp && (
+            <div>
+              <div
+                style={{
+                  ...style.text,
+                  fontWeight: "bold",
+                }}
+              >
+                {bootcamp}
+              </div>
+              <div>{program}</div>
+              <div>{endDate}</div>
+            </div>
+          )}
+        </div>
+      )
+    )}
   </section>
 );
 
 const style = {
-  main: {
-    margin: '0.4rem 0 0 0',
-  },
+  main: {},
   text: {
-    textAlign: 'left',
+    margin: "0.6rem 0 0 0",
+    textAlign: "left",
   },
 };
 
 Education.propTypes = {
-  university: PropTypes.string.isRequired,
+  institutions: PropTypes.array.isRequired,
   duration: PropTypes.string.isRequired,
   degree: PropTypes.string.isRequired,
   cert: PropTypes.string.isRequired,

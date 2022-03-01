@@ -1,26 +1,53 @@
-import React, { PropTypes } from 'react';
-import Project from './Project';
-import List from '../ui/List';
-import CompanyHeading from './CompanyHeading';
-import Section from '../ui/Section';
+import React, { PropTypes } from "react";
+import Project from "./Project";
+import List from "../ui/List";
+import CompanyHeading from "./CompanyHeading";
+import Section from "../ui/Section";
 
-const Company = ({ color, name, title, projects = [], achievements = [], date, location }) => {
+const Company = ({
+  color,
+  name,
+  title,
+  projects = [],
+  achievements = [],
+  date,
+  location,
+}) => {
+  let titles = Array.isArray(title) ? title : [title];
+  console.log(titles);
+  let dates = Array.isArray(date) ? date : [date];
+  let locations = Array.isArray(location) ? location : [location];
+  let achievementsWrapper = Array.isArray(achievements[0])
+    ? achievements
+    : [achievements];
+
   return (
     <div>
-      <CompanyHeading company={name} title={title} date={date} location={location} style={{
-        paddingLeft: '0.5rem',
-      }}/>
+      {titles.map((title, idx) => (
+        <div>
+          <CompanyHeading
+            company={idx == 0 && name}
+            title={title}
+            date={dates[idx]}
+            location={locations[idx]}
+            style={{
+              paddingLeft: "0.5rem",
+            }}
+          />
 
-      <Section color={color}>
-        <List items={achievements} />
-        {projects.map((project, key) => (
-          <Project
-            name={project.name}
-            achievements={project.achievements}
-            tools={project.tools}
-            key={key} />
-        ))}
-      </Section>
+          <Section color={color}>
+            <List items={achievementsWrapper[idx]} />
+            {projects.map((project, key) => (
+              <Project
+                name={project.name}
+                achievements={project.achievements}
+                tools={project.tools}
+                key={key}
+              />
+            ))}
+          </Section>
+        </div>
+      ))}
     </div>
   );
 };
