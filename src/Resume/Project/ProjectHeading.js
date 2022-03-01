@@ -1,50 +1,46 @@
-import React, { PropTypes } from 'react';
-import Link from '../../ui/Link';
+import React, { PropTypes } from "react";
+import Link from "../../ui/Link";
 
 const ProjectHeading = ({ name, tools, link, faClass }) => (
   <div style={style.main}>
     <div style={style.name}>
-      <Link to={link}>
-        {name}
-      </Link>
+      <Link to={link}>{name}</Link>
       <span style={style.link}>
         <Link to={link}>
           <i className={faClass} style={style.icon}></i>
         </Link>
       </span>
     </div>
-    <div style={style.tools}>
-      {tools.join(', ')}
-    </div>
+    <div style={style.tools}>{tools.join(", ")}</div>
   </div>
 );
 
 const style = {
   main: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-end',
-    marginBottom: '0rem',
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "flex-end",
+    marginBottom: "0rem",
   },
   name: {
-    fontSize: '1rem',
-    fontWeight: 'bold',
-    color: 'rgb(77, 100, 141)',
+    fontSize: "1rem",
+    fontWeight: "bold",
+    color: "rgb(77, 100, 141)",
   },
   link: {
-    fontWeight: 'normal',
-    fontStyle: 'italic',
+    fontWeight: "normal",
+    fontStyle: "italic",
   },
   tools: {
-    fontSize: '0.75rem',
-    color: 'rgba(77, 100, 141, 0.75)',
+    fontSize: "0.75rem",
+    color: "rgba(77, 100, 141)",
   },
   icon: {
-    fontSize: '1rem',
-    lineHeight: '1rem',
-    width: '1rem',
-    height: '1rem',
-    color: 'rgba(77, 100, 141, 1)',
+    fontSize: "1rem",
+    lineHeight: "1rem",
+    width: "1rem",
+    height: "1rem",
+    color: "rgba(77, 100, 141, 1)",
   },
 };
 

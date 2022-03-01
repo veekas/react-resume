@@ -37,13 +37,13 @@ const defaultStyles = {
   locationdate: {
     justifyContent: "flex-end",
     fontSize: "0.9rem",
-    color: "rgba(77, 100, 141, 0.75)",
+    color: "rgba(77, 100, 141)",
     padding: "0.25rem",
   },
   date: {
     justifyContent: "flex-end",
     fontSize: "0.9rem",
-    color: "rgba(77, 100, 141, 0.75)",
+    color: "rgba(77, 100, 141)",
     paddingBottom: "0.25rem",
   },
 };
