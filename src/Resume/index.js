@@ -58,7 +58,7 @@ const DATA = {
       },
     ],
     languages: [
-      "professional use: modern JavaScript (ES6+, Typescript), HTML, CSS, Rust, Groovy, Ruby",
+      "professional use: modern JavaScript (ES6+, Typescript), HTML5, CSS3, Rust, Groovy, Ruby",
       "additional exposure: Python, SQL, R, C++ 17, Scala",
     ],
     // databases: [
@@ -67,14 +67,16 @@ const DATA = {
     //   'FileMaker Pro',
     // ],
     libraries: [
-      "frameworks: React.js, Vue.js, Svelte",
+      "frameworks: React, Vue.js, Svelte",
       "packagers: Webpack, Rollup",
-      "back-end: Node.js, Rails",
+      "back-end: NodeJS, Rails",
       "ORM: Sequelize",
-      "APIs: Express.js, Hapi.js, Axios, GraphQL, Apollo",
+      "APIs: Express.js, Hapi, Axios, GraphQL (Apollo)",
       "testing: React Testing Library, Jest, Enzyme",
+      "code quality: Prettier, ESLint",
+      "styles: SCSS, CSS Modules, Styled Components, Emotion",
+      "transpilation: Babel",
       "state management: Redux, React Context API",
-      "transpilation: Babel.js",
       "routing: React Router",
     ],
     tools: [
@@ -82,7 +84,7 @@ const DATA = {
       "CI/CD: Jenkins (Pipelines), CircleCI",
       "agile project management: JIRA, Pivotal",
       "testing: Codecov, CodeClimate",
-      "design collaboration: inVision, Figma",
+      "design collaboration: inVision, Figma", // Adobe Photoshop & Illustrator",
       "data storage: PostgreSQL, MongoDB, S3",
       "orchestration: Kubernetes, Elastic Beanstalk",
       "serverless: EC2, Lambda",
@@ -96,8 +98,8 @@ const DATA = {
       {
         name: "Email",
         faClass: "fa fa-envelope",
-        display: "Veekas@VeekasMeansProgress.com",
-        link: "mailto:Veekas@VeekasMeansProgress.com",
+        display: "veekas.ashoka@gmail.com",
+        link: "mailto:veekas.ashoka@gmail.com",
       },
       {
         name: "Phone",
@@ -175,7 +177,7 @@ const DATA = {
         name: "The Knot Worldwide (formerly XO Group, Inc)",
         color: "rgb(77, 100, 141)",
         title: [
-          "Software Engineer - Core Services",
+          "Software Engineer - Core Systems",
           "Software Engineer - Marketplace",
           "Associate Software Engineer",
         ],
