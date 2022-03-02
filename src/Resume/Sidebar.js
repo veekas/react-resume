@@ -15,7 +15,7 @@ const Sidebar = ({ data }) => (
       <Languages title="+ LANGUAGES" items={data.languages} />
     </div>
     <div>
-      <SidebarList title="+ LIBRARIES" items={data.libraries} />
+      <SidebarList title="+ LIBRARIES" items={data.libraries} separator="; " />
     </div>
     {/*
       </div>
