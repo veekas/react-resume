@@ -23,20 +23,20 @@ class Resume extends Component {
 const DATA = {
   sidebar: {
     institutions: [
-      {
-        university: "Arizona State University",
-        duration: "on hiatus since 2020",
-        degree: "MS, Computer Science",
-        // cert: "Economics, Applied Business Data Analysis",
-        // courses:
-        //   "Statistics; Calculus; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs",
+      // {
+      //   university: "Arizona State University",
+      //   duration: "on hiatus since 2020",
+      //   degree: "MS, Computer Science",
+      //   // cert: "Economics, Applied Business Data Analysis",
+      //   // courses:
+      //   //   "Statistics; Calculus; Applied Regression and Forecasting; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs",
 
-        // FITS ON ONE PAGE WITHOUT FSA
-        // courses: 'Statistics; Calculus; Economics of Healthcare; Applied Regression and Forecasting; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
+      //   // FITS ON ONE PAGE WITHOUT FSA
+      //   // courses: 'Statistics; Calculus; Economics of Healthcare; Applied Regression and Forecasting; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Science, Technology and Public Affairs',
 
-        // courses: 'Science, Technology and Public Affairs; Information Technology and Culture; Political Statistics; Applied Regression and Forecasting; Economics of Healthcare; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Technology, Industry and Management in China',
-        // activities: 'GlobalResolve (helped prototype a portable electricity generator and capacitor; conducted market research in Ghana); Undergraduate Student Government; Lambda Chi Alpha',
-      },
+      //   // courses: 'Science, Technology and Public Affairs; Information Technology and Culture; Political Statistics; Applied Regression and Forecasting; Economics of Healthcare; Business Process Management; Business Project Management; Business Intelligence; Advanced Excel in Business; Technology, Industry and Management in China',
+      //   // activities: 'GlobalResolve (helped prototype a portable electricity generator and capacitor; conducted market research in Ghana); Undergraduate Student Government; Lambda Chi Alpha',
+      // },
       {
         university: "Arizona State University",
         duration: "May 2018",
@@ -67,14 +67,14 @@ const DATA = {
     //   'FileMaker Pro',
     // ],
     libraries: [
-      "frameworks: React, Vue.js, Svelte",
+      "frameworks: React, Next.js, Vue.js, Svelte",
       "packagers: Webpack, Rollup",
       "back-end: NodeJS, Rails",
       "ORM: Sequelize",
-      "APIs: Express.js, Hapi, Axios, GraphQL (Apollo)",
+      "APIs: Express.js, GraphQL",
       "testing: Storybook, React Testing Library, Jest, Enzyme",
       "code quality: Prettier, ESLint",
-      "styles: SCSS, CSS Modules, Styled Components, Emotion",
+      "styles: SCSS, CSS Modules, CSS-in-JS",
       "transpilation: Babel",
       "state management: Redux, React Context API",
       "routing: React Router",
@@ -175,6 +175,16 @@ const DATA = {
     },
     companies: [
       {
+        name: "Arcadia",
+        color: "rgb(77, 100, 141)",
+        title: "Software Engineer III",
+        date: "July 2022–Present",
+        location: "New York, NY",
+        // achievements: [
+        //   ""
+        // ],
+      },
+      {
         name: "The Knot Worldwide (formerly XO Group, Inc)",
         color: "rgb(77, 100, 141)",
         title: [
@@ -182,7 +192,7 @@ const DATA = {
           "Software Engineer - Marketplace",
           "Associate Software Engineer",
         ],
-        date: ["Jan 2020-Present", "Oct 2019-Jan 2020", "May 2018-Oct 2019"],
+        date: ["Jan 2020-June 2022", "Oct 2019-Jan 2020", "May 2018-Oct 2019"],
         location: ["New York, NY", "New York, NY", "New York, NY"],
         achievements: [
           [
@@ -197,12 +207,12 @@ const DATA = {
             "Member of Diversity, Equity, and Inclusion Council, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
           ],
           [
-            "Led development of the 'Quick Start' A/B test on search pages to increase relevancy for couples",
+            // "Led development of the 'Quick Start' A/B test on search pages to increase relevancy for couples",
           ],
           [
-            'Lead engineer on the <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)">Marketplace home page</a> <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> redesign',
-            "Regular contributor to inner source UI/UX library",
-            "Organized an Advanced React workshop for internal and external engineers",
+            // 'Lead engineer on the <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)">Marketplace home page</a> <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> redesign',
+            // "Regular contributor to inner source UI/UX library",
+            // "Organized an Advanced React workshop for internal and external engineers",
           ],
         ],
       },
