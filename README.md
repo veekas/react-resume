@@ -8,6 +8,3 @@ $ cd react-resume
 $ yarn install
 $ yarn start
 ```
-
-## Acknowledgements
-This resume was inspired by [Clement Hoang's](https://github.com/clemmy/react-resume) project

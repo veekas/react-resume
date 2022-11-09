@@ -89,6 +89,7 @@ const DATA = {
       "orchestration: Kubernetes, Elastic Beanstalk",
       "accessibility: Apple VoiceOver",
       "serverless: EC2, Lambda",
+      "CMS: Prismic",
     ],
     // interests: [
     //   '',
@@ -180,9 +181,10 @@ const DATA = {
         title: "Software Engineer III",
         date: "July 2022–Present",
         location: "New York, NY",
-        // achievements: [
-        //   ""
-        // ],
+        achievements: [
+          "Contributed to ongoing development of front-end infrastructure",
+          "Consolidating three brands to one marketing site",
+        ],
       },
       {
         name: "The Knot Worldwide (formerly XO Group, Inc)",
@@ -201,9 +203,9 @@ const DATA = {
             "Transitioned the company's shared UI/UX framework from CircleCI to Jenkins Pipelines",
             "Helped build an internal A/B testing service and REST API (Node.js/Express.js) to handle experiment management and user bucketing across brands",
             "Built a targeted build tool for our large monorepo using Rust",
-            "Re-platformed and redesigned docs to use Storybook (in progress)",
+            "Re-platformed and redesigned docs to use Storybook",
             "Implemented accessibility updates to foundational components used on all pages, such as headers, forms, and buttons (WCAG 2.0 standards)",
-            "Founding lead of 'TKWW in Solidarity', a group for employees to listen, learn, and grow as partners to marginalized peers and the wider TKWW community",
+            // "Founding lead of 'TKWW in Solidarity', a group for employees to listen, learn, and grow as partners to marginalized peers and the wider TKWW community",
             "Member of Diversity, Equity, and Inclusion Council, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
           ],
           [
@@ -275,28 +277,60 @@ const DATA = {
         ],
       },
       {
-        name: "Climate Can't Wait 2022",
-        // link: 'https://github.com/veekas/restaurant-search-example',
-        // faClass: 'fa fa-github',
-        tools: ["JavaScript", "React"],
-        // description: 'Yelp-like structured data search using Algolia and Open Table data',
-        achievements: [
-          'Administrative Committee member for collaboration between 43+ organizations to pass bold climate policy at the state level <a href="https://www.climatecantwait.org" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-          'Designed, built, and maintained coalition website <a href="https://github.com/veekas/climate-cant-wait" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-        ],
-      },
-      {
-        name: "Sunrise Movement NYC",
+        name: "Climate Farm School",
         // link: 'https://github.com/veekas/restaurant-search-example',
         // faClass: 'fa fa-github',
         tools: [],
         // description: 'Yelp-like structured data search using Algolia and Open Table data',
         achievements: [
-          "Elected to hub leadership in 2021",
-          'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Senate Majority Leader Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> and partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-          "Represented the organization in coalition meetings with other external partners",
+          "Attended Terra.do's Climate Farm School in the Hudson Valley to learn about regenerative agriculture",
         ],
       },
+      {
+        name: "Volunteer political activism",
+        // link: 'https://github.com/veekas/restaurant-search-example',
+        // faClass: 'fa fa-github',
+        tools: [],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          "Co-founded a grassroots volunteer group (Beacon Climate Action Now) in 2022 to promote climate justice in the Hudson Valley",
+          "Elected to Sunrise Movement NYC leadership in 2021",
+          'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Sen. Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> and partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+        ],
+      },
+      // {
+      //   name: "Beacon Climate Action Now",
+      //   // link: 'https://github.com/veekas/restaurant-search-example',
+      //   // faClass: 'fa fa-github',
+      //   tools: [],
+      //   // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //   achievements: [
+      //     "Co-founded a grassroots volunteer group to promote climate justice in the Hudson Valley",
+      //   ],
+      // },
+      // {
+      //   name: "Climate Can't Wait 2022",
+      //   // link: 'https://github.com/veekas/restaurant-search-example',
+      //   // faClass: 'fa fa-github',
+      //   tools: ["JavaScript", "React"],
+      //   // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //   achievements: [
+      //     'Administrative Committee member for collaboration between 43+ organizations to pass bold climate policy at the state level <a href="https://www.climatecantwait.org" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+      //     'Designed, built, and maintained coalition website <a href="https://github.com/veekas/climate-cant-wait" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+      //   ],
+      // },
+      // {
+      //   name: "Sunrise Movement NYC",
+      //   // link: 'https://github.com/veekas/restaurant-search-example',
+      //   // faClass: 'fa fa-github',
+      //   tools: [],
+      //   // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //   achievements: [
+      //     // "Elected to hub leadership in 2021",
+      //     'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Senate Majority Leader Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> and partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+      //     "Represented the organization in coalition meetings with other external partners",
+      //   ],
+      // },
       {
         name: "Technical speaker",
         // link: 'https://github.com/veekas/restaurant-search-example',
