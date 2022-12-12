@@ -229,6 +229,15 @@ const DATA = {
       //     "Executed online ad campaigns: 5%+ CTR for Google Adwords & Facebook Ads",
       //     "Designed logos, mail pieces, and digital content with Photoshop and Illustrator",
       //     // 'Scraped and cultivated insurance broker data, generating 7,000+ warm leads',
+      /*
+      Chief Development OfficerChief Development Officer
+VMP ConsultingVMP Consulting
+Feb 2012 - Jan 2021 · 9 yrsFeb 2012 - Jan 2021 · 9 yrs
+Tempe, AZTempe, AZ
+2017-Present: Specialized in building React.js web-apps and static sites, and guiding performance optimizations for existing web applications
+
+Previously crafted fundraising strategy and database management solutions for political campaigns with the purpose of improving donor and voter communication. Compiled, cleaned, and presented data of historical election results, campaign finance reports to inform strategy and management. Managed candidate call time for fundraising. Designed logos and graphics for political committees and start-up organizations. Designed, planned, and executed online advertising campaigns and public relations strategies for political and private-sector customers. Above industry standard click-through and conversion rates for Google Adwords (5%+). Above industry standard CTR for Facebook ads (consistently 2.5%, and regularly above 5%). Cleaned 69,997 rows of insurance broker data to use for client’s internal marketing and outreach, generating 7,000+ warm leads.
+      */
       //   ],
       // },
       // {
