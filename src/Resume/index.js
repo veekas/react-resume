@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Container from "../ui/Container";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 import Main from "./Main";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -12,7 +12,7 @@ class Resume extends Component {
         <Header {...DATA.main} />
         <div style={{ display: "flex" }}>
           <Main {...DATA.main} />
-          <Sidebar data={DATA.sidebar} />
+          {/* <Sidebar data={DATA.sidebar} /> */}
         </div>
         <Footer links={DATA.footerLinks} />
       </Container>
@@ -137,10 +137,16 @@ const DATA = {
   },
   footerLinks: [
     {
-      name: "Website",
-      faClass: "fa fa-veekas",
-      display: "VeekasMeansProgress.com",
-      link: "https://VeekasMeansProgress.com",
+      name: "Email",
+      faClass: "fa fa-envelope",
+      display: "veekas.ashoka@gmail.com",
+      link: "mailto:veekas.ashoka@gmail.com",
+    },
+    {
+      name: "Phone",
+      faClass: "fa fa-phone",
+      display: "(480) 264-0124",
+      link: "tel:+14802640124",
     },
     {
       name: "GitHub",
@@ -149,13 +155,7 @@ const DATA = {
       link: "https://github.com/veekas",
     },
     {
-      name: "Twitter",
-      faClass: "fa fa-twitter",
-      display: "@veekas",
-      link: "https://www.twitter.com/veekas",
-    },
-    {
-      name: "Linkedin",
+      name: "LinkedIn",
       faClass: "fa fa-linkedin",
       display: "linkedin.com/in/veekas",
       link: "https://www.linkedin.com/in/veekas",
@@ -165,9 +165,9 @@ const DATA = {
     firstName: "Veekas",
     lastName: "Ashoka",
     subheader: {
-      qualifier: "Full Stack JavaScript Developer",
-      title: "Software Engineer",
-      name: "Software Engineer",
+      qualifier: "Full Stack Web Developer",
+      title: "Senior Software Engineer",
+      name: "Senior Software Engineer",
     },
     website: {
       faClass: "fa fa-veekas",
@@ -176,18 +176,21 @@ const DATA = {
     },
     companies: [
       {
-        name: "Arcadia",
+        name: "Arcadia Power",
         color: "rgb(77, 100, 141)",
         title: "Software Engineer III",
         date: "July 2022–Present",
         location: "New York, NY",
         achievements: [
-          "Contributed to ongoing development of front-end infrastructure",
-          "Consolidating three brands to one marketing site",
+          'Contributed to ongoing development of front-end infrastructure such as the React component library <a href="https://shrike.arcadia.com" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          "Worked to consolidate three brands to one Next.js marketing site while performing major upgrades to the site's dependencies",
+          "Replatformed automated emails to a custom-built solution ingesting Salesforce events through AWS & consuming via a Ruby on Rails server with GraphQL",
+          "Helped develop an internationalization strategy for the company's marketing sites",
+          "Developed a strategy for working with non-technical stakeholders to improve accessibility measures",
         ],
       },
       {
-        name: "The Knot Worldwide (formerly XO Group, Inc)",
+        name: "The Knot",
         color: "rgb(77, 100, 141)",
         title: [
           "Software Engineer - Core Systems",
@@ -199,14 +202,14 @@ const DATA = {
         achievements: [
           [
             'Co-maintained the company\'s shared frontend UI/UX framework <a href="https://docs.union.theknot.com" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-            "Led development on full redesigns of the following: global navigation/header, layout and grid system, buttons, links, and inline alerts",
+            "Led development on full redesigns of the following: global navigation/header, layout & grid system, buttons, links, & inline alerts",
             "Transitioned the company's shared UI/UX framework from CircleCI to Jenkins Pipelines",
-            "Helped build an internal A/B testing service and REST API (Node.js/Express.js) to handle experiment management and user bucketing across brands",
+            "Helped build an internal A/B testing service & REST API (Node/Express) to manage experiments & user bucketing across brands",
             "Built a targeted build tool for our large monorepo using Rust",
-            "Re-platformed and redesigned docs to use Storybook",
-            "Implemented accessibility updates to foundational components used on all pages, such as headers, forms, and buttons (WCAG 2.0 standards)",
+            "Re-platformed & redesigned docs to use Storybook",
+            "Implemented accessibility updates to foundational components used on all pages, e.g. headers, forms, & buttons (WCAG 2.0)",
             // "Founding lead of 'TKWW in Solidarity', a group for employees to listen, learn, and grow as partners to marginalized peers and the wider TKWW community",
-            "Member of Diversity, Equity, and Inclusion Council, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
+            "Member of Diversity, Equity, & Inclusion Council", //, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
           ],
           [
             // "Led development of the 'Quick Start' A/B test on search pages to increase relevancy for couples",
@@ -274,7 +277,7 @@ Previously crafted fundraising strategy and database management solutions for po
       //   ],
       // },
     ],
-    projects: [
+    technicalProjects: [
       {
         name: "Club Rust",
         // link: 'https://github.com/veekas/restaurant-search-example',
@@ -282,31 +285,104 @@ Previously crafted fundraising strategy and database management solutions for po
         tools: ["Rust"],
         // description: 'Yelp-like structured data search using Algolia and Open Table data',
         achievements: [
-          'Livestream learning Rust, sometimes with help from a Rust core team member <a href="https://www.twitch.tv/tessaaaaaaaaaaaa" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          'Livestream learning Rust with help from a Rust core team member <a href="https://www.twitch.tv/tessaaaaaaaaaaaa" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>. Currently building a production-ready Rust server',
+        ],
+      },
+      // {
+      //   technical: true,
+      //   name: "TBD Rust Server",
+      //   // link: 'https://github.com/veekas/restaurant-search-example',
+      //   // faClass: 'fa fa-github',
+      //   tools: ["Rust"],
+      //   // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //   achievements: [
+      //     '',
+      //   ],
+      // },
+      {
+        technical: true,
+        name: "Technical speaker",
+        // link: 'https://github.com/veekas/restaurant-search-example',
+        // faClass: 'fa fa-github',
+        tools: ["JavaScript", "React"],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          'Virtual Reality on the Web with React 360 (ReactNYC, Dec. 2018) <a href="https://www.youtube.com/watch?v=yVNULzIkxCI" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
+          "Code-Splitting with React (ReactNYC, Nov. 2018)",
+          'A Practical Introduction to Service Workers (ReactNYC, May 2018) <a href="https://www.youtube.com/watch?v=0QE5xb9s6mM" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
         ],
       },
       {
-        name: "Climate Farm School",
+        technical: true,
+        name: "Open source contributions",
+        // link: 'https://github.com/facebook/react/pull/11658',
+        // faClass: 'fa fa-github',
+        tools: ["JavaScript", "React", "Jest", "HTML", "CSS", "Git", "Github"],
+        achievements: [
+          'Facebook - React (2018) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'Sequelize ORM (2017) <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+          'MDN (Mozilla Developer Network) - Interactive Examples (2017) <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
+        ],
+      },
+    ],
+    projects: [
+      {
+        name: "Beacon Climate Action Now",
         // link: 'https://github.com/veekas/restaurant-search-example',
         // faClass: 'fa fa-github',
         tools: [],
         // description: 'Yelp-like structured data search using Algolia and Open Table data',
         achievements: [
-          "Attended Terra.do's Climate Farm School in the Hudson Valley to learn about regenerative agriculture",
+          "Co-founded a grassroots volunteer group in 2022 to promote climate justice in the Hudson Valley",
+          "Successfully pressured the Beacon City Council to electrify new & renovated buildings <a href='https://highlandscurrent.org/2023/01/13/electric-beacon/' style='color: rgba(77, 100, 141, 1)'><i class='fa fa-external-link-square'></i></a>",
         ],
       },
       {
-        name: "Volunteer political activism",
+        name: "Sunrise Movement",
         // link: 'https://github.com/veekas/restaurant-search-example',
         // faClass: 'fa fa-github',
         tools: [],
         // description: 'Yelp-like structured data search using Algolia and Open Table data',
         achievements: [
-          "Co-founded a grassroots volunteer group (Beacon Climate Action Now) in 2022 to promote climate justice in the Hudson Valley",
+          // "Serving as a coach for hub leaders in Arizona, Georgia, and Florida",
           "Elected to Sunrise Movement NYC leadership in 2021",
-          'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Sen. Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> and partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Sen. Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> & partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
+      {
+        name: "Climate Can't Wait NY",
+        // link: 'https://github.com/veekas/restaurant-search-example',
+        // faClass: 'fa fa-github',
+        tools: [],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          "Planned & facilitated meetings for a coalition of 43+ organizations across NY",
+          'Helped organize 9 rallies & 6 live streams over 6 days all while bicycling 253 miles from NYC to Albany with three other Sunrisers, generating earned media <a href="https://nystateofpolitics.com/state-of-politics/new-york/politics/2022/04/22/environmental-advocates-push-for-more-action-by-new-york-state-on-earth-day" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> across NY State',
+          'Due to this effort, was honored with Citizen Action\'s 2022 Everyday Heroes Award <a href="https://citizenactionny.org/our-everyday-heroes/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+        ],
+      },
+      // {
+      //   name: "Climate Farm School",
+      //   // link: 'https://github.com/veekas/restaurant-search-example',
+      //   // faClass: 'fa fa-github',
+      //   tools: [],
+      //   // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //   achievements: [
+      //     'Attended Terra.do\'s Climate Farm School <a href="https://terra.do/climate-education/cohort-courses/climate-farm-school-regenerative-agriculture/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> in the Hudson Valley to learn about regenerative agriculture',
+      //   ],
+      // },
+      // {
+      //   name: "Volunteer political activism",
+      //   // link: 'https://github.com/veekas/restaurant-search-example',
+      //   // faClass: 'fa fa-github',
+      //   tools: [],
+      //   // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //   achievements: [
+      //     "Co-founded a grassroots volunteer group (Beacon Climate Action Now) in 2022 to promote climate justice in the Hudson Valley",
+      //     "Elected to Sunrise Movement NYC leadership in 2021",
+      //     'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Sen. Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> and partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+      //   ],
+      // },
       // {
       //   name: "Beacon Climate Action Now",
       //   // link: 'https://github.com/veekas/restaurant-search-example',
@@ -340,29 +416,6 @@ Previously crafted fundraising strategy and database management solutions for po
       //     "Represented the organization in coalition meetings with other external partners",
       //   ],
       // },
-      {
-        name: "Technical speaker",
-        // link: 'https://github.com/veekas/restaurant-search-example',
-        // faClass: 'fa fa-github',
-        tools: ["JavaScript", "React"],
-        // description: 'Yelp-like structured data search using Algolia and Open Table data',
-        achievements: [
-          'Virtual Reality on the Web with React 360 (ReactNYC, Dec. 2018) <a href="https://www.youtube.com/watch?v=yVNULzIkxCI" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
-          "Code-Splitting with React (ReactNYC, Nov. 2018)",
-          'A Practical Introduction to Service Workers (ReactNYC, May 2018) <a href="https://www.youtube.com/watch?v=0QE5xb9s6mM" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-youtube"></i></a>',
-        ],
-      },
-      {
-        name: "Open source contributions",
-        // link: 'https://github.com/facebook/react/pull/11658',
-        // faClass: 'fa fa-github',
-        tools: ["JavaScript", "React", "Jest", "HTML", "CSS", "Git", "Github"],
-        achievements: [
-          'Facebook - React (2018) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-          'Sequelize (2017) <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-          'MDN (Mozilla Developer Network) - Interactive Examples (2017) <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
-        ],
-      },
       // {
       //   name: "Reasons Why I Love You",
       //   link: "https://github.com/veekas/reasons-why-i-love-you",
