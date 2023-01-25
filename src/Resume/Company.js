@@ -14,7 +14,6 @@ const Company = ({
   location,
 }) => {
   let titles = Array.isArray(title) ? title : [title];
-  console.log(titles);
   let dates = Array.isArray(date) ? date : [date];
   let locations = Array.isArray(location) ? location : [location];
   let achievementsWrapper = Array.isArray(achievements[0])
@@ -35,17 +34,19 @@ const Company = ({
             }}
           />
 
-          <Section color={color}>
-            <List items={achievementsWrapper[idx]} />
-            {projects.map((project, key) => (
-              <Project
-                name={project.name}
-                achievements={project.achievements}
-                tools={project.tools}
-                key={key}
-              />
-            ))}
-          </Section>
+          {idx == 0 && (
+            <Section color={color}>
+              <List items={achievementsWrapper[idx]} />
+              {projects.map((project, key) => (
+                <Project
+                  name={project.name}
+                  achievements={project.achievements}
+                  tools={project.tools}
+                  key={key}
+                />
+              ))}
+            </Section>
+          )}
         </div>
       ))}
     </div>

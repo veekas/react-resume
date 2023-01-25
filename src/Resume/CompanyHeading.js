@@ -2,13 +2,13 @@ import React, { PropTypes } from "react";
 
 const CompanyHeading = ({ style, company, title, date, location }) => (
   <div style={{ ...defaultStyles.main, ...style }}>
-    <div style={!!company ? defaultStyles.company : undefined}>
-      {!!company && company}
+    <div style={company ? defaultStyles.company : undefined}>
+      {company && company}
       <div style={defaultStyles.title}>{title}</div>
     </div>
-    <div style={!!company ? defaultStyles.locationdate : defaultStyles.date}>
-      {!!company && location}
-      {!!company && <br />}
+    <div style={company ? defaultStyles.locationDate : defaultStyles.date}>
+      {company && location}
+      {company && <br />}
       {date}
     </div>
   </div>
@@ -25,7 +25,7 @@ const defaultStyles = {
     fontSize: "1.25rem",
     fontWeight: "bold",
     color: "rgba(77, 100, 141, 1)",
-    padding: "0.25rem",
+    padding: "0 0 0.25rem 0",
   },
   title: {
     // display: 'inline-block',
@@ -34,7 +34,7 @@ const defaultStyles = {
     // padding: '0.25rem',
     fontWeight: "500",
   },
-  locationdate: {
+  locationDate: {
     justifyContent: "flex-end",
     fontSize: "0.9rem",
     color: "rgba(77, 100, 141)",
@@ -67,7 +67,7 @@ const CompanyHeading = ({ style, company, title, date, location }) => (
         {company}
       </div>
 
-      <div style={defaultStyles.locationdate}>
+      <div style={defaultStyles.locationDate}>
         {date} {/* + ' | ' + location } }
       </div >
 

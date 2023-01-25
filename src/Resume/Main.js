@@ -14,13 +14,14 @@ const Main = ({
   subheader,
   companies,
   projects,
+  technicalProjects,
   faClass,
 }) => (
   <section style={style.main}>
-    <MainHeading title="+ Work Experience" />
+    <MainHeading title="+ Professional experience" />
     <Companies data={companies} />
-    <MainHeading title="+ VOLUNTEER EXPERIENCE" />
-    {projects.map((project, key) => (
+    <MainHeading title="+ Other technical work" />
+    {technicalProjects.map((project, key) => (
       <Section color="rgb(77, 100, 141)" key={key}>
         <Project
           name={project.name}
@@ -33,12 +34,29 @@ const Main = ({
         />
       </Section>
     ))}
+    <MainHeading title="+ Climate activism" />
+    {projects.map(
+      (project, key) =>
+        !project.technical && (
+          <Section color="rgb(77, 100, 141)" key={key}>
+            <Project
+              name={project.name}
+              tools={project.tools}
+              achievements={project.achievements}
+              link={project.link}
+              description={project.description}
+              key={key}
+              faClass={project.faClass}
+            />
+          </Section>
+        )
+    )}
   </section>
 );
 
 const style = {
   main: {
-    paddingRight: "1.25rem",
+    padding: "0 1.25rem 0.25rem 0",
   },
 };
 
