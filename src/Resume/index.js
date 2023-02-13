@@ -184,7 +184,7 @@ const DATA = {
         achievements: [
           'Contributed to ongoing development of front-end infrastructure such as the React component library <a href="https://shrike.arcadia.com" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
           "Worked to consolidate three brands to one Next.js marketing site while performing major upgrades to the site's dependencies",
-          "Replatformed automated emails to a custom-built solution ingesting Salesforce events through AWS & consuming via a Ruby on Rails server with GraphQL",
+          "Re-platformed automated emails to a custom-built solution ingesting Salesforce events through AWS & consuming via a Ruby on Rails server with GraphQL",
           "Helped develop an internationalization strategy for the company's marketing sites",
           "Developed a strategy for working with non-technical stakeholders to improve accessibility measures",
         ],
@@ -278,6 +278,16 @@ Previously crafted fundraising strategy and database management solutions for po
       // },
     ],
     technicalProjects: [
+      {
+        name: "Deque University - Web Accessiblity Training",
+        link: "https://github.com/veekas/restaurant-search-example",
+        // faClass: 'fa fa-github',
+        tools: ["Accessibility"],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          'Completing a comprehensive web accessibility training course with Deque University <a href="https://dequeuniversity.com/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+        ],
+      },
       {
         name: "Club Rust",
         // link: 'https://github.com/veekas/restaurant-search-example',
