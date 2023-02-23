@@ -329,6 +329,7 @@ Previously crafted fundraising strategy and database management solutions for po
         // faClass: 'fa fa-github',
         tools: ["JavaScript", "React", "Jest", "HTML", "CSS", "Git", "Github"],
         achievements: [
+          'Signal Messenger - Desktop (2022) <a href="https://github.com/signalapp/Signal-Desktop/pull/6303" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
           'Facebook - React (2018) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
           'Sequelize ORM (2017) <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
           'MDN (Mozilla Developer Network) - Interactive Examples (2017) <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
