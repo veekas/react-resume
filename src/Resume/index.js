@@ -184,7 +184,7 @@ const DATA = {
         achievements: [
           'Contributed to ongoing development of front-end infrastructure such as the React component library <a href="https://shrike.arcadia.com" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
           "Worked to consolidate three brands to one Next.js marketing site while performing major upgrades to the site's dependencies",
-          "Replatformed automated emails to a custom-built solution ingesting Salesforce events through AWS & consuming via a Ruby on Rails server with GraphQL",
+          "Re-platformed automated emails to a custom-built solution (React with Remix and Ruby on Rails)",
           "Helped develop an internationalization strategy for the company's marketing sites",
           "Developed a strategy for working with non-technical stakeholders to improve accessibility measures",
         ],
@@ -209,7 +209,7 @@ const DATA = {
             "Re-platformed & redesigned docs to use Storybook",
             "Implemented accessibility updates to foundational components used on all pages, e.g. headers, forms, & buttons (WCAG 2.0)",
             // "Founding lead of 'TKWW in Solidarity', a group for employees to listen, learn, and grow as partners to marginalized peers and the wider TKWW community",
-            "Member of Diversity, Equity, & Inclusion Council", //, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
+            // "Member of Diversity, Equity, & Inclusion Council", //, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
           ],
           [
             // "Led development of the 'Quick Start' A/B test on search pages to increase relevancy for couples",
@@ -279,6 +279,16 @@ Previously crafted fundraising strategy and database management solutions for po
     ],
     technicalProjects: [
       {
+        name: "Deque University - Web Accessiblity Training",
+        link: "https://github.com/veekas/restaurant-search-example",
+        // faClass: 'fa fa-github',
+        tools: ["Accessibility"],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          'Completing a comprehensive web accessibility training course with Deque University <a href="https://dequeuniversity.com/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+        ],
+      },
+      {
         name: "Club Rust",
         // link: 'https://github.com/veekas/restaurant-search-example',
         // faClass: 'fa fa-github',
@@ -319,6 +329,7 @@ Previously crafted fundraising strategy and database management solutions for po
         // faClass: 'fa fa-github',
         tools: ["JavaScript", "React", "Jest", "HTML", "CSS", "Git", "Github"],
         achievements: [
+          'Signal Messenger - Desktop (2022) <a href="https://github.com/signalapp/Signal-Desktop/pull/6303" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
           'Facebook - React (2018) <a href="https://github.com/facebook/react/pull/11658" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
           'Sequelize ORM (2017) <a href="https://github.com/sequelize/sequelize/pull/8403" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
           'MDN (Mozilla Developer Network) - Interactive Examples (2017) <a href="https://github.com/mdn/interactive-examples" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-github"></i></a>',
@@ -333,8 +344,8 @@ Previously crafted fundraising strategy and database management solutions for po
         tools: [],
         // description: 'Yelp-like structured data search using Algolia and Open Table data',
         achievements: [
-          "Co-founded a grassroots volunteer group in 2022 to promote climate justice in the Hudson Valley",
-          "Successfully pressured the Beacon City Council to electrify new & renovated buildings <a href='https://highlandscurrent.org/2023/01/13/electric-beacon/' style='color: rgba(77, 100, 141, 1)'><i class='fa fa-external-link-square'></i></a>",
+          // "Co-founded a grassroots volunteer group in 2022 to promote climate justice in the Hudson Valley",
+          "Successfully pressured the Beacon City Council to mandate electrification of new & renovated buildings <a href='https://westchester.news12.com/beacon-to-require-all-future-construction-projects-renovations-to-use-electric-utilities' style='color: rgba(77, 100, 141, 1)'><i class='fa fa-external-link-square'></i></a>",
         ],
       },
       {
