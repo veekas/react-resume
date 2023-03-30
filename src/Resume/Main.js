@@ -5,6 +5,7 @@ import Project from "./Project";
 import Section from "../ui/Section";
 import List from "../ui/List";
 import Identity from "./Identity";
+import Education from "./Education";
 
 // http://paletton.com/#uid=13I0u0kllllaFw0g0qFqFg0w0aF
 
@@ -16,11 +17,12 @@ const Main = ({
   projects,
   technicalProjects,
   faClass,
+  education,
 }) => (
   <section style={style.main}>
     <MainHeading title="+ Professional experience" />
     <Companies data={companies} />
-    <MainHeading title="+ Other technical work" />
+    <MainHeading title="+ Projects" />
     {technicalProjects.map((project, key) => (
       <Section color="rgb(77, 100, 141)" key={key}>
         <Project
@@ -34,8 +36,9 @@ const Main = ({
         />
       </Section>
     ))}
-    <MainHeading title="+ Climate activism" />
-    {projects.map(
+    <MainHeading title="+ Education" />
+    <Education institutions={education} />
+    {/* {projects.map(
       (project, key) =>
         !project.technical && (
           <Section color="rgb(77, 100, 141)" key={key}>
@@ -50,7 +53,7 @@ const Main = ({
             />
           </Section>
         )
-    )}
+    )} */}
   </section>
 );
 

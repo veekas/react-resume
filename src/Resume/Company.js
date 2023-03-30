@@ -34,19 +34,19 @@ const Company = ({
             }}
           />
 
-          {idx == 0 && (
+          {
             <Section color={color}>
               <List items={achievementsWrapper[idx]} />
-              {projects.map((project, key) => (
+              {/* {projects.map((project, key) => (
                 <Project
                   name={project.name}
                   achievements={project.achievements}
                   tools={project.tools}
                   key={key}
                 />
-              ))}
+              ))} */}
             </Section>
-          )}
+          }
         </div>
       ))}
     </div>

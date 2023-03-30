@@ -1,12 +1,9 @@
 import React, { PropTypes } from "react";
-import SidebarHeading from "./SidebarHeading";
 
 const Education = (
   { institutions } // activities
 ) => (
-  <section style={style.main}>
-    <SidebarHeading align="left">+ EDUCATION</SidebarHeading>
-
+  <section style={{ ...defaultStyles.main }}>
     {institutions.map(
       ({
         university,
@@ -21,24 +18,34 @@ const Education = (
         <div>
           <div
             style={{
-              ...style.text,
-              fontWeight: "bold",
+              ...defaultStyles.title,
             }}
           >
             {university}
           </div>
-          <div>
-            {degree}
-            {cert && `; concentrations in ${cert}`}
+
+          <div style={defaultStyles.mainSection}>
+            <div style={defaultStyles.degree}>
+              {degree}
+              {cert && `; concentrations in ${cert}`}
+            </div>
+
+            <div
+              style={
+                university ? defaultStyles.locationDate : defaultStyles.date
+              }
+            >
+              {duration}
+            </div>
           </div>
-          <div>{duration}</div>
-          {courses && (
+
+          {/* {courses && (
             <div>
               <br />
               <i>Selected Coursework: </i>
               {courses}
             </div>
-          )}
+          )} */}
           {/* <br /> */}
           {/*
       <div>
@@ -47,11 +54,11 @@ const Education = (
         {activities}
       </div>
       */}
-          {!!bootcamp && (
+          {/* {!!bootcamp && (
             <div>
               <div
                 style={{
-                  ...style.text,
+                  ...defaultStyles.text,
                   fontWeight: "bold",
                 }}
               >
@@ -60,18 +67,47 @@ const Education = (
               <div>{program}</div>
               <div>{endDate}</div>
             </div>
-          )}
+          )} */}
         </div>
       )
     )}
   </section>
 );
 
-const style = {
-  main: {},
-  text: {
-    margin: "0.6rem 0 0 0",
-    textAlign: "left",
+const defaultStyles = {
+  main: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    paddingRight: "0.75rem",
+    paddingLeft: "0.5rem",
+    width: "100%",
+  },
+  mainSection: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+  title: {
+    // display: 'inline-block',
+    fontSize: "1rem",
+    color: "rgba(78, 78, 78 , 1)",
+    padding: "0.25rem",
+    fontWeight: "500",
+  },
+  locationDate: {
+    justifyContent: "flex-end",
+    fontSize: "0.9rem",
+    color: "rgba(77, 100, 141)",
+    padding: "0.25rem",
+  },
+  date: {
+    justifyContent: "flex-end",
+    fontSize: "0.9rem",
+    color: "rgba(77, 100, 141)",
+    paddingBottom: "0.25rem",
+  },
+  degree: {
+    margin: "0 0 0.5rem 0.25rem",
   },
 };
 

@@ -34,6 +34,7 @@ const style = {
   tools: {
     fontSize: "0.75rem",
     color: "rgba(77, 100, 141)",
+    paddingRight: "0.75rem",
   },
   icon: {
     fontSize: "1rem",

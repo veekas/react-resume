@@ -11,7 +11,7 @@ class Resume extends Component {
       <Container>
         <Header {...DATA.main} />
         <div style={{ display: "flex" }}>
-          <Main {...DATA.main} />
+          <Main {...DATA.main} education={DATA.sidebar.institutions} />
           {/* <Sidebar data={DATA.sidebar} /> */}
         </div>
         <Footer links={DATA.footerLinks} />
@@ -205,19 +205,20 @@ const DATA = {
             "Led development on full redesigns of the following: global navigation/header, layout & grid system, buttons, links, & inline alerts",
             "Transitioned the company's shared UI/UX framework from CircleCI to Jenkins Pipelines",
             "Helped build an internal A/B testing service & REST API (Node/Express) to manage experiments & user bucketing across brands",
-            "Built a targeted build tool for our large monorepo using Rust",
+            "Configured a shared webpack (React.js build tool) config for use across the company's brands",
+            "Built a simple custom build tool for our large monorepo using Rust",
             "Re-platformed & redesigned docs to use Storybook",
             "Implemented accessibility updates to foundational components used on all pages, e.g. headers, forms, & buttons (WCAG 2.0)",
             // "Founding lead of 'TKWW in Solidarity', a group for employees to listen, learn, and grow as partners to marginalized peers and the wider TKWW community",
-            // "Member of Diversity, Equity, & Inclusion Council", //, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
+            "Member of Diversity, Equity, & Inclusion Council", //, a subset of representatives across the organization focused on working with executive leadership to implement policy change",
           ],
           [
-            // "Led development of the 'Quick Start' A/B test on search pages to increase relevancy for couples",
+            "Led development of the 'Quick Start' A/B test on search pages to increase relevancy for couples",
           ],
           [
-            // 'Lead engineer on the <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)">Marketplace home page</a> <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> redesign',
-            // "Regular contributor to inner source UI/UX library",
-            // "Organized an Advanced React workshop for internal and external engineers",
+            'Lead engineer on the <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)">Marketplace home page</a> <a href="https://www.theknot.com/marketplace" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> redesign',
+            "Regular contributor to inner source UI/UX library",
+            "Organized an Advanced React workshop for internal and external engineers",
           ],
         ],
       },
@@ -279,6 +280,7 @@ Previously crafted fundraising strategy and database management solutions for po
     ],
     technicalProjects: [
       {
+        technical: true,
         name: "Deque University - Web Accessiblity Training",
         link: "https://github.com/veekas/restaurant-search-example",
         // faClass: 'fa fa-github',
@@ -289,13 +291,15 @@ Previously crafted fundraising strategy and database management solutions for po
         ],
       },
       {
+        technical: true,
         name: "Club Rust",
         // link: 'https://github.com/veekas/restaurant-search-example',
         // faClass: 'fa fa-github',
         tools: ["Rust"],
         // description: 'Yelp-like structured data search using Algolia and Open Table data',
         achievements: [
-          'Livestream learning Rust with help from a Rust core team member <a href="https://www.twitch.tv/tessaaaaaaaaaaaa" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>. Currently building a production-ready Rust server',
+          'Livestream learning Rust with help from a Rust core team member <a href="https://www.twitch.tv/tessaaaaaaaaaaaa" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          "Currently building a production-ready Rust server to help homeowners find government incentives to electrify their homes",
         ],
       },
       // {
@@ -337,41 +341,41 @@ Previously crafted fundraising strategy and database management solutions for po
       },
     ],
     projects: [
-      {
-        name: "Beacon Climate Action Now",
-        // link: 'https://github.com/veekas/restaurant-search-example',
-        // faClass: 'fa fa-github',
-        tools: [],
-        // description: 'Yelp-like structured data search using Algolia and Open Table data',
-        achievements: [
-          // "Co-founded a grassroots volunteer group in 2022 to promote climate justice in the Hudson Valley",
-          "Successfully pressured the Beacon City Council to mandate electrification of new & renovated buildings <a href='https://westchester.news12.com/beacon-to-require-all-future-construction-projects-renovations-to-use-electric-utilities' style='color: rgba(77, 100, 141, 1)'><i class='fa fa-external-link-square'></i></a>",
-        ],
-      },
-      {
-        name: "Sunrise Movement",
-        // link: 'https://github.com/veekas/restaurant-search-example',
-        // faClass: 'fa fa-github',
-        tools: [],
-        // description: 'Yelp-like structured data search using Algolia and Open Table data',
-        achievements: [
-          // "Serving as a coach for hub leaders in Arizona, Georgia, and Florida",
-          "Elected to Sunrise Movement NYC leadership in 2021",
-          'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Sen. Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> & partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-        ],
-      },
-      {
-        name: "Climate Can't Wait NY",
-        // link: 'https://github.com/veekas/restaurant-search-example',
-        // faClass: 'fa fa-github',
-        tools: [],
-        // description: 'Yelp-like structured data search using Algolia and Open Table data',
-        achievements: [
-          "Planned & facilitated meetings for a coalition of 43+ organizations across NY",
-          'Helped organize 9 rallies & 6 live streams over 6 days all while bicycling 253 miles from NYC to Albany with three other Sunrisers, generating earned media <a href="https://nystateofpolitics.com/state-of-politics/new-york/politics/2022/04/22/environmental-advocates-push-for-more-action-by-new-york-state-on-earth-day" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> across NY State',
-          'Due to this effort, was honored with Citizen Action\'s 2022 Everyday Heroes Award <a href="https://citizenactionny.org/our-everyday-heroes/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
-        ],
-      },
+      //   {
+      //     name: "Beacon Climate Action Now",
+      //     // link: 'https://github.com/veekas/restaurant-search-example',
+      //     // faClass: 'fa fa-github',
+      //     tools: [],
+      //     // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //     achievements: [
+      //       // "Co-founded a grassroots volunteer group in 2022 to promote climate justice in the Hudson Valley",
+      //       "Successfully pressured the Beacon City Council to mandate electrification of new & renovated buildings <a href='https://westchester.news12.com/beacon-to-require-all-future-construction-projects-renovations-to-use-electric-utilities' style='color: rgba(77, 100, 141, 1)'><i class='fa fa-external-link-square'></i></a>",
+      //     ],
+      //   },
+      //   {
+      //     name: "Sunrise Movement",
+      //     // link: 'https://github.com/veekas/restaurant-search-example',
+      //     // faClass: 'fa fa-github',
+      //     tools: [],
+      //     // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //     achievements: [
+      //       // "Serving as a coach for hub leaders in Arizona, Georgia, and Florida",
+      //       "Elected to Sunrise Movement NYC leadership in 2021",
+      //       'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Sen. Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> & partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+      //     ],
+      //   },
+      //   {
+      //     name: "Climate Can't Wait NY",
+      //     // link: 'https://github.com/veekas/restaurant-search-example',
+      //     // faClass: 'fa fa-github',
+      //     tools: [],
+      //     // description: 'Yelp-like structured data search using Algolia and Open Table data',
+      //     achievements: [
+      //       "Planned & facilitated meetings for a coalition of 43+ organizations across NY",
+      //       'Helped organize 9 rallies & 6 live streams over 6 days all while bicycling 253 miles from NYC to Albany with three other Sunrisers, generating earned media <a href="https://nystateofpolitics.com/state-of-politics/new-york/politics/2022/04/22/environmental-advocates-push-for-more-action-by-new-york-state-on-earth-day" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> across NY State',
+      //       'Due to this effort, was honored with Citizen Action\'s 2022 Everyday Heroes Award <a href="https://citizenactionny.org/our-everyday-heroes/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+      //     ],
+      //   },
       // {
       //   name: "Climate Farm School",
       //   // link: 'https://github.com/veekas/restaurant-search-example',
