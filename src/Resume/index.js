@@ -357,7 +357,7 @@ Previously crafted fundraising strategy and database management solutions for po
         achievements: [
           // "Serving as a coach for hub leaders in Arizona, Georgia, and Florida",
           "Elected to Sunrise Movement NYC leadership in 2021",
-          'Led NYC\'s "Good Jobs for All" Campaign, which successfully pressured Sen. Schumer to support the creation of a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> & partnered with him to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          'Led NYC\'s "Good Jobs for All" Campaign to create a Civilian Climate Corps <a href="https://www.commondreams.org/news/2021/07/08/huge-schumer-commits-creating-civilian-climate-corps"  style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>; partnered with Sen. Schumer to promote it <a href="https://twitter.com/sunrisemvmt/status/1446204934865702918" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
       {
@@ -367,21 +367,20 @@ Previously crafted fundraising strategy and database management solutions for po
         tools: [],
         // description: 'Yelp-like structured data search using Algolia and Open Table data',
         achievements: [
-          "Planned & facilitated meetings for a coalition of 43+ organizations across NY",
-          'Helped organize 9 rallies & 6 live streams over 6 days all while bicycling 253 miles from NYC to Albany with three other Sunrisers, generating earned media <a href="https://nystateofpolitics.com/state-of-politics/new-york/politics/2022/04/22/environmental-advocates-push-for-more-action-by-new-york-state-on-earth-day" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> across NY State',
-          'Due to this effort, was honored with Citizen Action\'s 2022 Everyday Heroes Award <a href="https://citizenactionny.org/our-everyday-heroes/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
+          'Award-winning leader <a href="https://citizenactionny.org/our-everyday-heroes/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> of a coalition of 43+ organizations across NY',
+          'Helped organize 9 rallies & 6 live streams over 6 days while bicycling 253 miles from NYC to Albany <a href="https://nystateofpolitics.com/state-of-politics/new-york/politics/2022/04/22/environmental-advocates-push-for-more-action-by-new-york-state-on-earth-day" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a>',
         ],
       },
-      // {
-      //   name: "Climate Farm School",
-      //   // link: 'https://github.com/veekas/restaurant-search-example',
-      //   // faClass: 'fa fa-github',
-      //   tools: [],
-      //   // description: 'Yelp-like structured data search using Algolia and Open Table data',
-      //   achievements: [
-      //     'Attended Terra.do\'s Climate Farm School <a href="https://terra.do/climate-education/cohort-courses/climate-farm-school-regenerative-agriculture/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> in the Hudson Valley to learn about regenerative agriculture',
-      //   ],
-      // },
+      {
+        name: "Climate Farm School",
+        // link: 'https://github.com/veekas/restaurant-search-example',
+        // faClass: 'fa fa-github',
+        tools: [],
+        // description: 'Yelp-like structured data search using Algolia and Open Table data',
+        achievements: [
+          'Attended Terra.do\'s Climate Farm School <a href="https://terra.do/climate-education/cohort-courses/climate-farm-school-regenerative-agriculture/" style="color: rgba(77, 100, 141, 1)"><i class="fa fa-external-link-square"></i></a> in the Hudson Valley to learn about regenerative agriculture',
+        ],
+      },
       // {
       //   name: "Volunteer political activism",
       //   // link: 'https://github.com/veekas/restaurant-search-example',
